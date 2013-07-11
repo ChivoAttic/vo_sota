@@ -1,4 +1,4 @@
-vo_sota
-=======
+VOs_SOTA
+========
 
-Virtual Observatory - State of the Art
+State of the art about virtual observatories for LIRAE.
