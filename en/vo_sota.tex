@@ -1,0 +1,110 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{listings}
+\frenchspacing
+\linespread{1.2}                                          %espacio entre líneas
+\setlength{\parskip}{1.5ex plus 0.2ex minus 0.2ex}        %espacio entre párrafos
+\setlength{\columnsep}{0.9cm}                 %espacio entre columnas
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{moreverb}
+\usepackage{hyperref}
+\usepackage{caption}
+
+\newcommand\R{R}
+\newenvironment{keywords}{\begin{description}\item[Keywords:]}{\end{description}}
+
+%\center{\emph{Desarrollo de una plataforma astroinformática para la administración y análisis inteligente de datos a gran escala} \\}
+
+\title{
+\center{\textbf{Presence of the Virtual Observatory in the World} \\}
+\author{
+        Mauricio Solar, Marcelo Mendoza, Jonathan Antognini, José Marroquín, \\
+        Jorge Ibsen, Lars Nyman,
+        Eduardo Vera, Diego Mardones, Guillermo Cabrera,\\
+        Paola Arellano,
+        Karim Pichara, Nelson Padilla,
+        Ricardo Contreras, \\ Neil Nagar,
+        Victor Parada.
+}
+\date{Valparaíso, \today}
+}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+    \begin{abstract}
+		This document publicizes the virtual observatories projects that make
+up the International Virtual Observatory Alliance (IVOA), how they are
+distributed worldwide and trough some brief descriptions, the tools which they
+themselves develop under standards that facilitate the sharing of astronomical
+knowledge and the interoperability. For this research were reviewed the website
+of the IVOA and its membership, scientific publications, articles in book and
+other electronics sources. This document is required by an initiative which
+intends from Chile to development of an astro-informatics platform to manage
+and analyse large-scale data based on the IVOA standards, project which
+involves the active participation of university students of the Federico Santa
+Mar\'{i}a Technical University.
+    \end{abstract}
+\end{center}
+
+\vspace{0.4cm}
+
+\begin{center}
+\begin{keywords}
+    IVOA, ChiVO, VO.
+\end{keywords}
+\end{center}
+\newpage
+
+\input{include/introduction}
+\newpage
+
+\input{include/vo_distribution}
+\newpage
+
+\input{include/vo_list}
+\newpage
+
+\input{include/conclusions}
+\newpage
+ 
+\section{References}
+Hanisch, R., \& Quinn, P. (n.d.) The International Virtual Observatory.
+Retrieved from \url{http://www.ivoa.net/about/TheIVOA.pdf}\\
+
+Borne, K. (n.d.) Virtual Observatories, Data Mining, and Astroinformatics. In
+H.E. Bond (Ed.), \textit{Planets, Stars and Stellar Systems} (pp. 409-443).
+Vol. 2. Dordrecht: Springer Science$ + $Business Media.\\
+
+Anonymous. (2013, April 17). Proyecto Fondef: Innovador proyecto de la USM
+proveer\'{a} a la Red de Telescopios ALMA de un sofisticado observatorio
+virtual. Retrieved from
+\url{http://www.conicyt.cl/fondef/2013/04/17/proyecto-fondef-innovador-proyecto-de-la-usm-proveera-a-la-red-de-telescopios-alma-de-un-sofisticado-observatorio-virtual/}\\
+
+Foncea, V. (2013, April 12). Observatorios Virtuales: Desarrollo chileno de
+astroinform\'{a}tica para ALMA. Retrieved from
+\url{http://www.almaobservatory.org/es/anuncios-eventos/542-virtual-observatories-chilean-development-of-astronomical-computing-for-alma}\\
+
+De Young, D. (2010, October). A Vision for the US Virtual Astronomical
+Observatory. Retrieved from
+\url{http://www.usvao.org/documents/VAOVisionDocumentOct2010c.pdf}\\
+
+		Quinn, P., \& G\'{o}rsky, K.(2002). The Canadian Virtual Observatory
+Project. In \textit{Toward an International Virtual Observatory}. Retrieved
+from \url{http://link.springer.com/chapter/10.1007%2F10857598_4#page-1}\\
+
+Ishihara, Y., Mizumoto, Y., Ohishi, M., Kawaray, K. (2004, September 8).
+Construction of Japanese Virtual Observatory (JVO). Retrieved from
+\url{http://www.fujitsu.com/downloads/MAG/vol40-2/paper05.pdf}\\
+\end{document}
