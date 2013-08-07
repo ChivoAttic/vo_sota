@@ -1,11 +1,11 @@
 \section{List of IVOA Virtual Observatories}
 \subsection{America}
 \subsubsection{Brazilian Virtual Observatory (BRAVO)}
-The BRAVO \cite{bra} was born with the Declarations of Intentions signed on 18th of August,
-2008 by six research institutes and the Brazilian Astronomical Societyi (SBA, in
-its Portuguese acronym). Later, the Brazilian Virtual Observatory was founded by
-the National Institute for Science and Technology in Astrophysics (INCT-A, in
-its Portugese acronym).
+The BRAVO \cite{BRAVO} was born with the Declarations of Intentions signed on
+18th of August, 2008 by six research institutes and the Brazilian Astronomical
+Society (SBA, in its Portuguese acronym). Later, the Brazilian Virtual
+Observatory was founded by the National Institute for Science and Technology in
+Astrophysics (INCT-A, in its Portugese acronym).
 
 \begin{itemize}
 \item \textbf{Projects}
@@ -273,8 +273,42 @@ access VODesktop using Python script at
 \end{itemize}
 
 \subsubsection{European Space Agency Virtual Observatory (ESA-VO)}
+The ESA-VO aims to have the European Space Astronomy Centre (ESAP) as the VO
+node for all European astronomy. It is a member of the European Virtual
+Observaory (EURO-VO) and with European Southern Observatory (ESO) co-funded the
+EURO-VO Facility Centre. It participated of EURO-VO Data Centre Alliance
+(EURO-VO DCA) and EURO-VO Astronomical Infraestructure for Data Access
+(EuroVO-AIDA), and work with the formal partners of Euro-VO International
+Cooperation Empowerment (EuroVO-ICE) and EURO-VO Technology Centre (VOTECH).
+
 \begin{itemize}
 \item \textbf{Projects}
+\begin{itemize}
+\item DALToolKit
+\begin{itemize}
+\item \textbf{Description:} a downloadable software based on JAVA that allows
+users to publish in the VO following the Data Access Layer (DAL) protocol. It
+converts incoming standard DAL requests into database specific SQL queires, then
+serializes the database result into VOTable responses. 
+\end{itemize}
+\item IVOA Resource Registry
+\begin{itemize}
+\item \textbf{Description:} the official EURO-VO resource registry under the
+name of EURO-VO Full Harvestable VO Resource Registry that 
+\end{itemize}
+\item VOSpec
+\begin{itemize}
+\item \textbf{Description:} a multi-wavelength spectral analysis tool with
+access to atomic and molecular databases, spectra and theorical models
+registered in the VO. It can be downloadable and accessed through Internet.
+\end{itemize}
+\item Science Activities in the VO
+\begin{itemize}
+\item \textbf{Description:} development at the European Space Astronomy Centre
+(ESAC) of research projects based on VO, tutorial that teachs to use the tools
+made by the Science Archives Team (SAT), among other.
+\end{itemize}
+\end{itemize}
 \end{itemize}
 
 \subsubsection{European Virtual Observatory (EURO-VO)}
@@ -374,10 +408,10 @@ distributions based on model atmosphere calculations.
 \end{itemize}
 \end{itemize}
 
-\subsubsection{Observatoire Virtuel France (VO-France)}
-\begin{itemize}
-\item \textbf{Projects}
-\end{itemize}
+% \subsubsection{Observatoire Virtuel France (VO-France)}
+% \begin{itemize}
+% \item \textbf{Projects}
+% \end{itemize}
 
 \subsubsection{Spanish Virtual Observatory (SVO)}
 The SVO started in June 2004 and its participants are the Centro de
@@ -391,7 +425,13 @@ Catalonia (CESCA, in its Spanish acronym).
 \begin{itemize}
 \item VO Sed Analyzer (VOSA)
 \begin{itemize}
-\item \textbf{Description:}  
+\item \textbf{Description:} a tool that allows to analyze stellar and galactic
+data reading user photometry-tables, querying ``several photometrical catalogs
+accessible through VO services'', querying ``VO-compliant theorical models
+(spectra)'', performing ``a statistical test to determinate which model
+reproduced best observed
+data''\footnote{\url{http://svo2.cab.inta-csic.es/theory/vosa/helpw.php?action=help2&what=intro&otype=star}},
+among other. 
 \end{itemize}
 \item VOSED
 \begin{itemize}
@@ -411,7 +451,7 @@ sky.
 \subsubsection{Italian Virtual Observatory (VObs.it)}
 The VObs.it besides being member of IVOA, it is a member of EURO-VO. It was
 established and founded by the Italian National Institute for Astrophysics
-(INAF) and it is coordinated by the Information Systems Units (SI) of this. 
+(INAF) and is coordinated by the Information Systems Units (SI) of this. 
 
 \begin{itemize}
 \item \textbf{Projects}
@@ -455,9 +495,9 @@ Network Information Center, the Purple Mountain Astro Obs, the Shangai Astro
 Obs, the Yunnan Astro Obs, the Tsinghua University, the JHU, MSR, Caltech,
 IUCAA, CDS, ICRAR (Australia), NAOJ (Japan), among other.}.
 
-\begin{itemize}
-\item \textbf{Projects}
-\end{itemize}
+% \begin{itemize}
+% \item \textbf{Projects}
+% \end{itemize}
 
 \subsubsection{Japanese Virtual Observatory (JVO)}
 The JVO was implemented by the National Astronomical Observatory of Japan (NAOJ)
@@ -474,7 +514,7 @@ astronomical research enviroment. Retrieved from:
 \begin{itemize}
 \item JVO portal service
 \begin{itemize}
-\item \textbf{Description:} a portal site to various kind of astronomical
+\item \textbf{Description:} a site as portal to various kind of astronomical
 resources from the Subaru Telescope, Sloan Digital Sky and ALMA, among other.
 \end{itemize}
 \end{itemize}
@@ -488,7 +528,7 @@ Russia\footnote{\url{http://www.inasan.rssi.ru/eng/rvo/project.html}}.
 
 \begin{itemize}
 \item
-\textbf{Projects\footnote{\url{http://synthesis.ipi.ac.ru/synthesis/projects}}}
+\textbf{Projects}
 \begin{itemize}
 \item SYNTHESIS
 \begin{itemize}
@@ -496,80 +536,94 @@ Russia\footnote{\url{http://www.inasan.rssi.ru/eng/rvo/project.html}}.
 \end{itemize}
 \item INFOSEM
 \begin{itemize}
-\item \textbf{Description:}
+\item \textbf{Description:} it aims to ``investigate, prototype and disseminate
+methodologies and basic techniques allowing construction of semantically
+interoperable information systems based on the pre-existing heterogeneous
+information
+resources''\footnote{http://synthesis.ipi.ac.ru/synthesis/projects/InfoSem/}.
 \end{itemize}
 \item SEMIMOD
 \begin{itemize}
-\item \textbf{Description:} modelling and management of semi-structured data for
-dynamic World Wide Web applications.
+\item \textbf{Description:} ``Modelling and Management of Semi-Structured Data
+for Dynamic [World Wide Web applications]''.
 \end{itemize}
 \item BIOMED
 \begin{itemize}
-\item \textbf{Description:} methods and tools for development of subject
+\item \textbf{Description:} ``Methods and tools for development of subject
 mediators of he\-te\-ro\-ge\-neous information collections for distributed
-digital libraries.
+digital libraries''.
 \end{itemize}
 \item REFINE
 \begin{itemize}
-\item \textbf{Description:}
+\item \textbf{Description:} ``Modeling of compositional specifications intended
+for automated proof of correctness of refinement of specifications of
+requirements by pre-existing components in course of a compositional development
+of information systems''.
 \end{itemize}
 \item VOINFRA
 \begin{itemize}
-\item \textbf{Description:} devolopment of principles and fundamentals of the
-information interoperability in the infraestructure of the RVO.
+\item \textbf{Description:} ``Devolopment of principles and fundamentals of the
+information interoperability in the infraestructure'' of the RVO.
 \end{itemize}
 \item MULTISOURCE
 \begin{itemize}
-\item \textbf{Description:} methods for organization of problems solving over
-multiple distributed he\-te\-ro\-ge\-neous information sources.
+\item \textbf{Description:} ``Methods for organization of problems solving over
+multiple distributed he\-te\-ro\-ge\-neous information sources''.
 \end{itemize}
 \item RVOAG
 \begin{itemize}
-\item \textbf{Description:}
+\item \textbf{Description:} a RVO public utility center based on AstroGrid.
 \end{itemize}
 \item ASTROMEDIA
 \begin{itemize}
-\item \textbf{Description:} methods and tools for supporting subject mediators
-architecture in AstroGrid\footnote{\url{http://www.astrogrid.org/}}
-infrastructure for the RVO.
+\item \textbf{Description:} ``Methods and tools for supporting subject mediators
+architecture in AstroGrid infrastructure'' for the RVO.
 \end{itemize}
 \item UNIMOD
 \begin{itemize}
-\item \textbf{Description:}
+\item \textbf{Description:} ``Development and prototyping of experimental system
+for constructing the unifying information representation models for
+interoperable integrating systems of heterogeneous information sources''.
 \end{itemize}
 \item SEMID
 \begin{itemize}
-\item \textbf{Description:}
+\item \textbf{Description:} ``Research and development of methods and tools for
+semantic identification of specifications of heterogeneous information resources
+relevant to a scientific problem and their integration in the specifications of
+the problem at the scientific information systems''.
 \end{itemize}
 \item SubjMed
 \begin{itemize}
-\item \textbf{Description:}
+\item \textbf{Description:} ``Investigation of methods and tools for subject
+mediation middleware aimed at problems solving over heterogeneous distributed
+information resources''.
 \end{itemize}
 \item ConcMod
 \begin{itemize}
-\item \textbf{Description:} development of methods and tools for definition of
+\item \textbf{Description:} ``Development of methods and tools for definition of
 scientific subject domains conceptual models and problems solving support based
-on mediators subject in the hybrid grid-infrastructure.
+on mediators subject in the hybrid grid-infrastructure''.
 \end{itemize}
 \item RuleInt
 \begin{itemize}
-\item \textbf{Description:} integration of rule-based declarative programs and
+\item \textbf{Description:} ``Integration of rule-based declarative programs and
 knowledge databases and services for scientific problems solving over
-heterogeneus distributed information resources.
+heterogeneus distributed information resources''.
 \end{itemize}
 \item ASTROMEDIA Trial
 \begin{itemize}
-\item \textbf{Description:} hybrid architecture of AstroGrid and Mediator
-Middlewere.
+\item \textbf{Description:} ``Hybrid architecture of AstroGrid and Mediator
+Middlewere''.
 \end{itemize}
 \item Galaxies Search
 \begin{itemize}
-\item \textbf{Description:} distant galaxies search applying AstroGrid.
+\item \textbf{Description:} ``Distant Galaxies Search Applying AstroGrid''.
 \end{itemize}
 \item Star Classification
 \begin{itemize}
-\item \textbf{Description:} eclipsing-binary stars classification applying
-Ensembled Weka algorithm in AstroGrid.
+\item \textbf{Description:} ``Eclipsing-binary Stars Classification applying
+Ensembled Weka [algorithm] in
+AstroGrid''\footnote{\url{http://synthesis.ipi.ac.ru/synthesis/projects}}.
 \end{itemize}
 \end{itemize}
 \end{itemize}
