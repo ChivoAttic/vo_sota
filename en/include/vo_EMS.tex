@@ -36,7 +36,11 @@ spectrum value or range for each instrument (above) and virtual observatory
     Argentina (HASTA) & Leoncito, San Juan, Argentina & H-Alpha (656.28 nm)
     \cite{website:HASTA_EMS} \\
     \hline
-    \multirow{3}{3cm}{US Virtual Astronomical Observatory (VAO)} & Hubble Space
+    Chilean Virtual Observatory (ChiVO) & Atacama Large Milimeter/submilimeter
+    Array (ALMA) & Llano de Chajnantor Observatory, Atacama Desert, Chile &
+    initially in 400 $ \mu $m to 3 mm \cite{website:ALMA_EMS} \\
+    \hline
+    multirow{3}{3cm}{US Virtual Astronomical Observatory (VAO)} & Hubble Space
     Telescope (HST) & 569 km above the surface of Earth & near-ultraviolet,
     visible and near-infrared light with WFC3; ultraviolet light with COS;
     visible light with ACS; ultraviolet, visible and near-infrared light with
@@ -74,8 +78,7 @@ spectrum value or range for each instrument (above) and virtual observatory
      Mexico, USA & \\
      \cline{2-4} 
      & Atacama Large Milimeter/submilimeter Array (ALMA) & Llano de Chajnantor
-     Observatory, Atacama Desert, Chile & initially in 400 $ \mu $m to 3 mm
-     \cite{website:ALMA_EMS} \\
+     Observatory, Atacama Desert, Chile & initially in 400 $ \mu $m to 3 mm \\
     \hline
     Virtual Observatory India (VOI) & Himalayan Chandra Telescope (HCT) & Mount
     Saraswati, Digpa-ratsa Ri, Hanle, India & infrared light 
@@ -128,8 +131,9 @@ instruments.}
 \draw[<->,thick] (7.7*\markPlace,-4) -- (8.6*\markPlace,-4);
 \pgfmathparse{multiply(8.6-7.7,\factor)}
 \node at (\pgfmathresult+7.7*\markPlace,-3.5) {ALMA};
-\node at (\pgfmathresult+7.7*\markPlace,-4.5) {\textbf{JVO}};
-% BAO
+\node at (\pgfmathresult+7.7*\markPlace,-4.5) {\textbf{ChiVO}};
+\node at (\pgfmathresult+7.7*\markPlace,-5.0) {\textbf{JVO}};
+ BAO
 \draw[<->,thick] (3.58*\markPlace,-2) -- (3.88*\markPlace,-2);
 \pgfmathparse{multiply(3.88-3.58,\factor)}
 \node at (\pgfmathresult+3.58*\markPlace,-1.5) {BAO};
