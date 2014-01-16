@@ -3,7 +3,7 @@ VOs_SOTA
 
 State of the art about virtual observatories for LIRAE.
 
-:Authors:
+**Authors**
 - José Marroquín
 - Jonathan Antognini
 - Mauricio Solar
