@@ -2,28 +2,28 @@
 TEXFILES = $(wildcard *.tex)
 PDFFILES = $(TEXFILES:.tex=.pdf)
 
-all: pdflatex clean
+all: pdflatex 
 
 pdf: $(PDFFILES)
 
 %.pdf: %.tex
-	@rubber --pdf $<
 	@if [ -d publish ];then mv *.pdf publish; else mkdir publish; mv *.pdf publish/;fi
+#	@rubber --pdf $<
 
 pdflatex: $(TEXFILES)
-	@pdflatex $(TEXFILES:.tex=)
-	@TEXMFOUTPUT=`pwd` bibtex `pwd`/$(TEXFILES:.tex=)
-	@pdflatex $(TEXFILES:.tex=)
-	@pdflatex $(TEXFILES:.tex=)
+	$(foreach x,$(TEXFILES:.tex=),pdflatex $(x);)
+	$(foreach x,$(TEXFILES:.tex=),bibtex $(x);)
+	$(foreach x,$(TEXFILES:.tex=),pdflatex $(x);)
+	$(foreach x,$(TEXFILES:.tex=),pdflatex $(x);)
 	@if [ -d publish ];then mv *.pdf publish; else mkdir publish; mv *.pdf publish/;fi
 
-clean:
-	@rubber --clean $(TEXFILES:.tex=)
+#clean:
+#	@rubber --clean $(TEXFILES:.tex=)
 
 distclean: clean
-	@rubber --clean --pdf $(TEXFILES:.tex=)
 	@rm -rf publish
 	@rm -f $(PDFFILES)
+#	@rubber --clean --pdf $(TEXFILES:.tex=)
 
 x:
 	@open publish/$(PDFFILES) &> /dev/null &
