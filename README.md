@@ -1,4 +1,4 @@
-VOs_SOTA
+Presence of the Virtual Observatory in the World
 ========
 
 State of the art about virtual observatories for LIRAE.
