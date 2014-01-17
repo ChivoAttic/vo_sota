@@ -7,8 +7,8 @@ all: pdflatex
 pdf: $(PDFFILES)
 
 %.pdf: %.tex
+	@rubber --pdf $<
 	@if [ -d publish ];then mv *.pdf publish; else mkdir publish; mv *.pdf publish/;fi
-#	@rubber --pdf $<
 
 pdflatex: $(TEXFILES)
 	$(foreach x,$(TEXFILES:.tex=),pdflatex $(x);)
@@ -17,13 +17,13 @@ pdflatex: $(TEXFILES)
 	$(foreach x,$(TEXFILES:.tex=),pdflatex $(x);)
 	@if [ -d publish ];then mv *.pdf publish; else mkdir publish; mv *.pdf publish/;fi
 
-#clean:
-#	@rubber --clean $(TEXFILES:.tex=)
+clean:
+	@rubber --clean $(TEXFILES:.tex=)
 
 distclean: clean
+	@rubber --clean --pdf $(TEXFILES:.tex=)
 	@rm -rf publish
 	@rm -f $(PDFFILES)
-#	@rubber --clean --pdf $(TEXFILES:.tex=)
 
 x:
 	@open publish/$(PDFFILES) &> /dev/null &
