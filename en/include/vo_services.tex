@@ -5,10 +5,10 @@ standards that their members should follow, but each VO develop
 their own services and tools depending on their specific goals.
 In this section, most of these initiatives are briefly
 described by region to grasp the idea of the advances of
-the VO.
+the VO, yet not all of them are included due to space 
+constraints.
 
 \subsection{North America}
-
 
 The \textbf{Canadian Virtual Observatory} (CVO) has largely focus on the CANFAR Virtual Storage
 System\footnote{\url{http://www.canfar.phys.uvic.ca/canfar/}}, which
@@ -34,11 +34,12 @@ is also available, called Time Series Search Tool \cite{}.
 %http://arxiv.org/pdf/1206.4035v1.pdf
 In terms of cloud data processing, the NVO has a Cross-Comparison Tool 
 which perform fast positional cross-matches between a large number of 
-sources.
+sources, and a tool for researching multiple sky positions simultaneously (VIM).
 %http://www.usvao.org/documents/CrossComparisonTool/Tutorial/20120605/CrossComparisonToolTutorial_June5.pdf
 It also offers a user-side application to find, plot and fit the
 Spectral Energies Distributions (SEDs), called Iris~\cite{}.
 %http://cxc.cfa.harvard.edu/iris/v2.0.1/publications/files/P020.pdf
+
 
 \subsection{Europe}
 
@@ -63,7 +64,7 @@ library for Python scripting.
 The \textbf{German Astrophysical Virtual Observatory} (GAVO) is other important VO in Europe that focuses not
 only in observational data, but also in theoretical data \cite{}.
 %http://pubman.mpdl.mpg.de/pubman/item/escidoc:1759789:1/component/escidoc:1759788/GES_paper101.pdf
-The GAVO Data Center is the service that implements several IVOA standards for 
+The GAVO Data Centre is the service that implements several IVOA standards for 
 accessing to the ROSAT archive and other data, for example 
 \emph{Registry}, \emph{SIAP}, \emph{SCS}, \emph{VOTable}, \emph{VOPlot}, 
 \emph{TAP}, \emph{SSAP}, etc. The services for 
@@ -80,28 +81,6 @@ and TheoSSA \cite{}.
 Moreover, GAVO offers a full distribution of their server software, called
 DaCHS, and maintains SPLAT (a VO-enable spectral analysis tool) and the command line TAP
 client \texttt{tapsh}.
-
-\rem{MA}{VObs.it. The webpage is not working. Commented in the code is what
-Jmarroquin wrote}
-
-%\begin{itemize}
-%\item \textbf{SIAP}:
-%a web services that provides the public Hubble Space Telescope/Advanced Camera
-%for Surveys (HST/ACS) Great Observatories Origins Deep Survey (GOOD) data within
-%the VIMOS\footnote{VIMOS is a \textbf{VI}sible imaging
-%\textbf{M}ulti-\textbf{O}bject \textbf{S}pectrograph, a spectrograph for the
-%European Southern Observatory Very Large Telescope array (ESO-VLT).}-VLT Deep
-%Survey-Chandra Deep Field South (VVDS-CDFS).
-%
-%\item \textbf{SSAP}:
-%a web service that allows to access the VVDS-F02-DEEP spectra.
-%
-%\item \textbf{CONE SEARCH}:
-%a web service that allows to query in the VVDS-CDFS catalog.
-%
-%\item \textbf{SKYNODE}:
-%a web service that allows to query in the VVDS catalogs.
-%\end{itemize}
 
 
 The data access services of the \textbf{Observatoires Virtuels France}
@@ -121,7 +100,18 @@ is GhoSST \cite{},
 which is an experimental database on spectroscopy of solids, that
 plans in the near future to be IVOA compliant.
 
-Even though the \textbf{Spanish Virtual Observatory} (SVO) is a younger VO, it
+The \textbf{Italian Virtual Observatory} (VObs.it) provides data access to
+their archives through the VO-Dance service \cite{},
+%http://wwwas.oats.inaf.it/index.php/home/docs-mainmenu-42/doc_download/29-adass-2010-vo-dance
+which implements several IVOA standards and provides a user-friendly procedure 
+to publish astronomical data. An interesting service that VObs.it offers is
+VODKA (VO Data Keeping-up Agent), which is a ``new VO actor which monitors the
+state of the VO seeking for changes in services and datasets and notifying users
+for those changes and updates''. \cite{}
+%http://wwwas.oats.inaf.it/index.php/home/docs-mainmenu-42/doc_download/30-adass-2010-vodka
+
+Even though the \textbf{Spanish Virtual Observatory} (SVO) is a younger VO
+compared to the previous ones, it
 provides access to numerous databases of observational data, and also manages a
 theoretical database of synthetic spectra, models and even asteroseismology.
 Between the offered IVOA-compliant services we found the VO SED Analyzer (VOSA)
@@ -136,17 +126,6 @@ The SVO is moving also to data mining projects like the automated classification
 of light curves, and the GAIA project that aims to produce a 3D chart of the 
 Milky Way. 
 
-\rem{MA}{UkrVo}
-
-The \textbf{Armenian Virtual Observatory} (ArVO) is strongly based on the
-Digital First/Second Byurakan Survey~\cite{}, 
-%http://arxiv.org/pdf/1103.5624.pdf
-%http://www.aracneeditrice.it/pdf/2421.pdf
-and besides maintaining and making accessible this data to other VOs,
-they are focused on generating specialized catalogs like the
-blue stellar objects catalog or the late-type star catalog \cite{}.
-%http://www.grid.am/pdf/Science_with_the_Armenian_Virtual_Observatory_(ArVO).pdf
-
 The \textbf{Hungarian Virtual Observatory} (HVO) offers a web-based Spectrum
 Service \cite{},
 %http://www.voservices.net/spectrum/downloads/adass15_proc.pdf
@@ -157,25 +136,116 @@ astrophysical models that can be compared with observational
 data. Other future plans are automatic photometric redshift 
 estimation and performing all these computations in grid clusters. 
 
+The \textbf{Ukrainian Virtual Observatory} (UkrVO)
+offers access to the data generated by several Ukranian observatories 
+through the Joint Digital Archive (JDA) service. Some of these archives 
+(such as DBGPA)
+can be accessed through web-based services or through VO applications like
+Aladin. The UkrVO offers also user applications like the Variable Stars
+Calculator and CoLiTec, which is an automatic detector of asteroids and
+comets.
+
+The \textbf{Armenian Virtual Observatory} (ArVO) is strongly based on the
+Digital First/Second Byurakan Survey~\cite{}, 
+%http://arxiv.org/pdf/1103.5624.pdf
+%http://www.aracneeditrice.it/pdf/2421.pdf
+and besides maintaining and making accessible this data to other VOs,
+they are focused on generating specialized catalogs like the
+blue stellar objects catalog or the late-type star catalog \cite{}.
+%http://www.grid.am/pdf/Science_with_the_Armenian_Virtual_Observatory_(ArVO).pdf
+
 \subsection{Asia}
 
-\rem{MA}{China-VO}
-\rem{MA}{JVO}
+The \textbf{Chinese Virtual Observatory} (China-VO) provides
+access to their astronomical archives through the VO-DAS service
+that implements IVOA standards like CSC, TAP and Registry. 
+Besides this, China-VO offers several services like SkyMouse,
+a search engine for astronomical applications, the LAMOST Online
+Collaboration Platform and the WWT Community Beijing. It also
+offers a wide spectrum of user applications like the FITS Manager\footnote{In
+collaboration with VOI} \cite{}, 
+%http://www.sciencedirect.com/science/article/pii/S1384107611000728
+the FITS Header Archiving System and the VO\_IMPAT
+application (an interactive imaging tool). Furthermore, they have developed
+some compatibility applications for IVOA standars like the
+VOTable Filter for OpenOffice Calc and the 
+VOTable to XHTML converter. 
+
+The \textbf{Japanese Virtual Observatory} provides access to theirs
+and other VOs resources through the JVO Data Search service \cite{}, 
+%http://jvo.nao.ac.jp/Documents/2008/adass-2008-yshirasa.1.pdf
+including standard IVOA services like SCS, but also more interactive services
+such as JVO Sky that allows graphical search, and more low-level
+services like JVOQL which allows direct access to the database.
+Other offered services are the JVO SExtractor, for detecting sources
+from VO files (or external ones), and the JVOSpace service, which is
+again a cloud service for storage and processing astronomical files.
+
+The \textbf{Indian Virtual Observatory} (VOI)
+concentrates all their web-services in the VOIPortal, which allows
+access to several databases within the same framework than other
+VOI services such as the Mosaic Service to generate mosaic images 
+and PyMorph Service that derive morphological parameters for galaxy
+images. VOI has been very prolific in terms of user/web applications, 
+such as VOPlot and 
+VOMegaPlot for imaging, Astrostat for statistical routines, VOPlatform for
+managing astronomical data and VO resources, Android applications, and 
+several useful compatibility packages with the IVOA standard as 
+the VOTableJava Writer, C++ Parser for VOTable, VOConvert, CSharpFits, etc.
+% check http://voi.iucaa.ernet.in/~voi/technical_papers.htm
+
 \rem{MA}{RVO}
-\rem{MA}{VOI}
+
 
 \subsection{Oceania}
-\rem{MA}{Aus-VO}
-
+As most VOs, the \textbf{Australian Virtual Observatory} (Aus-VO) offers a 
+basic conesearch service to access to their archive under the
+IVOA standards. Other
+services include \emph{SkyCat}, which is an extensible 
+astronomical catalogue server, 
+and \emph{Volume}, a web application to visualize VOTables in several 
+coordinate systems.
+%check http://aus-vo.org/paper_trail/papers
+Other projects of Aus-VO include a Remote Visualization
+System (RVS) for imaging and analysis, a 	
+Distributed Volume Renderer (DVR) that renders larger-than-memory volumetric 
+datasets on the grid,
+%http://aus-vo.org/papertrail/papers/beeson-pasa20.pdf
+and a cross-matching service based on Machine Learning algorithms.
+Currently, the efforts of the Aus-VO are concentrated in a relatively
+new project called All-Sky Virtual 
+Observatory\footnote{http://www.asvo.org.au/}.
 
 \subsection{Africa}
-\rem{MA}{SA$^3$}
-
+The \textbf{South African Astroinformatics Alliance} (SA$^3$) 
+is a recently added member of IVOA, that aims 
+to facilitate access by the astronomical community to
+multi-wavelength astronomical data and tools.
+Currently, SA$^3$ provides a very complete list of the available datasets and
+tools in other VOs, and is expected that it will contribute with their own
+applications in the near future.
 
 \subsection{South America}
-\rem{MA}{BRAVO}
-\rem{MA}{NOVA}
-\rem{MA}{ChiVO}
+
+The \textbf{Brazilian Virtual Observatory} (BRAVO) is working in several
+%http://www.lna.br/bravo/files/whitepaper.pdf
+scientific-based project such as a spectral synthesis application to
+estimate de physical properties of galaxies (STARLiGHT), a tool 
+for obtaining interstellar extinction (GALExtin), a photometric redshift
+calculator (Zphot), between others. Besides that, BRAVO plans to develop
+grid and cloud applications for data mining, based on HPC technology.
+
+The \textbf{Nuevo Observatorio Virtual Argentino} (NOVA) is a young
+VO that offers IVOA-compliant registry and data access to surveys and
+spectral data. The main technicals goals of NOVA is to develop its portal
+within the grid infrastructure, and to produce an efficient interface for
+astronomers.
+
+The younger member of IVOA is the \textbf{Chilean Virtual Observatory} (ChiVO),
+which plans to become an important data access node to the large amount
+of astronomical data generated in Chile. ChiVO is also developing analysis
+tools based on Machine Learning and Artificial Intelligence algorithms,
+which could naturally be offered as cloud and grid-based services.
 
 \subsection{International Organizations}
 
