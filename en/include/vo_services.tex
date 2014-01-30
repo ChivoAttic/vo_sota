@@ -16,7 +16,7 @@ allows accessing very large resources for both storage and processing,
 using a cloud based framework \cite{Gaudet2011}. 
 This is a very generic framework for accessing and processing 
 large astronomical data sets that implements most of the
-VOSpace standard of IVOA \cite{Graham2007}. CVO also has implemented
+VOSpace standard of IVOA \cite{Graham2007a}. CVO also has implemented
 IVOA's data access services like TAP for metadata queries 
 and SIA for image access.
 
@@ -56,15 +56,15 @@ The GAVO Data Centre is the service that implements several IVOA standards for
 accessing to the ROSAT archive and other data, for example 
 \emph{Registry}, \emph{SIAP}, \emph{SCS}, \emph{VOTable}, \emph{VOPlot}, 
 \emph{TAP}, \emph{SSAP}, etc. The services for 
-theoretical data includes access to the MultiDark Simulation Database \cite{}
+theoretical data includes access to the MultiDark Simulation Database, %\cite{}
 % Search
-MPA Simulations \cite{},
+MPA Simulations, %\cite{},
 % search
-RAVE \cite{},
+RAVE, % \cite{},
 % search
-Millenium data \cite{},
+Millenium data, % \cite{},
 % search
-and TheoSSA \cite{}.
+and TheoSSA, % \cite{}.
 % search
 Moreover, GAVO offers a full distribution of their server software, called
 DaCHS, and maintains SPLAT (a VO-enable spectral analysis tool) and the command line TAP
@@ -83,7 +83,7 @@ service is X-match which performs a cross-matching between large amount
 of CDS objects or uploaded ones using a grid-based platform.
 %search
 Another recent VO-France project that is not part of CDS Portal 
-is GhoSST \cite{},
+is GhoSST, % \cite{},
 %search,
 which is an experimental database on spectroscopy of solids, that
 plans in the near future to be IVOA compliant.
@@ -177,12 +177,24 @@ several useful compatibility packages with the IVOA standard as
 the VOTableJava Writer, C++ Parser for VOTable, VOConvert, CSharpFits, etc.
 % check http://voi.iucaa.ernet.in/~voi/technical_papers.htm
 
-\rem{MA}{RVO}
-
+The \textbf{Russian Virtual Observatory} (RVO) provides access to original
+Russian astronomical data and mirrors several astronomical databases 
+of other countries. Due the huge diversity of Russian data centers,
+RVO mainly concentrates in coordinating the development of services,
+tools and new archives of these data centers, with a strong focus in
+interoperability and standardization, following the IVOA guidelines
+but also developing their own standards and frameworks \cite{Briukhov2005}.
+In particular, the Sternberg Astronomical Institute (SAI) is
+in charge of the development of VO services, such as the Catalog
+Access Services (CAS) that complies with IVOA standards (e.g., ConeSearch,
+CrossMatch, SkyNode). Other initiatives of SIA are ADQL2SQL that transform
+the Astronomic Data Query Language to PostgreSQL code and the Q3C package
+to indexing large astronomical databases in an efficient PostgreSQL 
+database.
 
 \subsection{Oceania}
 As most VOs, the \textbf{Australian Virtual Observatory} (Aus-VO) offers a 
-basic conesearch service to access to their archive under the
+basic conesearch (SCS) service to access to their archive under the
 IVOA standards. Other
 services include \emph{SkyCat}, which is an extensible 
 astronomical catalogue server, 
@@ -234,13 +246,13 @@ which could naturally be offered as cloud and grid-based services.
 The \textbf{European Virtual Observatory} (EURO-VO) offers support and funding
 for the European Community VOs.  It works by executing collaboration and
 development projects between the VOs with an specific topic, such as ICE
-(International Cooperation Empowerment) \cite{},
+(International Cooperation Empowerment), % \cite{},
 %search
-AIDA (Astronomical Infrastructure for Data Access) \cite{},
+AIDA (Astronomical Infrastructure for Data Access),% \cite{},
 %search
-DCA (Data Centre Alliance) \cite{}, and
+DCA (Data Centre Alliance), and % \cite{}, and
 %search
-VOTECH (Virtual Observatory Technology) \cite{}.
+VOTECH (Virtual Observatory Technology) % \cite{}.
 Currently, the EURO-VO is executing the project CoSADIE (Collaborative and
 Sustainable Astronomical Data Infrastructure for Europe), which offers 
 support, documentation and guidance for astronomers and VO members.
