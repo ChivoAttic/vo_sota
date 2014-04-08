@@ -1,90 +1,14 @@
 \section{Virtual Observatory in the Electromagnetic Spectrum}
-The table \ref{table:vo_EMS} shows the wavelenghts, $ \lambda $, values and
-ranges for which there is a virtual observatory that contributes to design,
-construction, implementation, support and/or improving of a databse with
-astronomical data obtained by a specific instrument. It is sorted alphabetically
-by continent and then, alphabetically by virtual observatory.\\
 
-In the figure 2, in the first line, appears ordered the different types of
-radiation with their common names. In the second line, can be located a value of
-wavelenghts in meters with the type of wave, the VOs and the astronomical
-instruments. A higher $ \lambda $ value is related with a lower frequency and a
-lower $ \lambda $ is related with a higher frequency. The electromagnetic
-spectrum value or range for each instrument (above) and virtual observatory
-(below) is represented with a dot or line, respectively.\\
-
-\scriptsize
-\begin{table*}[h!t]
-\centering
-\begin{tabular}{|p{1cm}|p{4cm}|p{5cm}|p{6cm}|}
-    \hline                                                                      
-    \textbf{VO} & \textbf{Instrument} & \textbf{Location} &
-    \textbf{Spectrum value or range} \\
-    \hline                                                                      
-    BRAVO & Southern Astrophysical Research
-    Telescope (SOAR) & Cerro Pach\'{o}n, Chile & blue (320 nm) to near infrared
-    \cite{website:SOAR_EMS} \\
-    \hline                                                                      
-    NOVA & H-Alpha Solar Telescope for
-    Argentina (HASTA) & Leoncito, San Juan, Argentina & H-Alpha (656.28 nm)
-    \cite{website:HASTA_EMS} \\
-    \hline
-    ChiVO & Atacama Large Milimeter/submilimeter
-    Array (ALMA) & Llano de Chajnantor Observatory, Atacama Desert, Chile &
-    initially in 400 $ \mu $m to 3 mm \cite{website:ALMA_EMS} \\
-    \hline
-    \multirow{3}{3cm}{VAO} & Hubble Space
-    Telescope (HST) & 569 km above the surface of Earth & near-ultraviolet,
-    visible and near-infrared light with WFC3; ultraviolet light with COS;
-    visible light with ACS; ultraviolet, visible and near-infrared light with
-    STIS; infrared light with NICMOS \cite{website:HST_EMS} \\
-     \cline{2-4}
-     & Chandra X-ray Observatory & 139,000 km above the surface of Earth & X-ray
-     \cite{website:Chandra_EMS} \\
-     \cline{2-4}
-     & Spitzer Space Telescope (SST) & 176,602,814 km above the surface of Earth
-     \cite{website:SST_EMS_1} & 3 $ \mu $m to 180 $ \mu $m
-     \cite{website:SST_EMS_2} \\
-    \hline
-    ArVO & Byurakan Astrophysical Observatory
-    (BAO) & Mount Aragats, Armenia & 1.2 m and 4.2 m \cite{website:BAO_EMS} \\
-    \hline
-    ArVO & Spitzer Space Telescope (SST) &
-    176,602,814 km above the surface of Earth & 3 $ \mu $m to 180 $ \mu $m \\
-    \hline
-    Vobs.it & Hubble Space Telescope (HST) & 569
-    km above the surface of Earth & near-ultraviolet, visible and near-infrared
-    light with WFC3; ultraviolet light with COS; visible light with ACS;
-    ultraviolet, visible and near-infrared light with STIS; infrared light with
-    NICMOS \\
-    \hline
-    \multirow{2}{3cm}{UkrVO} & Main Astronomical
-    Observatory (MAO) & Kiev, Ukraine & \\
-     \cline{2-4}
-     & Mykolaiv Astronomical Observatory & Mykolaiv, Ukraine & \\
-    \hline
-    \multirow{3}{3cm}{JVO} & Subaru Telescope &
-    Mauna Kea, Big Island, Hawaii & visible and infrared light
-    \cite{website:Subaru_EMS} \\
-     \cline{2-4}
-     & Sloan Digital Sky Survey (SDSS) & Sacramento Mountains, Sunspot, New
-     Mexico, USA & \\
-     \cline{2-4} 
-     & Atacama Large Milimeter/submilimeter Array (ALMA) & Llano de Chajnantor
-     Observatory, Atacama Desert, Chile & initially in 400 $ \mu $m to 3 mm \\
-    \hline
-    VOI & Himalayan Chandra Telescope (HCT) & Mount
-    Saraswati, Digpa-ratsa Ri, Hanle, India & infrared light 
-    \cite{website:HCT_EMS} \\
-    \hline
- \end{tabular}
-\caption{Virtual observatories that contributes to specifics astronomical
-instruments.}
-\label{table:vo_EMS}
-\end{table*}
-%\end{longtable}
-%\end{center}
-\normalsize
+Most of virtual observatories usually contribute to development of tools for
+for national astronomical instruments. These tools can be new source codes for
+the exploitation of the capability of some specific instrument, facilitation or
+improvement of the queries, reading, writing, conversion of the astronomical
+data of files like VOTable, ASCII and FITS formats, among other. 
+This means that each VO concentrates in providing services for specific
+data types, which in astronomy are highly correlated with the wavelengths values
+on which their work. This section intents to survey the ranges for which 
+each virtual observatory is developing their tools and 
 
 \begin{landscape}
 \begin{figure}%[h]
@@ -186,5 +110,90 @@ instruments.}
 \caption{Virtual observatories that contributes to specifics astronomical
 instruments.}
 \end{center}
+\label{figure:wavelength}
 \end{figure}
 \end{landscape}
+
+In Figure \ref{figure:wavelength}, the different types of
+radiation (in order) with their common names are shown. Below, the value of
+the wavelengths in meters and the respective VOs are presented. 
+%A higher $ \lambda $
+%value is related with a lower frequency and a
+%lower $ \lambda $ is related with a higher frequency. 
+%The electromagnetic
+%spectrum value or range for each instrument (above) and virtual observatory
+%(below) is represented with a dot or line, respectively.\\
+
+%\scriptsize
+%\begin{table*}[h!t]
+%\centering
+%\begin{tabular}{|p{1cm}|p{4cm}|p{5cm}|p{6cm}|}
+%    \hline                                                                      
+%    \textbf{VO} & \textbf{Instrument} & \textbf{Location} &
+%    \textbf{Spectrum value or range} \\
+%    \hline                                                                      
+%    BRAVO & Southern Astrophysical Research
+%    Telescope (SOAR) & Cerro Pach\'{o}n, Chile & blue (320 nm) to near infrared
+%    \cite{website:SOAR_EMS} \\
+%    \hline                                                                      
+%    NOVA & H-Alpha Solar Telescope for
+%    Argentina (HASTA) & Leoncito, San Juan, Argentina & H-Alpha (656.28 nm)
+%    \cite{website:HASTA_EMS} \\
+%    \hline
+%    ChiVO & Atacama Large Milimeter/submilimeter
+%    Array (ALMA) & Llano de Chajnantor Observatory, Atacama Desert, Chile &
+%    initially in 400 $ \mu $m to 3 mm \cite{website:ALMA_EMS} \\
+%    \hline
+%    \multirow{3}{3cm}{VAO} & Hubble Space
+%    Telescope (HST) & 569 km above the surface of Earth & near-ultraviolet,
+%    visible and near-infrared light with WFC3; ultraviolet light with COS;
+%    visible light with ACS; ultraviolet, visible and near-infrared light with
+%    STIS; infrared light with NICMOS \cite{website:HST_EMS} \\
+%     \cline{2-4}
+%     & Chandra X-ray Observatory & 139,000 km above the surface of Earth & X-ray
+%     \cite{website:Chandra_EMS} \\
+%     \cline{2-4}
+%     & Spitzer Space Telescope (SST) & 176,602,814 km above the surface of Earth
+%     \cite{website:SST_EMS_1} & 3 $ \mu $m to 180 $ \mu $m
+%     \cite{website:SST_EMS_2} \\
+%    \hline
+%    ArVO & Byurakan Astrophysical Observatory
+%    (BAO) & Mount Aragats, Armenia & 1.2 m and 4.2 m \cite{website:BAO_EMS} \\
+%    \hline
+%    ArVO & Spitzer Space Telescope (SST) &
+%    176,602,814 km above the surface of Earth & 3 $ \mu $m to 180 $ \mu $m \\
+%    \hline
+%    Vobs.it & Hubble Space Telescope (HST) & 569
+%    km above the surface of Earth & near-ultraviolet, visible and near-infrared
+%    light with WFC3; ultraviolet light with COS; visible light with ACS;
+%    ultraviolet, visible and near-infrared light with STIS; infrared light with
+%    NICMOS \\
+%    \hline
+%    \multirow{2}{3cm}{UkrVO} & Main Astronomical
+%    Observatory (MAO) & Kiev, Ukraine & \\
+%     \cline{2-4}
+%     & Mykolaiv Astronomical Observatory & Mykolaiv, Ukraine & \\
+%    \hline
+%    \multirow{3}{3cm}{JVO} & Subaru Telescope &
+%    Mauna Kea, Big Island, Hawaii & visible and infrared light
+%    \cite{website:Subaru_EMS} \\
+%     \cline{2-4}
+%     & Sloan Digital Sky Survey (SDSS) & Sacramento Mountains, Sunspot, New
+%     Mexico, USA & \\
+%     \cline{2-4} 
+%     & Atacama Large Milimeter/submilimeter Array (ALMA) & Llano de Chajnantor
+%     Observatory, Atacama Desert, Chile & initially in 400 $ \mu $m to 3 mm \\
+%    \hline
+%    VOI & Himalayan Chandra Telescope (HCT) & Mount
+%    Saraswati, Digpa-ratsa Ri, Hanle, India & infrared light 
+%    \cite{website:HCT_EMS} \\
+%    \hline
+% \end{tabular}
+%\caption{Virtual observatories that contributes to specifics astronomical
+%instruments.}
+%\label{table:vo_EMS}
+%\end{table*}
+%%\end{longtable}
+%%\end{center}
+%\normalsize
+

@@ -1,682 +1,273 @@
-\section{VO Services}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%$Data Access%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Data Access}
-\begin{table*}[h!t]
-	\centering
-	\begin{tabular}{|l|l|p{12.5cm}|}
-	\hline
-	CVO 	& Data Sharing (VOSpace 2.0) &  A service that allows to share files and collaborate with team members \\
-			& Table Access Protocol (TAP-1.0) &	A model that implements a standard view for \textbf{Table Access Protocol (TAP-1.0)}. \\
-			& Observation Model Core Components & A model that implements a standard view for \textbf{Table Access Protocol (TAP-1.0)}. \\
-			& Simple Image Access (SIA-1.0) & a SIA-1.0 compliant query service for easy access to calibrated images from most our data collections. \\
-	\hline
-	VAO		& Data Discovery Tool & A web tool that allows to find datasets from astronomical collections known to the VO like the Hubble Space Telescope 
-									(HST), the Chandra X-ray Observatory, the Spitzer Space Telescope, among other.\\
-			& Time Series Search Tool & A web tool that allows to access the time series data sets at the Harvard Time Series Center (TSC), the NASA 
-									Exoplanet Archive and the Catalina Real-Time Transient Survey, and analize them with the periodogram application 
-									of the NASA Exoplanet Archive.\\
-	\hline
-	BRAVO	& BRAVO@LNA & Making of a virtual observatory dedicated to Southern Astrophysical Research Telescope (SOAR) data from Brazilian astronomers.  \\
-	\hline
-	ChiVO	& Conceptual Design of a VO for ALMA & A degree thesis that through the researching and analysis of query 
-									languages, formats and the semantic of OVA (in its Spanish acronym), and the definition of it intends to make a 
-									conceptual design for the ALMA observatory.\\
-	\hline								
-	HVO		& Spectrum Service for VO & A proposal that intends to add several features and make two substantial improvements to the web services that 
-									contains spectra of galaxies and the other astronomical objects.\\
-			& Synthetic Spectrum Service & A proposal that intends to serve, as a web service, the ready made spectra for the users.\\
-			& Debrecen Photoheliographic Data & A sunspot catalogue with the heliographic positions and the areas of sunspots. A continuation of Greenwich 
-									Photoheliographic Results (GPR) that had been discontinued on 1976.\\
-	\hline								
-	AstroGrid& Topcat & An interactive graphical viewer and editor for tabular data for formats like the Flexible Image Transport System (FITS) 
-									and VOTable. \\
-			& VODesktop & an analysis tools wich allows limit the choice of resources through specific data saving.\\
-	\hline		
-	ESA-VO	& DALToolKit & A downloadable software based on JAVA that allows to publish in the VO following the Data Access Layer (DAL) protocol. It 
-									converts incoming standard DAL requests into database specific SQL queires, then serializes the database result into VOTable 
-									responses. \\
-			& IVOA Resource Registry & the official EURO-VO resource registry under the name of EURO-VO Full Harvestable VO Resource Registry that \\
-			& VOSpec & A multi-wavelength spectral analysis tool with access to atomic and molecular databases, spectra and theorical models registered 
-									in the VO. It can be downloadable and accessed through Internet.\\
-	\hline								
-	GAVO	& GAVO Data Center & A growing collection of data and services provided on behalf of third parties. Some of the GAVO services are also 
-									available on \url{http://dc.zah.uni-heidelberg.de/}\\
-			& MPA Simulations access & A web service for querying the results of the Millennium simulation using SQL.\\
-			& MultiDark Database & A service wich gives access to data from MultiDark and Bolshoi simulations using SQL queries.  It based on the Millennium 
-									Web Application. \\
-			& RAVE archive search & An access to a growing archive of radial velocities for more than 400 000 stars.\\
-			& TheoSSA & A service for providing spectral energy distributions based on model atmosphere calculations.\\
-	\hline		
-	SVO		& TESELA & a service that allows to access the catalog of blank regions. It is based on the application of the Delaunay triangulation
-									 of the sky. \\
-	\hline								 
-	VObs.it	& SIAP & A web services that provides the public Hubble Space Telescope/Advanced Camera for Surveys (HST/ACS) Great Observatories Origins 
-									Deep Survey (GOOD) data within the VIMOS\footnote{VIMOS is a \textbf{VI}sible imaging \textbf{M}ulti-\textbf{O}bject 
-									\textbf{S}pectrograph, a spectrograph for the European Southern Observatory Very Large Telescope array (ESO-VLT).}-VLT
-									Deep Survey-Chandra Deep Field South (VVDS-CDFS).\\
-			& SSAP & A web service that allows to access the VVDS-F02-DEEP spectra. \\
-			& Cone Search & A web service that allows to query in the VVDS-CDFS catalog.  \\
-			& Skynode & A web service that allows to query in the VVDS catalogs. \\
-	\hline		
-	China-VO& FITS Manager & A downloadable application, as a collaboration project between China-V0 and VOI, to manage FITS, VOTable, among other files, 
-								hosted in personal computers \footnote{FITS Manager (FM) is downloadble from \url{http://fm.china-vo.org/app/fm.zip}.}  \\
-			& VO Data Access Service & A data access framework that allows to query large volumes of astronomical resources like catalogs, spectrum 
-									and images through the command line, a graphical interface or webpage.\\
-			& FITS Header Archiving System & A downloadable tool that allows to view and import the FITS header files into a database table for single or 
-									multiple files. It was also developed by the IBM Center, Tianjin University (TU) and e-Science application research 
-									center, Computer Network Information Center (CNIC), Chinese Academy of Sciences (CAS).\\
-			& Imaging Processing and analysis tool & a downloadable imaging processing and analysis tool developed in JAVA that allows to visualize sky 
-									images and access related data from the Beijing Astronomical Data Center (BADC). \\
-			& VOTable2XHTML & A XSLT stylesheet that can be used to transform VOTable file into XHTML file.\\
-			& SkyMouse & A search engine that allows to access astronomical services like web service and CGI service. \\
-	\hline		
-	JVO		& JVO portal service & A site as portal to various kind of astronomical resources from the Subaru Telescope, Sloan Digital Sky and ALMA, among 
-									other. \\
-	\hline								
-	VOI		& VOIPortal & An entry to all VOI web services. Can be browse the data downloading or through VOIMosaic and PyMorph web applications.\\
-			& Mosaic Service & A software that allows to make mosaic, with SWarp\footnote{The SWarp tool is available from \url{http://www.astromatic.
-									net/software/swarp}} and SExtractor\footnote{The SExtractor tool is available from \url{http://www.astromatic.
-									net/software/sextractor}} and STIFF, of images retrieved from SDSS\footnote{The SDSS image server is available from 
-									\url{http://casjobs.sdss.org/vo/DR7SIAP/SIAP.asmx}}, 2MASS\footnote{The 2MASS image server is available from 
-									\url{http://irsa.ipac.caltech.edu/applications/2MASS/IM/}} and HST\footnote{The HST image server is available from 
-									\url{http://archive.stsci.edu/siap/search.php}} image servers.\\
-			& PyMorph Service & A software that allows to derive morphological parameters for galaxy images. Is possible to provide to it the output FITS
-									files generated by Mosaic Service.\\
-			& VOPlot & A software tool developed in JAVA that allows to visualize astronomical data available in VOTable, ASCII and FITS formats.\\
-			& VOMegaPlot & a software tool developed in JAVA that allows to visualize astronomical data available in VOTable format. It looks just like 
-									VOPlot. There is a client-server version.\\
-			& AstroStat & a software tool that allows astronomers to use both and sophisticated statical routines on large datasets uploaded in VOTable or
-									ASCII format. \\
-			& VOCat & a software tool that converts astronomical catalogs to MySQL databases. \\
-			& VOPlatform& a software tool developed in JAVA that allows to place their frequently used VO tools and datasets with others resourcers like 
-									documents, links, among other. \\
-			& VOConvert & A software tool that converts ASCII to VOTable files, FITS to VOTable and VOTable to ASCII. \\
-			& Android Cosmological Calculator & an Android aplication that allows to input the Hubble constant, $ \Omega_{m} $(matter), $ \Omega_{\lambda} 
-									$ (vacuum) and the redshift($ z $), and returns the current age of the Universe, the co-moving radial distance and 
-									volume and the angular size distance at the specified redshift, and the luminosity distance.\\
-			& Android Name Resolver & An Android application that allows to input the name of celestial object and returns information of this like 
-									RA/DEC values, redshift, proper motion, parallax, among other.\\
-			& CSharpFITS Package & A C\# .NET port of Tom McGlynn's nom.tam.fits JAVA packages\footnote{The C\# .NET port of Tom McGlynn's nom.tam.fits 
-									JAVA packages are availablre from \url{http://heasarc.gsfc.nasa.gov/docs/heasarc/fits/java/v0.9/javadoc/}}.\\
-			& VOTable JAVA Streaming Writer & A software that converts data streams in non-VOTable format, like ASCII or FITS, to the VOTable format. \\
-			& C++ parser for VOTable & A C++ library to access VOTable files. It has a non-streaming and streaming version.\\
-			& Fits Manager & A web-based tool for viewing, creating, adding extensions and converting FITS files.\\
-			& HCT Data Archive System & a web-based system that archives the observational data generated by the Himalayan Chandra Telescope (HCT), a 2 [m]
-									 aperture optical-infrared telescope manufactured by the EOS Technologies Inc. and remotely operated via dedicated
-									 satellite link.\\
-	\hline
-	\end{tabular}
-	\caption{Data Access}
-	\label{table:da}
-\end{table*}
+\section{Virtual Observatory Services and Tools}
+
+The IVOA architecture only defines a general framework and
+standards that their members should follow, but each VO develop
+their own services and tools depending on their specific goals.
+In this section, most of these initiatives are briefly
+described by region to grasp the idea of the advances of
+the VO, yet not all of them are included due to space 
+constraints.
+
+\subsection{North America}
+
+The \textbf{Canadian Virtual Observatory} (CVO) has largely focus on the CANFAR Virtual Storage
+System, which
+allows accessing very large resources for both storage and processing, 
+using a cloud based framework \cite{Gaudet2011}. 
+This is a very generic framework for accessing and processing 
+large astronomical data sets that implements most of the
+VOSpace standard of IVOA \cite{Graham2007a}. CVO also has implemented
+IVOA's data access services like TAP for metadata queries 
+and SIA for image access.
+
+A central objective of any VO is to make data accessible by astronomers,
+for which the \textbf{US Virtual Astronomical Observatory} (US-VAO) 
+offers a web-based service called Data Discovery Tool 
+that retrieve data contained in the VO~\cite{McGlynn2013}. 
+As a complement, a specific service for discovering time-series data
+is also available, called Time Series Search Tool \cite{Graham2012}.
+In terms of cloud data processing, the NVO has a Cross-Comparison Tool 
+which perform fast positional cross-matches between a large number of 
+sources, and a tool for researching multiple sky positions simultaneously (VIM)
+\cite{Hanisch2012}.
+It also offers a user-side application to find, plot and fit the
+Spectral Energies Distributions (SEDs), called Iris~\cite{Laurino2013}.
+
+\subsection{Europe}
+
+One of the most mature VO is \textbf{Astrogrid} (United Kingdom)
+\cite{Lawrence2002}, which implements
+several IVOA-compliant services and offer very popular user applications
+for accessing the VO services~\cite{Lawence2009}.
+The implemented services are: \emph{Registry}
+for discovering VO services, \emph{Community} to manage user accounts, 
+\emph{VOSpace} for virtual file systems and processing, \emph{CEA} for running
+generic asynchronous user applications, and \emph{DSA} for metadata/database
+access. The very successful stand-alone applications of Astrogrid are 
+the VODesktop~\cite{Tedds2008} for data and
+TOPCAT \cite{Graham2007} for metadata.
+Between other initiatives, Astrogrid offers a middleware platform 
+that offers an API for accessing VO services, and a specific 
+library for Python scripting.
+
+The \textbf{German Astrophysical Virtual Observatory} (GAVO) is other important VO in Europe that focuses not
+only in observational data, but also in theoretical data \cite{Lemson2007}.
+The GAVO Data Centre is the service that implements several IVOA standards for 
+accessing to the ROSAT archive and other data, for example 
+\emph{Registry}, \emph{SIAP}, \emph{SCS}, \emph{VOTable}, \emph{VOPlot}, 
+\emph{TAP}, \emph{SSAP}, etc. The services for 
+theoretical data includes access to the MultiDark Simulation Database, %\cite{}
+% Search
+MPA Simulations, %\cite{},
+% search
+RAVE, % \cite{},
+% search
+Millenium data, % \cite{},
+% search
+and TheoSSA, % \cite{}.
+% search
+Moreover, GAVO offers a full distribution of their server software, called
+DaCHS, and maintains SPLAT (a VO-enable spectral analysis tool) and the command line TAP
+client \texttt{tapsh}.
+
+
+The data access services of the \textbf{Observatoires Virtuels France}
+(VO-France) are mainly concentrated in the 
+CDS Portal, which is a mature service that host popular web-based and
+user applications such as Simbad, Aladin, Vizier, Sesame, SimPlay, X-match,
+etc., following the IVOA standards. 
+Just to highlight a few, Sesame is a name service that query to 
+three very complete catalogs and object databases (Simbad, Vizier and Ned),
+in order to resolve a name into RA/DEC coordinates. Other interesting 
+service is X-match which performs a cross-matching between large amount
+of CDS objects or uploaded ones using a grid-based platform.
+%search
+Another recent VO-France project that is not part of CDS Portal 
+is GhoSST, % \cite{},
+%search,
+which is an experimental database on spectroscopy of solids, that
+plans in the near future to be IVOA compliant.
+
+The \textbf{Italian Virtual Observatory} (VObs.it) provides data access to
+their archives through the VO-Dance service \cite{Smareglia2001},
+which implements several IVOA standards and provides a user-friendly procedure 
+to publish astronomical data. An interesting service that VObs.it offers is
+VODKA (VO Data Keeping-up Agent), which is a ``new VO actor which monitors the
+state of the VO seeking for changes in services and datasets and notifying users
+for those changes and updates''. \cite{Laurino2011}
+
+Even though the \textbf{Spanish Virtual Observatory} (SVO) is a younger VO
+compared to the previous ones, it
+provides access to numerous databases of observational data, and also manages a
+theoretical database of synthetic spectra, models and even asteroseismology.
+Between the offered IVOA-compliant services we found the VO SED Analyzer (VOSA)
+for comparing, managing and processing user or VO photometry-tables,
+%search
+and the VOSED, which is a SED generator using the VO data.
+%search
+Also, they provide other interesting services like the Filter Profile Service
+database, and the TESELA service \cite{Cardiel2011} to access a catalog 
+of blank regions.
+The SVO is moving also to data mining projects like the automated classification
+of light curves, and the GAIA project that aims to produce a 3D chart of the 
+Milky Way. 
+
+The \textbf{Hungarian Virtual Observatory} (HVO) offers a web-based Spectrum
+Service \cite{Dobos2006},
+that allows access, manipulation and composition of
+several measured spectra of astronomical objects. It
+also plan to include synthetic spectra generated by
+astrophysical models that can be compared with observational
+data. Other future plans are automatic photometric redshift 
+estimation and performing all these computations in grid clusters. 
+
+The \textbf{Ukrainian Virtual Observatory} (UkrVO)
+offers access to the data generated by several Ukranian observatories 
+through the Joint Digital Archive (JDA) service. Some of these archives 
+(such as DBGPA)
+can be accessed through web-based services or through VO applications like
+Aladin. The UkrVO offers also user applications like the Variable Stars
+Calculator and CoLiTec, which is an automatic detector of asteroids and
+comets.
+%search
+
+The \textbf{Armenian Virtual Observatory} (ArVO) is strongly based on the
+Digital First/Second Byurakan Survey~\cite{Massaro2008}, 
+and besides maintaining and making accessible this data to other VOs,
+they are focused on generating specialized catalogs like the
+blue stellar objects catalog or the late-type star catalog 
+\cite{Mickaelian2008}.
+
+\subsection{Asia}
+
+The \textbf{Chinese Virtual Observatory} (China-VO) provides
+access to their astronomical archives through the VO-DAS service
+that implements IVOA standards like CSC, TAP and Registry. 
+Besides this, China-VO offers several services like SkyMouse,
+a search engine for astronomical applications, the LAMOST Online
+Collaboration Platform and the WWT Community Beijing. It also
+offers a wide spectrum of user applications like the FITS Manager\footnote{In
+collaboration with VOI} \cite{Cui2012}, 
+the FITS Header Archiving System and the VO\_IMPAT
+application (an interactive imaging tool). Furthermore, they have developed
+some compatibility applications for IVOA standars like the
+VOTable Filter for OpenOffice Calc and the 
+VOTable to XHTML converter. 
+
+The \textbf{Japanese Virtual Observatory} provides access to theirs
+and other VOs resources through the JVO Data Search service 
+\cite{Shirasaki2009}, 
+including standard IVOA services like SCS, but also more interactive services
+such as JVO Sky that allows graphical search, and more low-level
+services like JVOQL which allows direct access to the database.
+Other offered services are the JVO SExtractor, for detecting sources
+from VO files (or external ones), and the JVOSpace service, which is
+again a cloud service for storage and processing astronomical files.
+
+The \textbf{Indian Virtual Observatory} (VOI)
+concentrates all their web-services in the VOIPortal, which allows
+access to several databases within the same framework than other
+VOI services such as the Mosaic Service to generate mosaic images 
+and PyMorph Service that derive morphological parameters for galaxy
+images. VOI has been very prolific in terms of user/web applications, 
+such as VOPlot and 
+VOMegaPlot for imaging, Astrostat for statistical routines, VOPlatform for
+managing astronomical data and VO resources, Android applications, and 
+several useful compatibility packages with the IVOA standard as 
+the VOTableJava Writer, C++ Parser for VOTable, VOConvert, CSharpFits, etc.
+% check http://voi.iucaa.ernet.in/~voi/technical_papers.htm
+
+The \textbf{Russian Virtual Observatory} (RVO) provides access to original
+Russian astronomical data and mirrors several astronomical databases 
+of other countries. Due the huge diversity of Russian data centers,
+RVO mainly concentrates in coordinating the development of services,
+tools and new archives of these data centers, with a strong focus in
+interoperability and standardization, following the IVOA guidelines
+but also developing their own standards and frameworks \cite{Briukhov2005}.
+In particular, the Sternberg Astronomical Institute (SAI) is
+in charge of the development of VO services, such as the Catalog
+Access Services (CAS) that complies with IVOA standards (e.g., ConeSearch,
+CrossMatch, SkyNode). Other initiatives of SIA are ADQL2SQL that transform
+the Astronomic Data Query Language to PostgreSQL code and the Q3C package
+to indexing large astronomical databases in an efficient PostgreSQL 
+database.
+
+\subsection{Oceania}
+As most VOs, the \textbf{Australian Virtual Observatory} (Aus-VO) offers a 
+basic conesearch (SCS) service to access to their archive under the
+IVOA standards. Other
+services include \emph{SkyCat}, which is an extensible 
+astronomical catalogue server, 
+and \emph{Volume}, a web application to visualize VOTables in several 
+coordinate systems.
+%check http://aus-vo.org/paper_trail/papers
+Other projects of Aus-VO include a Remote Visualization
+System (RVS) for imaging and analysis, a 	
+Distributed Volume Renderer (DVR) that renders larger-than-memory volumetric 
+datasets on the grid \cite{Beeson2003},
+and a cross-matching service based on Machine Learning algorithms.
+Currently, the efforts of the Aus-VO are concentrated in a relatively
+new project called All-Sky Virtual 
+Observatory\footnote{http://www.asvo.org.au/}.
+
+\subsection{Africa}
+The \textbf{South African Astroinformatics Alliance} (SA$^3$) 
+is a recently added member of IVOA, that aims 
+to facilitate access by the astronomical community to
+multi-wavelength astronomical data and tools.
+Currently, SA$^3$ provides a very complete list of the available datasets and
+tools in other VOs, and is expected that it will contribute with their own
+applications in the near future.
+
+\subsection{South America}
+
+The \textbf{Brazilian Virtual Observatory} (BRAVO) is working in several
+scientific-based project \cite{CarvalhoXXXX} such as a spectral synthesis 
+application to
+estimate de physical properties of galaxies (STARLiGHT), a tool 
+for obtaining interstellar extinction (GALExtin), a photometric redshift
+calculator (Zphot), between others. Besides that, BRAVO plans to develop
+grid and cloud applications for data mining, based on HPC technology.
+
+The \textbf{Nuevo Observatorio Virtual Argentino} (NOVA) is a young
+VO that offers IVOA-compliant registry and data access to surveys and
+spectral data. The main technicals goals of NOVA is to develop its portal
+within the grid infrastructure, and to produce an efficient interface for
+astronomers.
+
+The younger member of IVOA is the \textbf{Chilean Virtual Observatory} (ChiVO),
+which plans to become an important data access node to the large amount
+of astronomical data generated in Chile. ChiVO is also developing analysis
+tools based on Machine Learning and Artificial Intelligence algorithms,
+which could naturally be offered as cloud and grid-based services.
+
+\subsection{International Organizations}
+
+The \textbf{European Virtual Observatory} (EURO-VO) offers support and funding
+for the European Community VOs.  It works by executing collaboration and
+development projects between the VOs with an specific topic, such as ICE
+(International Cooperation Empowerment), % \cite{},
+%search
+AIDA (Astronomical Infrastructure for Data Access),% \cite{},
+%search
+DCA (Data Centre Alliance), and % \cite{}, and
+%search
+VOTECH (Virtual Observatory Technology) % \cite{}.
+Currently, the EURO-VO is executing the project CoSADIE (Collaborative and
+Sustainable Astronomical Data Infrastructure for Europe), which offers 
+support, documentation and guidance for astronomers and VO members.
+Due its nature, the EURO-VO is a very important member for IVOA, because
+it encourages the standardization and collaboration of European VOs.
+
+The \textbf{European Space Agency Virtual Observatory} (ESA-VO) aims to be the
+VO end-point for all the space-based astronomy.  It is an active member of the
+EURO-VO, providing not only data access and expertise for space-based astronomy,
+but generic tools that are useful for all VOs. In fact, the official resource
+registry of the EURO-VO is developed and maintained by ESA-VO. 
+%search
+Between the tools that ESA-VO has developed, there is the \emph{DALToolKit},
+that allows to publish in the VO following the DAL protocol, and \emph{VOSpec},
+which is a multi-wavelength spectral analysis tool with access to atomic and
+molecular databases, spectra and theoretical models registered in the VO.
+%search
 
-%\begin{itemize}
-%\item \textbf{CVO}
-%\item \textbf{Data Sharing (VOSpace 2.0)}:
-%a service that allows to share files and collaborate with team members.
-
-%\item \textbf{Table Access Protocol (TAP-1.0)}:
-%a service that allows the access to all the data
-%described by the Common Archive Observation Model (CAOM) in use at the CADC and
-%tables from other projects.
-
-%\item \textbf{Observation Model Core Components (ObsCore-1.0)}:
-%a model that implements a standard view for \textbf{Table Access Protocol (TAP-1.0)}.
-
-%\item \textbf{Simple Image Access (SIA-1.0)}:
-%a SIA-1.0 compliant query service for easy access to calibrated images from most
-%our data collections.
-
-%\item \textbf{VAO}
-%\item \textbf{Data Discovery Tool}:
-%a web tool that allows to find datasets from astronomical collections known to
-%the VO like the Hubble Space Telescope (HST), the Chandra X-ray Observatory, the
-%Spitzer Space Telescope, among other.
-
-%\item \textbf{Time Series Search Tool}:
-%a web tool that allows to access the time series data sets at the Harvard Time
-%Series Center (TSC), the NASA Exoplanet Archive and the Catalina Real-Time
-%Transient Survey, and analize them with the periodogram application of the NASA
-%Exoplanet Archive.
-
-%\item \textbf{BRAVO}
-%\item \textbf{BRAVO@LNA}:
-%making of a virtual observatory dedicated to Southern Astrophysical Research
-%Telescope (SOAR) data from Brazilian astronomers.  
-
-%\item \textbf{ChiVO}
-%\item \textbf{Conceptual Design of a Virtual Astronomical Observatory for ALMA}:
-%a degree thesis that through the researching and analysis of query languages,
-%formats and the semantic of OVA (in its Spanish acronym), and the definition of
-%it intends to make a conceptual design for the ALMA observatory.
-
-%\item \textbf{HVO}
-%\item \textbf{Spectrum Service for VO}:
-%a proposal that intends to add several features and make two substantial
-%improvements\footnote{Does not specified what several features and the two
-%substantial improvements.} to the web services that contains spectra of galaxies
-%and the other astronomical objects.
-
-%\item \textbf{Synthetic Spectrum Service}:
-%a proposal that intends to serve, as a web service, the ready made spectra for
-%the users.
-
-%\item \textbf{Debrecen Photoheliographic Data (DPD)}:
-%a sunspot catalogue with the heliographic positions and the areas of sunspots. A
-%continuation of Greenwich Photoheliographic Results (GPR) that had been
-%discontinued on 1976.
-
-%\item \textbf{AstroGrid}
-%\item \textbf{Topcat}:
-%an interactive graphical viewer and editor for tabular data for formats like the
-%Flexible Image Transport System (FITS) and VOTable.
-
-%\item \textbf{VODesktop}:
-%an analysis tools wich allows limit the choice of resources through specific
-%data saving.
-
-%\item \textbf{ESA-VO}
-%\item \textbf{DALToolKit}:
-%a downloadable software based on JAVA that allows to publish in the VO following
-%the Data Access Layer (DAL) protocol. It converts incoming standard DAL requests
-%into database specific SQL queires, then serializes the database result into
-%VOTable responses. 
-
-%\item \textbf{IVOA Resource Registry}:
-%the official EURO-VO resource registry under the name of EURO-VO Full
-%Harvestable VO Resource Registry that 
-
-%\item \textbf{VOSpec}:
-%a multi-wavelength spectral analysis tool with access to atomic and molecular
-%databases, spectra and theorical models registered in the VO. It can be
-%downloadable and accessed through Internet.
-
-%\item \textbf{GAVO}
-%\item \textbf{GAVO Data Center}:
-%a growing collection of data and services provided on behalf of third parties.
-%Some of the GAVO services are also available on
-%\url{http://dc.zah.uni-heidelberg.de/}
-
-%\item \textbf{MPA Simulations access}:
-%a web service for querying the results of the Millennium simulation using SQL.
-
-%\item \textbf{MultiDark Database}:
-%a service wich gives access to data from MultiDark and Bolshoi simulations using
-%SQL queries.  It based on the Millennium Web Application.
-
-%\item \textbf{RAVE archive search}:
-%an access to a growing archive of radial velocities for more than 400 000 stars.
-
-%\item \textbf{TheoSSA}:
-%a service for providing spectral energy distributions based on model atmosphere
-%calculations.
-
-%\item \textbf{SVO}
-%\item \textbf{TESELA}:
-%a service that allows to access the catalog of blank regions. It is based on the
-%application of the Delaunay triangulation of the sky.
-
-%\item \textbf{VObs.it}
-%\item \textbf{SIAP}:
-%a web services that provides the public Hubble Space Telescope/Advanced Camera
-%for Surveys (HST/ACS) Great Observatories Origins Deep Survey (GOOD) data within
-%the VIMOS\footnote{VIMOS is a \textbf{VI}sible imaging
-%\textbf{M}ulti-\textbf{O}bject \textbf{S}pectrograph, a spectrograph for the
-%European Southern Observatory Very Large Telescope array (ESO-VLT).}-VLT Deep
-%Survey-Chandra Deep Field South (VVDS-CDFS).
-
-%\item \textbf{SSAP}:
-%a web service that allows to access the VVDS-F02-DEEP spectra.
-
-%\item \textbf{CONE SEARCH}:
-%a web service that allows to query in the VVDS-CDFS catalog. 
-
-%\item \textbf{SKYNODE}:
-%a web service that allows to query in the VVDS catalogs. 
-
-%\item \textbf{China-VO}
-%\item \textbf{FITS Manager (FM)}:
-%a downloadable application, as a collaboration project between China-V0 and VOI,
-%to manage FITS, VOTable, among other files, hosted in personal computers
-%\footnote{FITS Manager (FM) is downloadble from
-%\url{http://fm.china-vo.org/app/fm.zip}.} 
-
-%\item \textbf{VO Data Access Service (VO-DAS)}:
-%a data access framework that allows to query large volumes of astronomical
-%resources like catalogs, spectrum and images through the command line, a
-%graphical interface or webpage.
-
-%\item \textbf{FITS Header Archiving System (FitHAS)}:
-%a downloadable tool that allows to view and import the FITS header files into a
-%database table for single or multiple files. It was also developed by the IBM
-%Center, Tianjin University (TU) and e-Science application research center,
-%Computer Network Information Center (CNIC), Chinese Academy of Sciences (CAS).
-
-%\item \textbf{Imaging Processing and analysis tool for China\_VO (VO\_IMPAT)}:
-%a downloadable imaging processing and analysis tool developed in JAVA that
-%allows to visualize sky images and access related data from the Beijing
-%Astronomical Data Center (BADC). 
-
-%\item \textbf{VOTable2XHTML}
-%a XSLT stylesheet that can be used to transform VOTable file into XHTML file.
-
-%\item \textbf{SkyMouse}:
-%a search engine that allows to access astronomical services like web service and
-%CGI service.
-
-%\item \textbf{JVO}
-%\item \textbf{JVO portal service}:
-%a site as portal to various kind of astronomical resources from the Subaru
-%Telescope, Sloan Digital Sky and ALMA, among other.
-
-%\item \textbf{VOI}
-%\item \textbf{VOIPortal}:
-%an entry to all VOI web services. Can be browse the data downloading or through
-%VOIMosaic and PyMorph web applications.
-
-%\item \textbf{Mosaic Service}:
-%a software that allows to make mosaic, with SWarp\footnote{The SWarp tool is
-%available from \url{http://www.astromatic.net/software/swarp}} and
-%SExtractor\footnote{The SExtractor tool is available from
-%\url{http://www.astromatic.net/software/sextractor}} and STIFF, of images
-%retrieved from SDSS\footnote{The SDSS image server is available from
-%\url{http://casjobs.sdss.org/vo/DR7SIAP/SIAP.asmx}}, 2MASS\footnote{The 2MASS
-%image server is available from
-%\url{http://irsa.ipac.caltech.edu/applications/2MASS/IM/}} and HST\footnote{The
-%HST image server is available from
-%\url{http://archive.stsci.edu/siap/search.php}} image servers.
-
-%\item \textbf{PyMorph Service}:
-%a software that allows to derive morphological parameters for galaxy images. Is
-%possible to provide to it the output FITS files generated by Mosaic Service.
-
-%\item \textbf{VOPlot}:
-%a software tool developed in JAVA that allows to visualize astronomical data
-%available in VOTable, ASCII and FITS formats.
-
-%\item \textbf{VOMegaPlot}:
-%a software tool developed in JAVA that allows to visualize astronomical data
-%available in VOTable format. It looks just like VOPlot. There is a client-server
-%version.
-
-%\item \textbf{AstroStat}:
-%a software tool that allows astronomers to use both and sophisticated statical
-%routines on large datasets uploaded in VOTable or ASCII format.
-
-%\item \textbf{VOCat}:
-%a software tool that converts astronomical catalogs to MySQL databases. 
-
-%\item \textbf{VOPlatform}:
-%a software tool developed in JAVA that allows to place their frequently used VO
-%tools and datasets with others resourcers like documents, links, among other.
-
-%\item \textbf{VOConvert (ConVOT)}:
-%a software tool that converts ASCII to VOTable files, FITS to VOTable and
-%VOTable to ASCII.
-
-%\item \textbf{Android Cosmological Calculator}:
-%an Android aplication that allows to input the Hubble constant, $ \Omega_{m} $
-%(matter), $ \Omega_{\lambda} $ (vacuum) and the redshift($ z $), and returns the
-%current age of the Universe, the co-moving radial distance and volume and the
-%angular size distance at the specified redshift, and the luminosity distance.
-
-%\item \textbf{Android Name Resolver}:
-%an Android application that allows to input the name of celestial object and
-%returns information of this like RA/DEC values, redshift, proper motion,
-%parallax, among other.
-
-%\item \textbf{CSharpFITS Package}:
-%a C\# .NET port of Tom McGlynn's nom.tam.fits JAVA packages\footnote{The C\#
-%.NET port of Tom McGlynn's nom.tam.fits JAVA packages are availablre from
-%\url{http://heasarc.gsfc.nasa.gov/docs/heasarc/fits/java/v0.9/javadoc/}}.
-
-%\item \textbf{VOTable JAVA Streaming Writer}:
-%a software that converts data streams in non-VOTable format, like ASCII or FITS,
-%to the VOTable format.
-
-%\item \textbf{C++ parser for VOTable}:
-%a C++ library to access VOTable files. It has a non-streaming and streaming
-%version.
-
-%\item \textbf{Fits Manager}:
-%a web-based tool for viewing, creating, adding extensions and converting FITS
-%files.
-
-%\item \textbf{HCT Data Archive System}:
-%a web-based system that archives the observational data generated by the
-%Himalayan Chandra Telescope (HCT), a 2 [m] aperture optical-infrared telescope
-%manufactured by the EOS Technologies Inc. and remotely operated via dedicated
-%satellite link.
-%\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Grid and Cloud%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{Grid and Cloud}
-\begin{table*}[h!t]
-	\centering
-	\begin{tabular}{|l|p{3cm}|p{12.5cm}|}
-	\hline
-	VAO 	& Cross-Comparision Tool & a web tool that performs croos-comparisons between one table supplied by the user and other of an online source 
-								catalog, for a user-specified match radius. This returns the all sources in the online catalog that are within the radius.\\
-	\hline
-	BRAVO	& BRAVO@INPE & Generate investment in information technology on Computational Infraestructure, Data Grid, Data Processing and Data Mining.\\
-	\hline
-	ChiVO	& Automatic Astronomical Different Scales Structures Detection and Classification within Astronomical Images & A magister thesis that intends to 
-								make a software tool that finds directly astronomical objects within astronomical images through the wavelet mathematical 
-								tool and a machine learning system.\\
-			& Indexing of Astronomical Objects & A degree thesis that intends to design and implement an software tool that allow make an R-tree index of 
-								FITS astronomical images based on their celestial coordinates. \\
-	\hline
-	HVO		& Photometric Redshift Estimation & a proposal that intends to execute as a web service a method developed by themselves that is capable to 
-								estimate redshift from photometry increasing by two orders of magnitude the objects number of known distance. \\
-			& Linking WebServices to GRID clusters & a proposal that intends, among other, to improvement the operating systems inter communication, because 
-								there are simulations optimized for differents SOs and the rewritten of the codes for one different in some cases results a 
-								inaccessible task.\\
-			& Information Bulletin on Variable Stars & a bulletin on benhalf of the Commission 27\footnote{International Astronomical Union. (2005, November)
-								. Commission 27. Variable Stars (Etoiles Variables). Retrieved from \url{http://www.konkoly.hu/IAUC27/}} and 42
-								\footnote{International Astronomical Union. (2014). Comision 42: Close Binary Stars. Retrieved from: 
-								\url{http://www.konkoly.hu/IAUC42/}} of the International Astronomical Union (IAU), published by the Konkoly Observatory 
-								of the Hungarian Academy of Sciences. \\
-	\hline
-	AstroGrid& AstroRuntime & An API implemented in JAVA wich facilitates the access to the \textbf{VODesktop} services from almost any programming language
-								\footnote{On the AstroGrid's official website there is a document about how to access VODesktop using Python script at 
-								\url{http://www.astrogrid.org/agpython.html}}.\\
-	\hline
-	SVO		& VOSA & a tool that allows to analyze stellar and galactic data reading user photometry-tables, querying ``several photometrical 
-								catalogs accessible through VO services'', querying ``VO-compliant theorical models (spectra)'', performing ``a 
-								statistical test to determinate which model reproduced best observed data''\footnote{The VOSA tool is available from 
-								\url{http://svo2.cab.inta-csic.es/theory/vosa/helpw.php?action=help2&what=intro&otype=star}}, among other. \\
-			& VOSED & A service that builds Spectral Energy Distributions (SEDs) gathering information from the spectrocopic services in VO. It has two
-								modes depending of the query objects number. \\
-	\hline
-	RVO		& INFOSEM & It aims to ``investigate, prototype and disseminate methodologies and basic techniques allowing construction of semantically 
-								interoperable information systems based on the pre-existing heterogeneous information resources''\footnote{Synthesis Group. 
-								(n.d.). Information System Semantic Interoperability (INFOSEM). Retrieved from 
-								\url{http://synthesis.ipi.ac.ru/synthesis/projects/InfoSem/}}. \\
-			& SEMIMOD & ``Modelling and Management of Semi-Structured Data for Dynamic [World Wide Web applications]''. \\
-			& BIOMED & ``Methods and tools for development of subject mediators of he\-te\-ro\-ge\-neous information collections for distributed digital 
-								libraries''.\\
-			& REFINE & ``Modeling of compositional specifications intended for automated proof of correctness of refinement of specifications of 								requirements by pre-existing components in course of a compositional development of information systems''.\\
-			& VOINFRA & ``Devolopment of principles and fundamentals of the information interoperability in the infraestructure'' of the RVO. \\
-			& MULTISOURCE & ``Methods for organization of problems solving over multiple distributed heterogeneous information sources''.\\
-			& RVOAG & A RVO public utility center based on AstroGrid. \\
-			& ASTROMEDIA & ``Methods and tools for supporting subject mediators architecture in AstroGrid infrastructure'' for the RVO.\\
-			& UNIMOD & ``Development and prototyping of experimental system for constructing the unifying information representation models for 
-								interoperable integrating systems of heterogeneous information sources''.\\
-			& SEMID & ``Research and development of methods and tools for semantic identification of specifications of heterogeneous information resources 
-								relevant to a scientific problem and their integration in the specifications of the problem at the scientific information 
-								systems''.\\
-			& SubjMed & ``Investigation of methods and tools for subject mediation middleware aimed at problems solving over heterogeneous distributed 
-								information resources''.\\
-			& ConcMod & ``Development of methods and tools for definition of scientific subject domains conceptual models and problems solving support based 
-								on mediators subject in the hybrid grid-infrastructure''.\\
-			& RuleInt & ``Integration of rule-based declarative programs and knowledge databases and services for scientific problems solving over 
-								heterogeneus distributed information resources''. \\
-			& ASTROMEDIA Trial & ``Hybrid architecture of AstroGrid and Mediator Middlewere''. \\
-			& Star Classification & ``Eclipsing-binary Stars Classification applying Ensembled Weka [algorithm] in AstroGrid''\footnote{Synthesis Group. 
-								(n.d.). Information System Semantic Interoperability (INFOSEM). Retrieved from 
-								\url{http://synthesis.ipi.ac.ru/synthesis/projects/InfoSem/}}.\\
-	\hline
-	\end{tabular}
-	\caption{Grid \& Cloud}
-	\label{table:gc}
-\end{table*}
-%\begin{itemize}
-%\item \textbf{VAO}
-%\item \textbf{Cross-Comparision Tool}:
-%a web tool that performs croos-comparisons between one table supplied by the
-%user and other of an online source catalog, for a user-specified match radius.
-%This returns the all sources in the online catalog that are within the radius.
-
-%\item \textbf{BRAVO}
-%\item \textbf{BRAVO@INPE}:
-%generate investment in information technology on Computational Infraestructure,
-%Data Grid, Data Processing and Data Mining.
-
-%\item \textbf{ChiVO}
-%\item \textbf{Automatic Astronomical Different Scales Structures Detection and
-%Classification within Astronomical Images}:
-%a magister thesis that intends to make a software tool that finds directly
-%astronomical objects within astronomical images through the wavelet mathematical
-%tool and a machine learning system.
-
-%\item \textbf{Indexing of Astronomical Objects}:
-%a degree thesis that intends to design and implement an software tool that allow
-%make an R-tree index of FITS astronomical images based on their celestial
-%coordinates.
-
-%\item \textbf{HVO}
-%\item \textbf{Photometric Redshift Estimation}:
-%a proposal that intends to execute as a web service a method developed by
-%themselves that is capable to estimate redshift from photometry increasing by
-%two orders of magnitude the objects number of known distance. 
-
-%\item \textbf{Linking WebServices to GRID clusters}:
-%a proposal that intends, among other, to improvement the operating systems inter
-%communication, because there are simulations optimized for differents SOs and
-%the rewritten of the codes for one different in some cases results a
-%inaccessible task.
-
-%\item \textbf{Information Bulletin on Variable Stars}:
-%a bulletin on benhalf of the Commission 27\footnote{International Astronomical
-%Union. (2005, November). Commission 27. Variable Stars (Etoiles Variables).
-%Retrieved from \url{http://www.konkoly.hu/IAUC27/}} and
-%42\footnote{International Astronomical Union. (2014). Comision 42: Close Binary
-%Stars. Retrieved from: \url{http://www.konkoly.hu/IAUC42/}} of the International
-%Astronomical Union (IAU), published by the Konkoly Observatory of the Hungarian
-%Academy of Sciences. 
-
-%\item \textbf{AstroGrid}
-%\item \textbf{AstroRuntime}:
-%an API implemented in JAVA wich facilitates the access to the \textbf{VODesktop}
-%services from almost any programming language \footnote{On the AstroGrid's
-%official website there is a document about how to access VODesktop using Python
-%script at \url{http://www.astrogrid.org/agpython.html}}.
-
-%\item \textbf{SVO}
-%\item \textbf{VO Sed Analyzer (VOSA)}:
-%a tool that allows to analyze stellar and galactic data reading user
-%photometry-tables, querying ``several photometrical catalogs accessible through
-%VO services'', querying ``VO-compliant theorical models (spectra)'', performing
-%``a statistical test to determinate which model reproduced best observed
-%data''\footnote{The VOSA tool is available from
-%\url{http://svo2.cab.inta-csic.es/theory/vosa/helpw.php?action=help2&what=intro&otype=star}},
-%among other. 
-
-%\item \textbf{VOSED}:
-%a service that builds Spectral Energy Distributions (SEDs) gathering information
-%from the spectrocopic services in VO. It has two modes depending of the query
-%objects number.
-
-%\item \textbf{RVO}
-%\item \textbf{INFOSEM}:
-%it aims to ``investigate, prototype and disseminate methodologies and basic
-%techniques allowing construction of semantically interoperable information
-%systems based on the pre-existing heterogeneous information
-%resources''\footnote{Synthesis Group. (n.d.). Information System Semantic
-%Interoperability (INFOSEM). Retrieved from
-%\url{http://synthesis.ipi.ac.ru/synthesis/projects/InfoSem/}}.
-
-%\item \textbf{SEMIMOD}:
-%``Modelling and Management of Semi-Structured Data for Dynamic [World Wide Web
-%applications]''.
-
-%\item \textbf{BIOMED}:
-%``Methods and tools for development of subject mediators of
-%he\-te\-ro\-ge\-neous information collections for distributed digital
-%libraries''.
-%
-%\item \textbf{REFINE}:
-%``Modeling of compositional specifications intended for automated proof of
-%correctness of refinement of specifications of requirements by pre-existing
-%components in course of a compositional development of information systems''.
-%
-%\item \textbf{VOINFRA}:
-%``Devolopment of principles and fundamentals of the information interoperability
-%in the infraestructure'' of the RVO.
-%
-%\item \textbf{MULTISOURCE}:
-%``Methods for organization of problems solving over multiple distributed
-%heterogeneous information sources''.
-%
-%\item \textbf{RVOAG}:
-%a RVO public utility center based on AstroGrid.
-%
-%\item \textbf{ASTROMEDIA}:
-%``Methods and tools for supporting subject mediators architecture in AstroGrid
-%infrastructure'' for the RVO.
-%
-%\item \textbf{UNIMOD}:
-%``Development and prototyping of experimental system for constructing the
-%unifying information representation models for interoperable integrating systems
-%of heterogeneous information sources''.
-%
-%\item \textbf{SEMID}:
-%``Research and development of methods and tools for semantic identification of
-%specifications of heterogeneous information resources relevant to a scientific
-%problem and their integration in the specifications of the problem at the
-%scientific information systems''.
-%
-%\item \textbf{SubjMed}:
-%``Investigation of methods and tools for subject mediation middleware aimed at
-%problems solving over heterogeneous distributed information resources''.
-%
-%\item \textbf{ConcMod}:
-%``Development of methods and tools for definition of scientific subject domains
-%conceptual models and problems solving support based on mediators subject in the
-%hybrid grid-infrastructure''.
-%
-%\item \textbf{RuleInt}:
-%``Integration of rule-based declarative programs and knowledge databases and
-%services for scientific problems solving over heterogeneus distributed
-%information resources''.
-%
-%\item \textbf{ASTROMEDIA Trial}:
-%``Hybrid architecture of AstroGrid and Mediator Middlewere''.
-%
-%\item \textbf{Star Classification}:
-%``Eclipsing-binary Stars Classification applying Ensembled Weka [algorithm] in
-%AstroGrid''\footnote{Synthesis Group. (n.d.). Information System Semantic
-%Interoperability (INFOSEM). Retrieved from
-%\url{http://synthesis.ipi.ac.ru/synthesis/projects/InfoSem/}}.
-%
-%\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Scientific Project%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{Scientific Project \& Tools}
-\begin{table*}[h!t]
-	\centering
-	\begin{tabular}{|l|p{4cm}|p{10cm}|}
-	\hline
-	VAO		& Iris: SED Analysis Tool & A downloadable application for the finding, plotting and fitting the Spectral Energies Distributions (SEDs). \\
-	\hline
-	BRAVO	& BRAVO@UFSC & Researching of the of the power spectral synthesis as a mean to estimate the physical properties of the galaxies.\\
-			& CYCLOPS & A software that models the optical emission from AM Her systems including the four Stokes parameters.\\
-	\hline
-	ChiVO	& Conceptual Design for the Search for Astronomical Patterns & A degree thesis that through the researching and analysis o search and
-							recognition methods of patterns intends to minimize the search space with minimal impact on the results. \\
-	\hline
-	ArVO	& ``Search for new interesting objects of definite types by low-dispersion template spectra'' & ``modeling of spectra [...] [for a] QSOs,
-							Seyfert galaxies, white dwarfs, [...] late-type stars (K-M, S, carbon)'' \\
-			& ``Optical identifications of new gamma, X-ray, IR and radio sources'' & using the Byurakan 2.6 [m] telescope, ``the first test resulted in 145 
-							objects found, 81 being known QSOs/Sys, and 64 new candidates (including 23 NVSS and FIRST radio sources)''.\\
-			& ``Identification of the newly found IR sources from Spitzer Space Telescope (SST)''& ``73 unidentified sources in the Bootes region have been 
-							found and clasified on the DFBS plates''\footnote{Mickaelian, A. (2006, August). Science projects with the Armenian Virtual 
-							Observatory (Arvo). Karel A.  van der Hucht (Ed.), \textit{Highlights of Astronomy} (p. 529). Vol. 14. Prague: Cambridge 
-							University Press.}.\\
-	\hline
-	ESA-VO	& Science Activities in the VO & development at the European Space Astronomy Centre (ESAC) of research projects based on VO, tutorial that teachs to use the tools made by the Science Archives Team (SAT), among other.\\
-	\hline
-	\end{tabular}
-	\caption{Scientific Project \& Tools}
-	\label{table:st}
-\end{table*}
-
-%\begin{itemize}
-%\item \textbf{VAO}
-%\item \textbf{Iris: SED Analysis Tool}:
-%a downloadable application for the finding, plotting and fitting the Spectral
-%Energies Distributions (SEDs). 
-
-%\item \textbf{BRAVO}
-%\item \textbf{BRAVO@UFSC}:
-%researching of the of the power spectral synthesis as a mean to estimate the
-%physical properties of the galaxies.
-
-%\item \textbf{CYCLOPS}:
-%a software that models the optical emission from AM Her systems including the
-%four Stokes parameters.
-
-%\item \textbf{ChiVO}
-%\item  \textbf{Conceptual Design for the Search for Astronomical Patterns}:
-% a degree thesis that through the researching and analysis o search and
-%recognition methods of patterns intends to minimize the search space with
-%minimal impact on the results. 
-
-%\item \textbf{ArVO}
-%\item \textbf{``Search for new interesting objects of definite types by
-%low-dispersion template spectra''}:
-%``modeling of spectra [...] [for a] QSOs, Seyfert galaxies, white dwarfs, [...]
-%late-type stars (K-M, S, carbon)'' 
-
-%\item \textbf{``Optical identifications of new gamma, X-ray, IR and radio
-%sources''}:
-%using the Byurakan 2.6 [m] telescope, ``the first test resulted in 145 objects
-%found, 81 being known QSOs/Sys, and 64 new candidates (including 23 NVSS and
-%FIRST radio sources)''.
-
-%\item \textbf{``Identification of the newly found IR sources from Spitzer Space
-%Telescope (SST)''}:
-%``73 unidentified sources in the Bootes region have been found and clasified on
-%the DFBS plates''\footnote{Mickaelian, A. (2006, August). Science projects with
-%the Armenian Virtual Observatory (Arvo). Karel A.  van der Hucht (Ed.),
-%\textit{Highlights of Astronomy} (p. 529). Vol. 14. Prague: Cambridge University
-%Press.}.
-
-%\item \textbf{ESA-VO}
-%\item \textbf{Science Activities in the VO}:
-%development at the European Space Astronomy Centre (ESAC) of research projects
-%based on VO, tutorial that teachs to use the tools made by the Science Archives
-%Team (SAT), among other.
-
-%\subsection{Non-classified}
-%\begin{table*}[h!t]
-%	\centering
-%	\begin{tabular}{|l|l|p{12.5cm}|}
-%	\hline
-%	EURO-VO	& VOTECH & The first project that implemented the concept of the EURO-VO Technology Centre (EURO-VOTC) as part of the Euro-VO.\\
-%			& EuroVO-ICE & as a Coordination Action supported by the European Union (UE) in the framework of the FP7 INFRA-2010-2.3.3 Research 
-%					Infrastructures initiative (project 261541). It began on 1st of September, 2010 and ended on 31th of August, 2012, and succeed 
-%					EuroVO-AIDA and the EuroVO-DCA.\\
-%			& EuroVO-CoSADIE & As a Coordination Action supported by the EU in the framework of the FP7 INFRA-2012-3.3 Research Infraestructure 
-%					initiative (project 312559). It began on 1st of September, 2012, and will end on 31th of August, 2014.\\
-%	\hline
-%	\end{tabular}
-%	\caption{Non-classified}
-%	\label{table:nc}
-%\end{table*}
-
-%\item \textbf{EURO-VO}
-%\item \textbf{VOTECH}:
-%the first project that implemented the concept of the EURO-VO Technology Centre
-%(EURO-VOTC) as part of the Euro-VO.
-
-%\item \textbf{Euro-VO International Cooperation Empowerment (EuroVO-ICE)}:
-%as a Coordination Action supported by the European Union (UE) in the framework
-%of the FP7 INFRA-2010-2.3.3 Research Infrastructures initiative (project
-%261541). It began on 1st of September, 2010 and ended on 31th of August, 2012,
-%and succeed EuroVO-AIDA and the EuroVO-DCA.
-
-%\item \textbf{EuroVO-CoSADIE}:
-%as a Coordination Action supported by the EU in the framework of the FP7
-%INFRA-2012-3.3 Research Infraestructure initiative (project 312559). It began on
-%1st of September, 2012, and will end on 31th of August, 2014.
-
-%\end{itemize}
