@@ -1,0 +1,1486 @@
+##################################################
+Publishers complete list
+##################################################
+Elements in publishers[ tap ]
+Publisher:  VO-Paris Data Centre - USN   {'wavebands': [], 'amount': 1}
+Publisher:  VO-Paris Data Centre - IMCCE   {'wavebands': [u'Optical', u'Infrared'], 'amount': 1}
+Publisher:  Chandra X-ray Observatory   {'wavebands': [u'X-ray'], 'amount': 2}
+Publisher:  NASA/HEASARC   {'wavebands': [], 'amount': 1}
+Publisher:  Yuji SHIRASAKI   {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  VO-Paris Data Centre - LESIA   {'wavebands': [], 'amount': 7}
+Publisher:  JVO   {'wavebands': [u'Optical', u'Infrared', u'Radio', u'X-ray'], 'amount': 12}
+Publisher:  Yuji Shirasaki   {'wavebands': [u'Infrared'], 'amount': 2}
+Publisher:  CDS SIMBAD service   {'wavebands': [], 'amount': 1}
+Publisher:  The GAVO DC team   {'wavebands': [], 'amount': 1}
+Publisher:  GAVO at Leibniz-Institute for Astrophysics Potsdam   {'wavebands': [], 'amount': 1}
+Publisher:  VO-Paris Data Centre - LUTH   {'wavebands': [], 'amount': 1}
+Publisher:  Canadian Astronomy Data Centre   {'wavebands': [], 'amount': 1}
+Publisher:  IA2   {'wavebands': [], 'amount': 1}
+
+##################################################
+Elements in publishers[ sia ]
+Publisher:  Space Telescope Science Institute   {'wavebands': [u'UV'], 'amount': 1}
+Publisher:  Dutch National Astronomical Data Center   {'wavebands': [u'Optical'], 'amount': 2}
+Publisher:  European Southern Observatory - Science Archive Facility   {'wavebands': [u'Infrared', u'Optical', u'UV'], 'amount': 2}
+Publisher:  European Space Agency   {'wavebands': [], 'amount': 2}
+Publisher:  Instituto de Astrofisica de Canarias   {'wavebands': [u'Infrared', u'Optical'], 'amount': 3}
+Publisher:  Yuji Shirasaki   {'wavebands': [u'Infrared'], 'amount': 1}
+Publisher:  Sternberg Astronomical Institute of Moscow State University (SAI MSU)   {'wavebands': [], 'amount': 1}
+Publisher:  Space Telescope Science Institute Archive   {'wavebands': [u'UV', u'Optical', u'Infrared'], 'amount': 8}
+Publisher:  Office of Public Outreach, Space Telescope Science Institute   {'wavebands': [u'Optical', u'Infrared', u'UV'], 'amount': 1}
+Publisher:  National Optical Astrono   {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  Space Telescope Science   {'wavebands': [u'Optical'], 'amount': 4}
+Publisher:  Canadian Astronomy Data Centre   {'wavebands': [u'Millimeter', u'Infrared', u'Optical', u'UV'], 'amount': 2}
+Publisher:  Vatican Observatory   {'wavebands': [u'Infrared', u'Optical'], 'amount': 1}
+Publisher:  NASA/HEASARC   {'wavebands': [u'Radio', u'Infrared', u'Optical', u'UV', u'X-ray', u'Gamma-ray'], 'amount': 1}
+Publisher:  MAST   {'wavebands': [u'Optical', u'Infrared', u'UV', u'Radio'], 'amount': 33}
+Publisher:  NCSA Radio Astronomy Imaging   {'wavebands': [u'Radio', u'Millimeter', u'Infrared', u'Optical', u'UV'], 'amount': 1}
+Publisher:  German Astrophysical Virtual Observatory   {'wavebands': [u'X-ray'], 'amount': 1}
+Publisher:  Ioffe Physical Technical Institute   {'wavebands': [u'Optical', u'Infrared'], 'amount': 1}
+Publisher:  INAF-IASF Milano   {'wavebands': [], 'amount': 1}
+Publisher:  Chandra X-ray Observatory   {'wavebands': [u'X-ray'], 'amount': 2}
+Publisher:  VO-Paris Data Centre   {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  CDS   {'wavebands': [u'Optical', u'Infrared'], 'amount': 1}
+Publisher:  INAF - OATs   {'wavebands': [], 'amount': 1}
+Publisher:  JVO   {'wavebands': [u'Infrared'], 'amount': 1}
+Publisher:  NASA/IPAC Infrared Science Archive   {'wavebands': [u'Infrared', u'Optical', u'UV', u'EUV', u'Radio'], 'amount': 20}
+Publisher:  ESO   {'wavebands': [], 'amount': 1}
+Publisher:  VO-Paris Data Centre - GEPI   {'wavebands': [u'Optical'], 'amount': 4}
+Publisher:  The Johns Hopkins University   {'wavebands': [u'Optical'], 'amount': 2}
+Publisher:  Chandra Transmission Grating Catalog and Archive   {'wavebands': [u'X-ray'], 'amount': 1}
+Publisher:  NASA/GSFC HEASARC   {'wavebands': [u'Gamma-ray', u'Infrared', u'X-ray', u'UV', u'Optical', u'Radio'], 'amount': 49}
+Publisher:  The GAVO DC team   {'wavebands': [u'Optical', u'Infrared', u'Radio'], 'amount': 5}
+Publisher:  The NASA/IPAC Extragalactic Database   {'wavebands': [u'Radio', u'Millimeter', u'Infrared', u'Optical', u'UV', u'EUV', u'X-ray', u'Gamma-ray'], 'amount': 1}
+Publisher:  The Johns Hopkins Univer   {'wavebands': [u'Optical'], 'amount': 19}
+
+##################################################
+Elements in publishers[ ssa ]
+Publisher:  ivo://Bass2000   {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  European Southern Observatory - Science Archive Facility   {'wavebands': [u'Infrared', u'Optical', u'UV'], 'amount': 1}
+Publisher:  Nova   {'wavebands': [], 'amount': 2}
+Publisher:  Space Telescope Science Institute Archive   {'wavebands': [u'UV'], 'amount': 2}
+Publisher:  European Space Agency   {'wavebands': [], 'amount': 1}
+Publisher:  Stelar Department of Astronomical Institute of the Academy of Sciences of the Czech Republic   {'wavebands': [], 'amount': 2}
+Publisher:  VO-Paris Data Centre - LUTH   {'wavebands': [u'Gamma-ray'], 'amount': 1}
+Publisher:  INTA/LAEFF   {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  WFAU, Institute for Astronomy, University of Edinburgh   {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  Observatoire de Haute-Provence   {'wavebands': [], 'amount': 1}
+Publisher:  MAST   {'wavebands': [u'Optical', u'EUV', u'UV'], 'amount': 10}
+Publisher:  German Astrophysical Virtual Observatory   {'wavebands': [u'Optical'], 'amount': 3}
+Publisher:  Institut d'Astrophysique de Paris (IAP)   {'wavebands': [u'EUV'], 'amount': 1}
+Publisher:  Space Telescope Science Institute/MAST   {'wavebands': [u'UV', u'Optical', u'Infrared'], 'amount': 1}
+Publisher:  VO-Paris Data Centre - IMCCE   {'wavebands': [u'Optical', u'Infrared'], 'amount': 1}
+Publisher:  WFAU   {'wavebands': [u'X-ray', u'Gamma-ray'], 'amount': 1}
+Publisher:  JVO   {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  Instituto de Astrofsica de Andaluca (IAA)   {'wavebands': [u'Infrared', u'Optical', u'UV'], 'amount': 1}
+Publisher:  ESO   {'wavebands': [], 'amount': 1}
+Publisher:  VO-Paris Data Centre - GEPI   {'wavebands': [u'Optical'], 'amount': 2}
+Publisher:  Laboratoire d'Astrophysique de Marseille - Departement d'informatique      scientifique   {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  Instituto de Astrofsica de Andaluca   {'wavebands': [u'Infrared', u'Optical', u'UV', u'X-ray'], 'amount': 1}
+Publisher:  Observatoire de Lyon   {'wavebands': [], 'amount': 1}
+Publisher:  VO-Paris Data Centre - LESIA   {'wavebands': [u'Optical', u'UV'], 'amount': 1}
+Publisher:  OMP   {'wavebands': [], 'amount': 1}
+Publisher:  The GAVO DC team   {'wavebands': [u'Optical', u'UV', u'Infrared'], 'amount': 5}
+Publisher:  The NASA/IPAC Extragalactic Database   {'wavebands': [u'Radio', u'Millimeter', u'Infrared', u'Optical', u'UV', u'EUV', u'X-ray', u'Gamma-ray'], 'amount': 1}
+Publisher:  LUPM (Laboratoire Univers et Particules de Montpellier)   {'wavebands': [u'Optical', u'UV'], 'amount': 1}
+Publisher:  CRAL-Observatoire de Lyon   {'wavebands': [u'Optical'], 'amount': 1}
+
+##################################################
+Elements in publishers[ scs ]
+{'wavebands': [], 'amount': 469}
+{'wavebands': [u'Optical', u'X-ray', u'Radio', u'Infrared', u'UV', u'Gamma-ray', u'Millimeter', u'EUV'], 'amount': 9087}
+{'wavebands': [u'Optical', u'Radio', u'X-ray', u'UV', u'Infrared', u'Gamma-ray', u'EUV'], 'amount': 744}
+
+Others publishers[scs]:  163
+
+##################################################
+Publishers with wavebands
+##################################################
+Elements in publishers[ tap ]
+Publisher:  VO-Paris Data Centre - IMCCE {'wavebands': [u'Optical', u'Infrared'], 'amount': 1}
+Publisher:  Chandra X-ray Observatory {'wavebands': [u'X-ray'], 'amount': 2}
+Publisher:  Yuji Shirasaki {'wavebands': [u'Infrared'], 'amount': 2}
+Publisher:  JVO {'wavebands': [u'Optical', u'Infrared', u'Radio', u'X-ray'], 'amount': 10}
+Publisher:  Yuji SHIRASAKI {'wavebands': [u'Optical'], 'amount': 1}
+
+##################################################
+Elements in publishers[ sia ]
+Publisher:  Space Telescope Science Institute {'wavebands': [u'UV'], 'amount': 1}
+Publisher:  Dutch National Astronomical Data Center {'wavebands': [u'Optical'], 'amount': 2}
+Publisher:  European Southern Observatory - Science Archive Facility {'wavebands': [u'Infrared', u'Optical', u'UV'], 'amount': 2}
+Publisher:  Instituto de Astrofisica de Canarias {'wavebands': [u'Infrared', u'Optical'], 'amount': 3}
+Publisher:  Yuji Shirasaki {'wavebands': [u'Infrared'], 'amount': 1}
+Publisher:  Space Telescope Science Institute Archive {'wavebands': [u'UV', u'Optical', u'Infrared'], 'amount': 8}
+Publisher:  Office of Public Outreach, Space Telescope Science Institute {'wavebands': [u'Optical', u'Infrared', u'UV'], 'amount': 1}
+Publisher:  National Optical Astrono {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  Space Telescope Science {'wavebands': [u'Optical'], 'amount': 4}
+Publisher:  Canadian Astronomy Data Centre {'wavebands': [u'Millimeter', u'Infrared', u'Optical', u'UV'], 'amount': 1}
+Publisher:  Vatican Observatory {'wavebands': [u'Infrared', u'Optical'], 'amount': 1}
+Publisher:  NASA/HEASARC {'wavebands': [u'Radio', u'Infrared', u'Optical', u'UV', u'X-ray', u'Gamma-ray'], 'amount': 1}
+Publisher:  MAST {'wavebands': [u'Optical', u'Infrared', u'UV', u'Radio'], 'amount': 33}
+Publisher:  NCSA Radio Astronomy Imaging {'wavebands': [u'Radio', u'Millimeter', u'Infrared', u'Optical', u'UV'], 'amount': 1}
+Publisher:  German Astrophysical Virtual Observatory {'wavebands': [u'X-ray'], 'amount': 1}
+Publisher:  Ioffe Physical Technical Institute {'wavebands': [u'Optical', u'Infrared'], 'amount': 1}
+Publisher:  Chandra X-ray Observatory {'wavebands': [u'X-ray'], 'amount': 2}
+Publisher:  VO-Paris Data Centre {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  NASA/GSFC HEASARC {'wavebands': [u'Gamma-ray', u'Infrared', u'X-ray', u'UV', u'Optical', u'Radio'], 'amount': 49}
+Publisher:  JVO {'wavebands': [u'Infrared'], 'amount': 1}
+Publisher:  NASA/IPAC Infrared Science Archive {'wavebands': [u'Infrared', u'Optical', u'UV', u'EUV', u'Radio'], 'amount': 20}
+Publisher:  VO-Paris Data Centre - GEPI {'wavebands': [u'Optical'], 'amount': 4}
+Publisher:  The Johns Hopkins University {'wavebands': [u'Optical'], 'amount': 2}
+Publisher:  Chandra Transmission Grating Catalog and Archive {'wavebands': [u'X-ray'], 'amount': 1}
+Publisher:  CDS {'wavebands': [u'Optical', u'Infrared'], 'amount': 1}
+Publisher:  The GAVO DC team {'wavebands': [u'Optical', u'Infrared', u'Radio'], 'amount': 5}
+Publisher:  The NASA/IPAC Extragalactic Database {'wavebands': [u'Radio', u'Millimeter', u'Infrared', u'Optical', u'UV', u'EUV', u'X-ray', u'Gamma-ray'], 'amount': 1}
+Publisher:  The Johns Hopkins Univer {'wavebands': [u'Optical'], 'amount': 19}
+
+##################################################
+Elements in publishers[ ssa ]
+Publisher:  ivo://Bass2000 {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  European Southern Observatory - Science Archive Facility {'wavebands': [u'Infrared', u'Optical', u'UV'], 'amount': 1}
+Publisher:  Space Telescope Science Institute Archive {'wavebands': [u'UV'], 'amount': 2}
+Publisher:  VO-Paris Data Centre - LUTH {'wavebands': [u'Gamma-ray'], 'amount': 1}
+Publisher:  INTA/LAEFF {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  WFAU, Institute for Astronomy, University of Edinburgh {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  MAST {'wavebands': [u'Optical', u'EUV', u'UV'], 'amount': 10}
+Publisher:  Institut d'Astrophysique de Paris (IAP) {'wavebands': [u'EUV'], 'amount': 1}
+Publisher:  Space Telescope Science Institute/MAST {'wavebands': [u'UV', u'Optical', u'Infrared'], 'amount': 1}
+Publisher:  VO-Paris Data Centre - IMCCE {'wavebands': [u'Optical', u'Infrared'], 'amount': 1}
+Publisher:  WFAU {'wavebands': [u'X-ray', u'Gamma-ray'], 'amount': 1}
+Publisher:  JVO {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  Instituto de Astrofsica de Andaluca (IAA) {'wavebands': [u'Infrared', u'Optical', u'UV'], 'amount': 1}
+Publisher:  VO-Paris Data Centre - GEPI {'wavebands': [u'Optical'], 'amount': 2}
+Publisher:  Laboratoire d'Astrophysique de Marseille - Departement d'informatique      scientifique {'wavebands': [u'Optical'], 'amount': 1}
+Publisher:  Instituto de Astrofsica de Andaluca {'wavebands': [u'Infrared', u'Optical', u'UV', u'X-ray'], 'amount': 1}
+Publisher:  VO-Paris Data Centre - LESIA {'wavebands': [u'Optical', u'UV'], 'amount': 1}
+Publisher:  The GAVO DC team {'wavebands': [u'Optical', u'UV', u'Infrared'], 'amount': 5}
+Publisher:  The NASA/IPAC Extragalactic Database {'wavebands': [u'Radio', u'Millimeter', u'Infrared', u'Optical', u'UV', u'EUV', u'X-ray', u'Gamma-ray'], 'amount': 1}
+Publisher:  LUPM (Laboratoire Univers et Particules de Montpellier) {'wavebands': [u'Optical', u'UV'], 'amount': 1}
+Publisher:  CRAL-Observatoire de Lyon {'wavebands': [u'Optical'], 'amount': 1}
+
+##################################################
+Elements in publishers[ scs ]
+{'wavebands': [u'Optical', u'Radio', u'X-ray', u'UV', u'Infrared', u'Gamma-ray', u'EUV'], 'amount': 744}
+{'wavebands': [u'Optical', u'X-ray', u'Radio', u'Infrared', u'UV', u'Gamma-ray', u'Millimeter', u'EUV'], 'amount': 8850}
+
+Others publishers[scs]:  115
+
+##################################################
+Type:  ssa   publisher  Try:  44  Except:  4
+Type:  ssa   subjects  Try:  43  Except:  5
+Type:  ssa   waveband  Try:  36  Except:  8
+Type:  sia   publisher  Try:  174  Except:  1
+Type:  sia   subjects  Try:  152  Except:  23
+Type:  sia   waveband  Try:  168  Except:  6
+Type:  tap   publisher  Try:  27  Except:  6
+Type:  tap   subjects  Try:  32  Except:  1
+Type:  tap   waveband  Try:  16  Except:  11
+Type:  scs   publisher  Try:  9970  Except:  493
+Type:  scs   subjects  Try:  10453  Except:  10
+Type:  scs   waveband  Try:  9709  Except:  261
+
+##################################################
+Waveband resume per each type of resource
+Wavebands &  tap  &  Optical Infrared Radio X-ray   \\
+Wavebands &  sia  &  Gamma-ray Radio Infrared Optical UV X-ray Millimeter EUV   \\
+Wavebands &  ssa  &  Optical EUV Infrared UV X-ray Gamma-ray Radio Millimeter   \\
+Wavebands &  scs  &  Optical X-ray Radio Infrared UV Gamma-ray Millimeter EUV   \\
+
+##################################################
+Ranking by subjects (from all type of resources)
+Subject: &  Galaxies  &  1994  \\
+Subject: &  Stars  &  1566  \\
+Subject: &  Photometry  &  1400  \\
+Subject: &  Photometry:wide-band  &  1176  \\
+Subject: &  Redshifts  &  1018  \\
+Subject: &  Stars:variable  &  985  \\
+Subject: &  Velocities  &  919  \\
+Subject: &  Open_Clusters  &  787  \\
+Subject: &  Spectroscopy  &  715  \\
+Others subjects types: &  837  & total amount:  12357  \\
+
+##################################################
+Subject:  
+	Optical :  30
+Subject:  AGN
+	Infrared :  34
+Subject:  twosigma
+Subject:  xteltsched
+Subject:  xteconstr
+Subject:  xtestsched
+Subject:  dust catalogue
+Subject:  TCS image archive
+	Infrared :  1
+Subject:  Nebula
+	Optical :  6
+Subject:  einopslgal
+Subject:  cdfsagncxo
+Subject:  orionffcxo
+Subject:  m81cxo
+Subject:  m87cxo
+Subject:  Schmidt
+	Optical :  1
+	Infrared :  1
+Subject:  fuselog
+Subject:  xteslew
+Subject:  ipngrb
+Subject:  grbcatinta
+Subject:  TAP
+Subject:  White Dwarf
+	X-ray :  1
+Subject:  Stars:late-type
+	Optical :  243
+Subject:  Stars:Emission
+	Infrared :  5
+Subject:  rosatrlq
+Subject:  Object
+	Optical :  2
+	UV :  1
+Subject:  sdssbalqso
+Subject:  crates
+Subject:  grbcatag
+Subject:  Survey with Schmidt telescope
+	Optical :  1
+Subject:  fpcsfits
+Subject:  grbcatflux
+Subject:  Stars: Binary
+	Optical :  1
+Subject:  hete2gcn
+Subject:  Stars:variable
+	Optical :  726
+Subject:  ngc2000
+Subject:  Techniques: high angular resolution
+	Infrared :  2
+Subject:  mggammadet
+Subject:  MGC B-band Galaxy Survey
+	Optical :  1
+Subject:  gc47tuccxo
+Subject:  ascasttl
+Subject:  grbcatdual
+Subject:  mggammacat
+Subject:  high energy and microwave astronomy
+Subject:  veron2001
+Subject:  veron2000
+Subject:  Abundances
+Subject:  batsedaily
+Subject:  gcvsnsvars
+Subject:  roswfcbsc
+Subject:  woolley
+Subject:  cma
+Subject:  rosprspec
+Subject:  SNR
+	Radio :  1
+Subject:  Uranus
+Subject:  Clusters of galaxies
+	Optical :  1
+Subject:  Novae
+	Optical :  18
+Subject:  Seyfert nucleus
+	Infrared :  2
+Subject:  cabscat
+Subject:  ritter
+Subject:  Nova
+	Optical :  1
+Subject:  Solar Flare
+	Gamma-ray :  1
+Subject:  tycho2
+Subject:  onccxoxray
+Subject:  Galaxies: ISM
+	Optical :  1
+Subject:  ASTROGRAPHIC CATALOGS
+	Infrared :  1
+Subject:  wackerling
+Subject:  Associations
+	Infrared :  41
+Subject:  lyngaclust
+Subject:  infrared astronomy
+	Infrared :  1
+Subject:  m31cxoxray
+Subject:  swiftmastr
+Subject:  xmdsvvds4s
+Subject:  Globular_Clusters
+	Optical :  439
+Subject:  lockmanxm2
+Subject:  dr3qso
+Subject:  flarestars
+Subject:  kommersgrb
+Subject:  orionxray
+Subject:  chandrapub
+Subject:  Astrometric data
+	Optical :  1
+Subject:  ngc6530oid
+Subject:  swiftbalog
+Subject:  Galaxy clusters
+	Optical :  1
+	Infrared :  1
+Subject:  rassdssagn
+Subject:  Astronomical data bases: miscellaneous
+	Gamma-ray :  1
+	UV :  1
+	Infrared :  1
+	Millimeter :  1
+	Optical :  1
+	Radio :  1
+	X-ray :  1
+Subject:  intscw
+Subject:  Cosmology
+	Gamma-ray :  1
+Subject:  Infrared, survey, galaxy, Marellanic Cloud
+	Infrared :  1
+Subject:  Radial velocities
+	Optical :  1
+Subject:  GRB
+	Gamma-ray :  15
+Subject:  cgrogi
+Subject:  xtecoi
+Subject:  X-ray
+	X-ray :  6
+Subject:  rosstl
+Subject:  rassfsc
+Subject:  symbiotics
+Subject:  integralao
+Subject:  chansexsi
+Subject:  SuperNovae
+	Optical :  103
+Subject:  xmmpublic
+Subject:  hbc
+Subject:  smcrosxray
+Subject:  swifttdrss
+Subject:  wds
+Subject:  Optical  Astronomy
+	Optical :  12
+Subject:  QUASARS
+Subject:  Light Curves.
+	Optical :  1
+Subject:  ipc
+Subject:  uhuru4
+Subject:  Photographic plate
+	Optical :  1
+Subject:  Planetary Systems
+Subject:  ACIS
+	X-ray :  2
+Subject:  uzc
+Subject:  Polarization
+	Infrared :  11
+Subject:  Radio Bursts
+Subject:  gingalog
+Subject:  gingamode
+Subject:  roshri
+Subject:  pmsucat
+Subject:  Spectral_Classification
+	Optical :  221
+Subject:  Strong gravitational lensing
+	Optical :  3
+	Infrared :  1
+Subject:  Binaries:cataclysmic
+	Infrared :  4
+Subject:  X-Ray Satellite Astronomy
+Subject:  Star
+	Optical :  36
+Subject:  wfcpoint
+Subject:  cvcat
+Subject:  SETI
+Subject:  hcggalaxy
+Subject:  chanc150pc
+Subject:  Radio astronomy
+	Radio :  1
+Subject:  asiagosn
+Subject:  vlss
+Subject:  Proper motions
+	Optical :  2
+Subject:  xmmao
+Subject:  phebus
+Subject:  Gravitational lensing
+	Optical :  1
+	Infrared :  1
+Subject:  cns3
+Subject:  fermigtrig
+Subject:  Positions
+	Optical :  1
+Subject:  Ultraviolet Astronomy
+	UV :  3
+Subject:  hesscat
+Subject:  ulxrbcat
+Subject:  einlog
+Subject:  pmn
+Subject:  Solar system
+	EUV :  1
+	UV :  1
+Subject:  Galaxies: abundances
+Subject:  Extra-galactic stars
+	Optical :  1
+Subject:  ibiscat3
+Subject:  me
+Subject:  zcat
+Subject:  chianti
+Subject:  xmmcfrscat
+Subject:  Auroras
+Subject:  Planetary_Nebulae
+	Optical :  102
+Subject:  plnebulae
+Subject:  Multiple_Stars
+Subject:  Quasars
+	EUV :  1
+	UV :  1
+Subject:  Binaries:spectroscopic
+Subject:  Archive
+	Optical :  1
+	Infrared :  1
+Subject:  gratings
+	X-ray :  2
+Subject:  Reference systems
+Subject:  denisigal
+Subject:  Positional Data, Proper motions, Photometry:wide-band
+	Optical :  1
+Subject:  Infrared Counterpart
+	X-ray :  2
+	Infrared :  2
+Subject:  ipclxlbol
+Subject:  Optical observations
+	Optical :  1
+Subject:  duerbeck
+Subject:  wbhgp20cm
+Subject:  Digital Images
+	Optical :  3
+Subject:  champlane
+Subject:  exss
+Subject:  Infrared Sky Survey
+	Infrared :  1
+Subject:  ngc2024cxo
+Subject:  hstpaec
+Subject:  Dark matter
+	Optical :  2
+Subject:  lmcxray
+Subject:  xmmlss
+Subject:  Lightcurve
+	Gamma-ray :  2
+Subject:  veron93
+Subject:  Nonstellar
+	Optical :  11
+Subject:  sdssnbcqsc
+Subject:  xtepuball
+Subject:  X-ray astronomy
+	X-ray :  6
+Subject:  champpsc
+Subject:  rasscals
+Subject:  galaxies: evolution
+	UV :  2
+	Optical :  2
+	Infrared :  4
+Subject:  swiftbscat
+Subject:  ngc4472cxo
+Subject:  rospublic
+Subject:  mcksion
+Subject:  smcstars2
+Subject:  ATNF Pulsar Observations Parkes
+Subject:  gingafrf
+Subject:  nltt
+Subject:  metal poor stars
+Subject:  oso8rtraw
+Subject:  gcvsegsn
+Subject:  cosmology
+	EUV :  1
+Subject:  Star Formation
+	UV :  2
+Subject:  Radio
+	Radio :  2
+Subject:  ritterrbin
+Subject:  Large Magellanic Cloud
+	Optical :  1
+	Infrared :  1
+Subject:  BLACK HOLES
+Subject:  cmaimage
+Subject:  Stars:early-type
+	Optical :  207
+Subject:  Galaxies:spectra
+	Optical :  130
+	Radio :  11
+	Infrared :  19
+Subject:  exogps
+Subject:  Publication
+	X-ray :  1
+Subject:  rcw108cxo
+Subject:  Ultraviolet-excess galaxies
+	Optical :  1
+Subject:  cxoxassist
+Subject:  m31stars
+Subject:  Minor Planets
+	Optical :  2
+	Infrared :  2
+Subject:  ngc6231xmm
+Subject:  saxwfclog
+Subject:  hiiregion
+Subject:  ipcultsoft
+Subject:  upprscoxmm
+Subject:  einstein2e
+Subject:  clusters of galaxies
+	UV :  2
+	Optical :  2
+	Infrared :  2
+Subject:  ros400gcls
+Subject:  xmmprspec
+Subject:  ngc2362cxo
+Subject:  Extrasolar Planets
+Subject:  obslog
+Subject:  warps
+Subject:  cgrotl
+Subject:  Infrared Satellite Astronomy
+Subject:  ascapi
+Subject:  ipcostars
+Subject:  Compilation Source
+	Infrared :  1
+Subject:  osse
+Subject:  Extragalactic Source
+	X-ray :  1
+Subject:  Cluster of Galaxies
+	Optical :  7
+Subject:  sborbitcat
+Subject:  texas
+Subject:  ipcphot
+Subject:  interstellar medium
+	UV :  1
+	Optical :  1
+	Infrared :  1
+Subject:  rcw49cxo
+Subject:  x ray spectra
+	X-ray :  2
+Subject:  IR Survey
+	Infrared :  1
+Subject:  rassimages
+Subject:  ngc2516xmm
+Subject:  noras
+Subject:  bsc5p
+Subject:  Blue_objects
+	Optical :  9
+Subject:  eingalcat
+Subject:  Venus
+Subject:  HRC
+	X-ray :  2
+Subject:  galaxies: stellar content
+	UV :  2
+	Optical :  2
+	Infrared :  2
+Subject:  ALFALFA
+	Radio :  1
+Subject:  orionxstar
+Subject:  cosbraw
+Subject:  LETG
+	X-ray :  2
+Subject:  changalcen
+Subject:  Quasar
+	Gamma-ray :  1
+	X-ray :  1
+Subject:  Stars: AGB and post-AGB
+	Optical :  1
+	UV :  1
+Subject:  gcvs
+Subject:  isolog
+Subject:  smcstars
+Subject:  Representative UV
+	Optical :  1
+	Infrared :  1
+	UV :  1
+Subject:  Planets
+	Optical :  8
+	UV :  8
+	Infrared :  6
+Subject:  Pulsar
+	Radio :  3
+Subject:  Stars: late-type
+	Radio :  1
+Subject:  photometry
+	X-ray :  6
+Subject:  chandrao
+Subject:  comptel
+Subject:  spitzmastr
+Subject:  pvogrb
+Subject:  galaxies: high-redshift
+	Infrared :  2
+Subject:  xtemaster
+Subject:  xcopraw
+Subject:  high resolution spectroscopy
+	X-ray :  2
+Subject:  gusbad
+Subject:  UV Astronomy
+	EUV :  1
+	UV :  10
+Subject:  elaiscxo
+Subject:  rixos
+Subject:  pulsar
+Subject:  sdssquasar
+Subject:  wgacat
+Subject:  globular clusters
+	Optical :  1
+	UV :  1
+Subject:  spicescxo
+Subject:  oso8alc
+Subject:  hubbleudf
+Subject:  twoxmmidr3slim
+Subject:  Gamma Rays
+	Gamma-ray :  1
+Subject:  Stars,Survey,Galaxy, low mass stars, dark energy
+	Infrared :  1
+Subject:  BL Lac
+	Optical :  1
+	Radio :  1
+	X-ray :  1
+Subject:  gravitational lenses
+	UV :  2
+	Optical :  2
+	Infrared :  2
+Subject:  Computer simulation
+	Optical :  1
+	UV :  1
+Subject:  hcg
+Subject:  sax2to10
+Subject:  saxnfilog
+Subject:  Saturn
+Subject:  Compilation of 1D spectra
+	Optical :  1
+Subject:  fsvsclustr
+Subject:  Stars:WR
+	Optical :  19
+Subject:  gingaraw
+Subject:  intbsc
+Subject:  Observation
+	Optical :  3
+Subject:  Magnetic_fields
+Subject:  Velocities
+	Optical :  892
+Subject:  galaxies
+	Infrared :  1
+Subject:  rosltl
+Subject:  Planet
+	Optical :  2
+Subject:  spectroscopic observations
+Subject:  m33xmm2
+Subject:  saxao
+Subject:  m31xray
+Subject:  Quasars: emission lines
+	Optical :  1
+	Infrared :  1
+Subject:  ACTIVE GALACTIC NUCLEI
+Subject:  elaiss1xmm
+Subject:  Comets
+Subject:  nvss
+Subject:  Extragalactic Objects
+	Gamma-ray :  1
+Subject:  revisedlhs
+Subject:  surveys, spectroscopy
+Subject:  collapsed stars
+	UV :  2
+	Optical :  2
+	Infrared :  2
+Subject:  snrgreen
+Subject:  Strong lensing
+	Optical :  1
+	Infrared :  1
+Subject:  Positional data
+	Optical :  1
+Subject:  Binaries:eclipsing
+	Optical :  124
+Subject:  first
+Subject:  Astrophotography
+	Optical :  1
+Subject:  xteindex
+Subject:  exgalemobj
+Subject:  hriphot
+Subject:  intspiagrb
+Subject:  wfcbsc
+Subject:  Masers
+	Optical :  38
+	Radio :  123
+	Infrared :  43
+Subject:  Stars
+	Optical :  1121
+Subject:  Q magnitude
+	Infrared :  2
+Subject:  Exobiology
+Subject:  sacy
+Subject:  cgropi
+Subject:  surveys
+	Gamma-ray :  4
+Subject:  Seyfert_Galaxies
+	Optical :  37
+Subject:  Catalogs
+	Optical :  12
+	Infrared :  2
+Subject:  nebulae
+	UV :  2
+	Optical :  2
+	Infrared :  2
+Subject:  Models
+Subject:  rosatlog
+Subject:  gpa
+Subject:  irasfsc
+Subject:  Cosmic Microwave Background
+Subject:  wgacat95
+Subject:  ISM: abundances
+Subject:  veron96
+Subject:  oso8pharaw
+Subject:  fermigbrst
+Subject:  veron98
+Subject:  Exoplanets
+	Optical :  5
+	Infrared :  1
+	UV :  1
+Subject:  Cosmology: observations
+	Optical :  2
+	Infrared :  2
+Subject:  chantypgpr
+Subject:  ngc2264cx2
+Subject:  IAC80 telescope image archive
+	Optical :  1
+Subject:  Stars, Galaxies, Surveys
+Subject:  Photographic catalog
+	Optical :  1
+Subject:  optical
+Subject:  rasswd
+Subject:  egret2
+Subject:  lineenergy
+Subject:  stellar evolution
+	UV :  1
+	Optical :  1
+	Infrared :  1
+Subject:  grbcatcirc
+Subject:  champhxagn
+Subject:  Infrared, survey, Milky Way, bulge
+	Infrared :  1
+Subject:  lmcextobj
+Subject:  twoxmmp
+Subject:  Planetary Nebulae Catalog
+	Optical :  1
+Subject:  grbcat
+Subject:  astrometric catalogue
+	Optical :  3
+	Infrared :  1
+Subject:  ascaprspec
+Subject:  Extinction
+	Optical :  50
+	Infrared :  32
+Subject:  exolog
+Subject:  Galaxy
+Subject:  Gravitational_lensing
+	Optical :  42
+Subject:  sao
+Subject:  sa57xmm
+Subject:  photographic images
+	Optical :  3
+	Infrared :  1
+Subject:  intrefcat
+Subject:  channsgpsc
+Subject:  stellar atmospheres
+Subject:  Radio Galaxies
+	Infrared :  1
+Subject:  lmchrixray
+Subject:  chanulxcat
+Subject:  quasars
+	X-ray :  6
+Subject:  Stars,Survey,Galaxy
+	Optical :  5
+Subject:  lbn
+Subject:  Photometry:surface
+	Optical :  34
+Subject:  HII_regions
+	Optical :  124
+Subject:  Galaxies: halos
+	Optical :  1
+Subject:  iuelog
+Subject:  erosxmm
+Subject:  x-ray xray XMM
+Subject:  Photometry:narrow-band
+	Optical :  67
+	Infrared :  24
+Subject:  tgs2
+Subject:  gingalac
+Subject:  Merging Galaxies
+	Optical :  1
+Subject:  Photometry: wide-band
+	Optical :  1
+Subject:  chandfs1ms
+Subject:  Atomic_Data
+Subject:  ngc2516cxo
+Subject:  Infrared, FITS, research, WISE, All-Sky
+	Infrared :  2
+Subject:  macs
+Subject:  Galaxy Group
+	X-ray :  1
+Subject:  Infrared, survey, galaxy, point source
+Subject:  Hot stars
+	UV :  6
+Subject:  ostars
+Subject:  mgps2
+Subject:  xteprocess
+Subject:  grbcatirr
+Subject:  sigorixmm
+Subject:  6dF survey galaxy galaxies redshift redshifts 2MASS
+	Optical :  2
+Subject:  TimeSeries
+	Optical :  1
+Subject:  class
+Subject:  mpcraw
+Subject:  Radio Counterpart
+	X-ray :  2
+Subject:  Hubble Space Telescope Observations
+	UV :  1
+	Optical :  1
+	Infrared :  1
+Subject:  Green Bank
+	Radio :  1
+Subject:  Asteroids
+	Optical :  1
+Subject:  variable stars
+	UV :  2
+	Optical :  2
+	Infrared :  2
+Subject:  6dF Data Release 3 Spectra
+	Optical :  1
+Subject:  messier
+Subject:  xteobs
+Subject:  Observational cosmology
+	Optical :  1
+Subject:  Optical and near-IR observations of the pulsars
+	Optical :  1
+	Infrared :  1
+Subject:  mrc
+Subject:  mostsnrcat
+Subject:  lmxbcat
+Subject:  ugc
+Subject:  Interstellar_Medium
+	Optical :  86
+Subject:  qorgcat
+Subject:  cenacxo
+Subject:  infrared
+Subject:  The WiggleZ Data Archive
+	Optical :  1
+Subject:  radio
+Subject:  Radio Astronomy
+	Radio :  2
+Subject:  rassbsc
+Subject:  Infrared all-sky survey
+	Infrared :  1
+Subject:  star clusters
+	UV :  2
+	Optical :  2
+	Infrared :  2
+Subject:  optical astronomy
+	Optical :  7
+	UV :  2
+Subject:  swiftuvlog
+Subject:  White dwarfs
+	UV :  4
+Subject:  cbatpicagn
+Subject:  smcradio
+Subject:  trifidcxo
+Subject:  gb6
+Subject:  mitgb6cm
+Subject:  Star Cluster
+	Optical :  6
+Subject:  ibiscat2
+Subject:  xms
+Subject:  hriimage
+Subject:  Active galactic nucleus
+	Infrared :  2
+Subject:  sssraw
+Subject:  Solar Activity
+Subject:  sss
+Subject:  Galaxies: active
+	Infrared :  2
+Subject:  cfa2s
+Subject:  chainthcxo
+Subject:  WISE all-sky infrared
+	Infrared :  1
+Subject:  hstaec
+Subject:  rhoophcxo
+Subject:  wgacattotal
+Subject:  xteprspec
+Subject:  HIPASS Project Data
+	Radio :  6
+Subject:  Virtual observatory
+Subject:  ALMA
+	Radio :  1
+Subject:  xmmmaster
+Subject:  survey, Twomass, galaxy, redshift
+Subject:  echelle spectra archives
+Subject:  m31stars2
+Subject:  Jupiter
+Subject:  kuehr
+Subject:  Techniques: interferometric
+	Radio :  1
+Subject:  hrasscat
+Subject:  IPHAS
+Subject:  shk
+Subject:  zwclusters
+Subject:  Virtual Observatory
+	Optical :  13
+Subject:  Synthetic Stellar Spectra
+	Optical :  1
+	UV :  1
+Subject:  Infrared photometry
+	Infrared :  2
+Subject:  cygtevcxo
+Subject:  rassdwarf
+Subject:  pkscat90
+Subject:  pleiadxray
+Subject:  rospi
+Subject:  twoxmm
+Subject:  ngc6357cxo
+Subject:  Stars: atmospheres
+	Optical :  1
+	UV :  1
+Subject:  tartarus
+Subject:  xbootes
+Subject:  iraszsurv
+Subject:  Supernovae
+	UV :  1
+	Optical :  1
+	Infrared :  1
+Subject:  smcwingcxo
+Subject:  a2rtraw
+Subject:  hmxbcat
+Subject:  ngc1333cxo
+Subject:  sumss
+Subject:  intgccat
+Subject:  xray
+Subject:  Infrared, survey, galaxy, point source, KIDS
+Subject:  hipparcos
+Subject:  Sky survey
+	Radio :  1
+Subject:  Infrared, Spitzer, FITS, research
+	Infrared :  1
+Subject:  twoxmmi
+Subject:  roswfcpub
+Subject:  variability
+	X-ray :  6
+Subject:  rosid
+Subject:  groups of galaxies
+	UV :  2
+	Optical :  2
+	Infrared :  2
+Subject:  Cool stars
+	UV :  3
+Subject:  Mercury
+Subject:  carinaxmm
+Subject:  roshritotal
+Subject:  Variable stars
+	UV :  5
+Subject:  xrbcat
+Subject:  XRB
+	Optical :  3
+Subject:  ngc6530xmm
+Subject:  stars: evolution
+	UV :  2
+	Optical :  2
+	Infrared :  2
+Subject:  active galactic nuclei
+	UV :  2
+	Optical :  2
+	Infrared :  2
+Subject:  Optical spectroscopy
+	Optical :  3
+Subject:  oneswasp_lightcurves
+Subject:  multibeam
+	Radio :  1
+Subject:  emss
+Subject:  vlacosmos
+Subject:  Astrometry
+	Optical :  7
+Subject:  Infrared point-source survey
+	Infrared :  1
+Subject:  HII regions
+Subject:  bmwchancat
+Subject:  xteasscat
+Subject:  egretdata
+Subject:  Solar Sytem
+	Optical :  2
+	Infrared :  2
+Subject:  Quasars: general
+	Optical :  2
+	Infrared :  1
+Subject:  rosgalclus
+Subject:  xteao
+Subject:  edgeenergy
+Subject:  tgs
+Subject:  Nebulae
+	Optical :  126
+Subject:  wrcat
+Subject:  N magnitude
+	Infrared :  2
+Subject:  ngc6530cxo
+Subject:  galactic evolution
+	Optical :  1
+Subject:  Infrared: galaxies
+	Infrared :  2
+Subject:  SuperNovae_Remnants
+	Optical :  14
+	Radio :  16
+Subject:  Interacting Galaxies
+	Optical :  1
+Subject:  P/Halley
+Subject:  cgmw
+Subject:  Galaxies:Markarian
+	UV :  1
+Subject:  Sky surveys
+	Optical :  1
+Subject:  GOODS Image Cutout Service
+	Optical :  1
+Subject:  Infrared Astronomy
+	Infrared :  3
+Subject:  Open Clusters
+Subject:  Interstellar medium
+	UV :  2
+Subject:  onccxoopt
+Subject:  Galaxies: evolution
+	Radio :  1
+Subject:  survey, galaxy, point source
+Subject:  Orbits
+Subject:  BL_Lac_objects
+	Optical :  28
+	Infrared :  8
+Subject:  Optical
+	Optical :  3
+	UV :  2
+Subject:  pg
+Subject:  cepbob3cxo
+Subject:  reflex
+Subject:  intpublic
+Subject:  OB star
+	Optical :  1
+Subject:  roswfcse
+Subject:  ALFA
+	Radio :  2
+Subject:  cygob2cxo
+Subject:  Dark Matter
+	UV :  1
+	Optical :  1
+	Infrared :  1
+Subject:  Pulsars
+	Radio :  44
+	X-ray :  7
+	Infrared :  2
+Subject:  qso
+Subject:  lalaboocxo
+Subject:  roswfcsi
+Subject:  rostargets
+Subject:  HEG
+	X-ray :  2
+Subject:  Chandra
+	X-ray :  2
+Subject:  sky survey
+	Radio :  1
+Subject:  xteasmquick
+Subject:  eingalclus
+Subject:  ngc2264cxo
+Subject:  CV
+	Optical :  2
+Subject:  m33chase
+Subject:  iramlog
+Subject:  hete2grb
+Subject:  observations: imaging
+Subject:  supernovae
+	UV :  1
+	Optical :  1
+	Infrared :  1
+Subject:  swirecxo
+Subject:  Arecibo
+	Radio :  3
+Subject:  xmmcfrsoid
+Subject:  rbs
+Subject:  Spectrophotometry
+	Optical :  47
+Subject:  Ephemeral Active Regions
+Subject:  Redshifts
+	Optical :  832
+Subject:  rassgb
+Subject:  Astrobiology
+Subject:  rosatrqq
+Subject:  rosrorno
+Subject:  hete2tl
+Subject:  Masses
+Subject:  Extrasolar neutrino candidates
+Subject:  finding charts
+	Optical :  3
+	Infrared :  1
+Subject:  wblgalaxy
+Subject:  ipcslew
+Subject:  rosnepxray
+Subject:  Optical Astronomy
+	Optical :  2
+Subject:  rcw38cxo
+Subject:  Cosmic rays
+Subject:  Be Stars
+	Optical :  1
+	UV :  1
+Subject:  crabtime
+Subject:  xmmabstview
+Subject:  simulated radio galaxies agn
+Subject:  iraspsc
+Subject:  plates
+	Optical :  1
+	Infrared :  1
+Subject:  xteasmlong
+Subject:  euvebsl
+Subject:  smcxray
+Subject:  cepaxmm
+Subject:  onexmm
+Subject:  rassmaster
+Subject:  Galaxy Evolution
+	Optical :  1
+Subject:  Equivalent_widths
+	Optical :  335
+Subject:  Photometry:intermediate-band
+	Optical :  106
+Subject:  onexmm_v1_01
+Subject:  chpngptsrc
+Subject:  Supernova light curves
+Subject:  NOT PROVIDED
+	Optical :  1
+	Infrared :  2
+Subject:  exms
+Subject:  Galactic Legacy Infrared Mid-Plane Survey GLIMPSE
+	Infrared :  1
+Subject:  Digitised photographic Schmidt field test photometry astrometry
+	Optical :  1
+Subject:  Atmospheric neutrinos
+Subject:  irasssc
+Subject:  Survey Source
+	Radio :  128
+Subject:  Photometry
+Subject:  Optical Counterpart
+	Optical :  5
+Subject:  rasscns3
+Subject:  gcps
+Subject:  Milky Way
+	Optical :  1
+Subject:  xteconfig
+Subject:  pgc2003
+Subject:  Stars: Proper Motions
+	Optical :  6
+Subject:  QSOs
+	Optical :  307
+Subject:  ultraviolet astronomy
+	Optical :  7
+	UV :  2
+Subject:  coup
+Subject:  Surveys
+	UV :  2
+	Optical :  13
+	Infrared :  7
+Subject:  taurusxmm
+Subject:  m67cxo
+Subject:  Diameters
+Subject:  Proper_Motions
+	Optical :  374
+Subject:  shkgalaxy
+Subject:  ipcimage
+Subject:  ldn
+Subject:  grbcatint
+Subject:  fbsbsocat
+Subject:  rostarfilter
+Subject:  Radio Emission
+Subject:  swiftxrlog
+Subject:  ibisgpscat
+Subject:  Binary stars
+	UV :  1
+Subject:  Photometry:wide-band
+	Optical :  1062
+Subject:  xbootesoid
+Subject:  m31xmmxray
+Subject:  smcclustrs
+Subject:  Galaxies
+	UV :  127
+	Optical :  1485
+	Infrared :  493
+Subject:  Neutrino skymap
+Subject:  transmission grating
+	X-ray :  2
+Subject:  IR
+	Infrared :  1
+Subject:  cpstars
+Subject:  maghmxbcat
+Subject:  dixon
+Subject:  woodebcat
+Subject:  Planetary Nebulae
+	Optical :  1
+Subject:  binary stars
+	UV :  2
+	Optical :  2
+	Infrared :  2
+Subject:  gs
+Subject:  Spacecraft Pointing
+	X-ray :  1
+Subject:  rassgiant
+Subject:  monr2cxo
+Subject:  rassnorsam
+Subject:  fermilasp
+Subject:  LEDAS
+Subject:  clasxs
+Subject:  echelle spectra archive cutout service
+Subject:  Rotational_Velocities
+	Optical :  131
+	Radio :  4
+	Infrared :  9
+Subject:  north6cm
+Subject:  rassebcs
+Subject:  Clusters_of_galaxies
+	Optical :  586
+	X-ray :  96
+Subject:  Planetary nebulae
+	UV :  1
+Subject:  Redshift
+	Optical :  3
+Subject:  xtetoo
+Subject:  Infrared
+Subject:  Infrared, survey, galaxy, KIDS
+	Infrared :  1
+Subject:  xmmslewcln
+Subject:  globclust
+Subject:  wbl
+Subject:  m31rosxray
+Subject:  survey
+	Infrared :  1
+Subject:  rosatmaster
+Subject:  Stars: Positions
+	Optical :  2
+Subject:  ADQL
+Subject:  Positional_Data
+	Optical :  366
+Subject:  pvotrig
+Subject:  Sun
+Subject:  xmmmasternew
+Subject:  lmcrosxray
+Subject:  Gravitational arcs
+	Optical :  1
+	Infrared :  1
+Subject:  omegcenxmm
+Subject:  Mars
+Subject:  Infrared, FITS, research, Spitzer
+	Infrared :  1
+Subject:  td1
+Subject:  sas2maps
+Subject:  euvemaster
+Subject:  Faint Images of the Radio Sky at Twenty-cm FIRST
+	Radio :  1
+Subject:  saxwfccat
+Subject:  dxrbs
+Subject:  optical observations
+	UV :  3
+	Optical :  3
+	Infrared :  3
+Subject:  ipcdeep
+Subject:  infrared: galaxies
+	Infrared :  2
+Subject:  hricfa
+Subject:  smcrosxry2
+Subject:  Hight resolution stellar spectra
+	Optical :  1
+Subject:  rosatxuv
+Subject:  HETG
+	X-ray :  2
+Subject:  rosdistrib
+Subject:  lmcclustrs
+Subject:  rosao
+Subject:  rosatsrc
+Subject:  Spectroscopy
+	Optical :  551
+	UV :  70
+Subject:  irasid
+Subject:  egretsrc
+Subject:  Planets+Asteroids
+Subject:  chansexoid
+Subject:  m31clustrs
+Subject:  sas2raw
+Subject:  cgrotarget
+Subject:  Open_Clusters
+	Optical :  579
+Subject:  Observational cosmology, galaxy, cluster, evolution, infrared
+	Infrared :  1
+Subject:  Image
+	X-ray :  3
+Subject:  UV
+	Optical :  2
+Subject:  Ages
+	Optical :  31
+Subject:  m17cxo
+Subject:  Constellations
+	Optical :  3
+Subject:  chandfn2ms
+Subject:  hrideep
+Subject:  and Infrared Images
+	Optical :  1
+	Infrared :  1
+	UV :  1
+Subject:  hdec
+Subject:  Images
+	Optical :  21
+Subject:  ipcunscrnd
+Subject:  xtemlcat
+Subject:  konus
+Subject:  hriexo
+Subject:  maranoxmm
+Subject:  m51cxo
+Subject:  rasshgsoft
+Subject:  Solar System
+	Optical :  1
+Subject:  intscwpub
+Subject:  ppm
+Subject:  lockmanxmm
+Subject:  ascalttl
+Subject:  Astronomical literature
+	Gamma-ray :  1
+	UV :  1
+	Infrared :  1
+	Millimeter :  1
+	Optical :  1
+	Radio :  1
+	EUV :  1
+	X-ray :  1
+Subject:  ROSAT xray x-ray sources faint bright
+	X-ray :  1
+Subject:  KUG
+	Optical :  1
+Subject:  HEAVENS light curves (ISDC - Data Centre for Astrophysics)
+	Gamma-ray :  1
+	X-ray :  1
+Subject:  YSOs
+	Infrared :  96
+Subject:  Stars:white_dwarf
+	UV :  10
+Subject:  stucture
+	Optical :  1
+Subject:  Parallaxes
+	Optical :  72
+Subject:  Transient
+	Gamma-ray :  4
+	X-ray :  1
+Subject:  X RAY SPECTROSCOPY
+	X-ray :  2
+Subject:  stars
+	X-ray :  6
+Subject:  Dust
+	Optical :  1
+	Infrared :  1
+Subject:  X-ray sky survey
+	X-ray :  1
+Subject:  exohgls
+Subject:  smmgrs
+Subject:  Galaxies: distance and redshift
+	Optical :  2
+	Infrared :  2
+Subject:  Digitised photographic optical all-sky photometric astrometric survey
+	Optical :  1
+Subject:  ngc2264xmm
+Subject:  exopubs
+Subject:  Pointed observations
+	Optical :  2
+Subject:  Galaxies: photometry
+	Optical :  2
+	Infrared :  2
+Subject:  Astroparticle physics
+Subject:  onexmmv101
+Subject:  gcvsegvars
+Subject:  rassob
+Subject:  Obs_Log
+	X-ray :  5
+Subject:  Survey
+	Optical :  5
+Subject:  twoxmmidr3
+Subject:  wmapptsrc
+Subject:  at20gbss
+Subject:  galatic evolution
+	UV :  3
+	Optical :  3
+	Infrared :  3
+Subject:  hd
+Subject:  Galaxy Cluster
+	Optical :  1
+Subject:  MEG
+	X-ray :  2
+Subject:  xtepublic
+Subject:  gingabgd
+Subject:  wbhgp6cm
+Subject:  LEG
+	X-ray :  2
+Subject:  and Infrared Astronomy
+	Optical :  2
+	UV :  1
+Subject:  lmc30drcxo
+Subject:  Stars:peculiar
+	Optical :  130
+Subject:  openclust
+Subject:  rc3
+Subject:  rosnepagn
+Subject:  OPTICAL
+	Optical :  1
+	UV :  1
+Subject:  lbqs
+Subject:  spectroscopy
+Subject:  sdsswdsd
+Subject:  pmpulsar
+Subject:  rosnepoid
+Subject:  exofot
+Subject:  xmmxassist
+Subject:  Galaxy Evolution and Structure
+	Optical :  1
+Subject:  uit
+Subject:  High Energy Astrophysics
+	Gamma-ray :  1
+Subject:  Supernova
+	Optical :  1
+Subject:  roxa
+Subject:  Methods: data analysis
+	Optical :  2
+	Infrared :  2
+Subject:  vlanep
+Subject:  mcg
+Subject:  star formation
+	UV :  1
+	Optical :  2
+	Infrared :  1
+Subject:  hrassoptid
+Subject:  chanextdfs
+Subject:  History and philosophy of astronomy
+	Optical :  1
+Subject:  hic
+Subject:  m33xmmxray
+Subject:  Neutral Hydrogen
+	Radio :  3
+Subject:  hyadesxray
+Subject:  saisncat
+Subject:  star
+	Optical :  1
+Subject:  rospspc
+Subject:  veroncat
+Subject:  rassvars
+Subject:  galaxies: formation
+	Infrared :  2
+Subject:  Ultraviolet Images
+	UV :  1
+Subject:  oso8bclc
+Subject:  markarian
+Subject:  Interstellar medium, nebulae
+	Optical :  1
+	Infrared :  1
+Subject:  wenss
+Subject:  euvecat1
+Subject:  gpsr5
+Subject:  euvecat2
+Subject:  Ephemerides
+Subject:  sterngrb
+Subject:  Spectrum
+	Optical :  8
+Subject:  Space Observatory
+	Optical :  1
+Subject:  grbcatbox
+Subject:  xmmlog
+Subject:  gwsstrpcxo
+Subject:  wds1996
+Subject:  north20cm
+Subject:  cdfn2msoid
+
+##################################################
+Ranking by amount of type of resources
+Resource: &  scs  &  10463  \\
+Resource: &  sia  &  175  \\
+Resource: &  ssa  &  48  \\
+Resource: &  tap  &  33  \\
