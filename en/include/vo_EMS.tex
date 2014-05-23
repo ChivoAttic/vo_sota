@@ -27,7 +27,112 @@ the VO supports as a whole.
 
 \subsection{VO Resources by Type of Service}
 
+We have selected the four most known IVOA services described in Section~\ref{sec:popservices}, namely
+\verb+SCS+,\verb+SIA+,\verb+SSA+ and \verb+TAP+. We've asked the Registry for the number of resources 
+that are available for each one of them. Please note that a resource correspond to a whole database, where
+each one might have from one to a huge number of entries depending on the service. 
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Service} & \textbf{Resources} & \textbf{Publishers} & \textbf{No
+Information} \\
+\hline
+SCS  &  10463 & 165 & 4.7 \% \\
+SIA  &  175 & 33 & 0.6 \% \\
+SSA  &  48  & 29 & 8.3 \% \\
+TAP  &  33  & 14 & 18.2 \% \\
+\hline
+\end{tabular}
+\label{tab:serviceRanking}
+\caption{Resources and publishers for each IVOA service. The last column
+presents the percentage of resources that do not inform a publisher.}
+\end{center}
+\end{table}
+
+Table~\ref{tab:serviceRanking} shows how many resources are available for the
+selected services, including the number of publishers that offer the service
+and the percentage of resources that do not inform a publisher\footnote{The
+publisher field is optional in the registry standard}. Clearly, the simple
+cone search (SCS) service is the most popular service, yet we have to note
+here that around the 85\% of the resources are concentrated in one publisher,
+and in fact the 90\% of them are concentrated in only two. Nevertheless, the 
+10\% of the total SCS resources is still one order larger than its follower, 
+the SIA standard. This results arises naturally from the fact that every
+observation has an angular position and field of view, so a SCS can be 
+developed for almost every astronomical data set.
+
+\rem{MA}{Say More}
+
 \subsection{VO Resources in the Electromagnetic Spectrum}
+
+One of the interesting queries that can be asked to the registry is
+to which wavelength a resource belongs to. This not only simplifies
+searching for appropriate resources, but it also give us the 
+\emph{big picture} of the services coverage. As expected, 
+the resources are scattered over the whole spectrum, where
+only TAP fails to offer services in the Gamma-ray, UV, extreme UV, and Millimeter
+wavebands. All the other shows a fair coverage of the spectrum, considering
+that only the 3\% of the resources does not inform wavelength band. 
+As an example, 
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{VO} & GR & XR & EU & UV & OP & IR & ML & RD \\
+\hline
+\hline
+  ESO - Science Archive Facility  & & & & X & X & X & & \\
+\hline
+  Space Telescope Science Institute & & & & X & & & & \\
+\hline
+  VO-Paris - LUTH  & X & & & & & & & \\
+\hline
+  INTA/LAEFF  & & & & & X & & & \\
+\hline
+  WFAU, Institute for Astronomy & & & & & X & & & \\
+\hline
+  MAST  & & & X & X & X & & & \\
+\hline
+  Institut d'Astrophysique de Paris  & & & X & & & & & \\
+\hline
+  Space Telescope Science Institute & & & & X & X & X & & \\
+\hline
+  VO-Paris - IMCCE  & & & & & X & X & & \\
+\hline
+  WFAU  & X & X & & & & & & \\
+\hline
+  JVO  & & & & & X & & & \\
+\hline
+  Instituto de Astrofsica de Andaluca & & & & X & X & X & & \\
+\hline
+  VO-Paris Data Centre - GEPI  & & & & & X & & & \\
+\hline
+  Laboratoire d'Astrophysique de Marseille  & & & & & X & & & \\
+\hline
+  Instituto de Astrofsica de Andaluca  & & X & & X & X & X & & \\
+\hline
+  VO-Paris Data Centre - LESIA  & & & & X & X & & & \\
+\hline
+  GAVO DC team  & & & & X & X & X & & \\
+\hline
+  NASA/IPAC Extragalactic Database  & X & X & X & X & X & X & X & X \\
+\hline
+  LUPM  & & & & X & X & & & \\
+\hline
+  CRAL-Observatoire de Lyon  & & & & & X & & & \\
+\hline
+  Ivo://Bass2000   & & & & & X & & & \\
+\hline
+\end{tabular}
+\label{tab:SIAEMS}
+\caption{}
+\end{center}
+\end{table}
+
 
 \subsection{VO Resources by Observation Subject}
 
