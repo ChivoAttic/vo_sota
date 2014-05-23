@@ -135,7 +135,7 @@ for i in publishers:
     for j in publishers[i]:
         if i == "scs":
             if publishers[i][j]["amount"] >= 100:
-                print publishers[i][j]
+                print "Publisher: ", j.encode('ascii', 'ignore'), " ", publishers[i][j]
             else:
                 others += publishers[i][j]["amount"]      
         else:
@@ -154,7 +154,7 @@ for i in publishersWW:
     for j in publishersWW[i]:
         if i == "scs":
             if publishersWW[i][j]["amount"] >= 100:
-                print publishersWW[i][j]
+                print "Publisher: ", j.encode('ascii', 'ignore'), publishersWW[i][j]
             else:
                 others += publishersWW[i][j]["amount"]      
         else:

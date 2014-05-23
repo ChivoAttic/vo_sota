@@ -87,9 +87,9 @@ Publisher:  CRAL-Observatoire de Lyon   {'wavebands': [u'Optical'], 'amount': 1}
 
 ##################################################
 Elements in publishers[ scs ]
-{'wavebands': [], 'amount': 469}
-{'wavebands': [u'Optical', u'X-ray', u'Radio', u'Infrared', u'UV', u'Gamma-ray', u'Millimeter', u'EUV'], 'amount': 9087}
-{'wavebands': [u'Optical', u'Radio', u'X-ray', u'UV', u'Infrared', u'Gamma-ray', u'EUV'], 'amount': 744}
+Publisher:  LEDAS, University of Leicester   {'wavebands': [], 'amount': 469}
+Publisher:  CDS   {'wavebands': [u'Optical', u'X-ray', u'Radio', u'Infrared', u'UV', u'Gamma-ray', u'Millimeter', u'EUV'], 'amount': 9087}
+Publisher:  NASA/GSFC HEASARC   {'wavebands': [u'Optical', u'Radio', u'X-ray', u'UV', u'Infrared', u'Gamma-ray', u'EUV'], 'amount': 744}
 
 Others publishers[scs]:  163
 
@@ -160,8 +160,8 @@ Publisher:  CRAL-Observatoire de Lyon {'wavebands': [u'Optical'], 'amount': 1}
 
 ##################################################
 Elements in publishers[ scs ]
-{'wavebands': [u'Optical', u'Radio', u'X-ray', u'UV', u'Infrared', u'Gamma-ray', u'EUV'], 'amount': 744}
-{'wavebands': [u'Optical', u'X-ray', u'Radio', u'Infrared', u'UV', u'Gamma-ray', u'Millimeter', u'EUV'], 'amount': 8850}
+Publisher:  NASA/GSFC HEASARC {'wavebands': [u'Optical', u'Radio', u'X-ray', u'UV', u'Infrared', u'Gamma-ray', u'EUV'], 'amount': 744}
+Publisher:  CDS {'wavebands': [u'Optical', u'X-ray', u'Radio', u'Infrared', u'UV', u'Gamma-ray', u'Millimeter', u'EUV'], 'amount': 8850}
 
 Others publishers[scs]:  115
 
