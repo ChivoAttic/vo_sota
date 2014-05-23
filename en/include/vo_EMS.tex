@@ -27,8 +27,8 @@ the VO supports as a whole.
 
 \subsection{VO Resources by Type of Service}
 
-We have selected the four most known IVOA services described in Section~\ref{sec:popservices}, namely
-\verb+SCS+,\verb+SIA+,\verb+SSA+ and \verb+TAP+. We've asked the Registry for the number of resources 
+We have selected the four most known IVOA services standards described in Section~\ref{sec:popservices}, namely
+\verb+SCS+, \verb+SIA+, \verb+SSA+ and \verb+TAP+. We've queried the Registry for the number of resources 
 that are available for each one of them. Please note that a resource correspond to a whole database, where
 each one might have from one to a huge number of entries depending on the service. 
 
@@ -56,18 +56,34 @@ selected services, including the number of publishers that offer the service
 and the percentage of resources that do not inform a publisher\footnote{The
 publisher field is optional in the registry standard}. Clearly, the simple
 cone search (SCS) service is the most popular service, yet we have to note
-here that around the 85\% of the resources are concentrated in one publisher,
+here that around the 85\% of the resources are concentrated in one publisher\footnote{Which corresponds to the Centre de Données astronomiques de Strasbourg},
 and in fact the 90\% of them are concentrated in only two. Nevertheless, the 
 10\% of the total SCS resources is still one order larger than its follower, 
-the SIA standard. This results arises naturally from the fact that every
+the SIA standard. This result arises naturally from the fact that every
 observation has an angular position and field of view, so a SCS can be 
 developed for almost every astronomical data set.
 
-\rem{MA}{Say More}
+As explained above, the publishers do not correspond to country-VOs, but 
+to the names of the institutions that host the services, so that is why the SCS
+service has 165 publishers instead of only a few country-VOs. In fact, well
+orginized VOs still include their organizational branches in the publisher field,
+such as VO-Paris that has at least 3 branches.
+
+The relatively low number of services of SSA and TAP can be explained as follows:
+\begin{itemize}
+\item SSA is a very specialized service, that only allows 1-D spectroscopy data that commonly 
+needs on-line transformation to the SSA format. Also, the spectroscopy instrumentation is
+scarse compared to imaging instruments in the observatories. Also, is very likely that for each
+SIA or SSA resource, a SCS service exists also for the same database.
+\item TAP is a very generic service, because almost any public table can be queried. 
+The natural implementation is to provide only one TAP service for all the databases
+in the same institution (as our results confirm), because TAP is a more a technical 
+service than a scientific resource. 
+\end{itemize} 
 
 \subsection{VO Resources in the Electromagnetic Spectrum}
 
-One of the interesting queries that can be asked to the registry is
+One of the interesting queries that can be done using the registry is
 to which wavelength a resource belongs to. This not only simplifies
 searching for appropriate resources, but it also give us the 
 \emph{big picture} of the services coverage. As expected, 
@@ -75,67 +91,119 @@ the resources are scattered over the whole spectrum, where
 only TAP fails to offer services in the Gamma-ray, UV, extreme UV, and Millimeter
 wavebands. All the other shows a fair coverage of the spectrum, considering
 that only the 3\% of the resources does not inform wavelength band. 
-As an example, 
 
 
 \begin{table}
 \begin{center}
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
 \hline
-\textbf{VO} & GR & XR & EU & UV & OP & IR & ML & RD \\
+\textbf{VO} & Resources & GR & XR & EU & UV & OP & IR & ML & RD \\
 \hline
 \hline
-  ESO - Science Archive Facility  & & & & X & X & X & & \\
+  ESO - Science Archive Facility & 1  & & & & X & X & X & & \\
 \hline
-  Space Telescope Science Institute & & & & X & & & & \\
+  Space Telescope Science Institute & 2 & & & & X & & & & \\
 \hline
-  VO-Paris - LUTH  & X & & & & & & & \\
+  VO-Paris - LUTH & 1  & X & & & & & & & \\
 \hline
-  INTA/LAEFF  & & & & & X & & & \\
+  INTA/LAEFF & 1  & & & & & X & & & \\
 \hline
-  WFAU, Institute for Astronomy & & & & & X & & & \\
+  WFAU, Institute for Astronomy & 1 & & & & & X & & & \\
 \hline
-  MAST  & & & X & X & X & & & \\
+  MAST & 10  & & & X & X & X & & & \\
 \hline
-  Institut d'Astrophysique de Paris  & & & X & & & & & \\
+  Institut d'Astrophysique de Paris & 1  & & & X & & & & & \\
 \hline
-  Space Telescope Science Institute & & & & X & X & X & & \\
+  Space Telescope Science Institute & 1 & & & & X & X & X & & \\
 \hline
-  VO-Paris - IMCCE  & & & & & X & X & & \\
+  VO-Paris - IMCCE & 1  & & & & & X & X & & \\
 \hline
-  WFAU  & X & X & & & & & & \\
+  WFAU & 1  & X & X & & & & & & \\
 \hline
-  JVO  & & & & & X & & & \\
+  JVO & 1  & & & & & X & & & \\
 \hline
-  Instituto de Astrofsica de Andaluca & & & & X & X & X & & \\
+  Instituto de Astrofsica de Andaluca & 1 & & & & X & X & X & & \\
 \hline
-  VO-Paris Data Centre - GEPI  & & & & & X & & & \\
+  VO-Paris Data Centre - GEPI  & 2 & & & & & X & & & \\
 \hline
-  Laboratoire d'Astrophysique de Marseille  & & & & & X & & & \\
+  Laboratoire d'Astrophysique de Marseille & 1 & & & & & X & & & \\
 \hline
-  Instituto de Astrofsica de Andaluca  & & X & & X & X & X & & \\
+  Instituto de Astrofsica de Andaluca & 1  & & X & & X & X & X & & \\
 \hline
-  VO-Paris Data Centre - LESIA  & & & & X & X & & & \\
+  VO-Paris Data Centre - LESIA  & 1  & & & & X & X & & & \\
 \hline
-  GAVO DC team  & & & & X & X & X & & \\
+  GAVO DC team  & 5  & & & & X & X & X & & \\
 \hline
-  NASA/IPAC Extragalactic Database  & X & X & X & X & X & X & X & X \\
+  NASA/IPAC Extragalactic Database & 1  & X & X & X & X & X & X & X & X \\
 \hline
-  LUPM  & & & & X & X & & & \\
+  LUPM & 1  & & & & X & X & & & \\
 \hline
-  CRAL-Observatoire de Lyon  & & & & & X & & & \\
+  CRAL-Observatoire de Lyon & 1 & & & & & X & & & \\
 \hline
-  Ivo://Bass2000   & & & & & X & & & \\
+  Ivo://Bass2000 & 1 & & & & & X & & & \\
 \hline
 \end{tabular}
-\label{tab:SIAEMS}
-\caption{}
+\label{tab:SSAEMS}
+\caption{Publishers in the Electromagnetic Spectrum for SSA resources.}
 \end{center}
 \end{table}
 
+In general, and as expected, the resources are concentrated around the optical waveband as can be
+seen in the example Table~\ref{tab:SSAEMS}. This table shows the number of SSA resources by publisher,
+including the waveband where they inform that the data belongs to. SSA was selected as an example due to
+space reasons, but the same result can be obtained for SCS, SIA and TAP. In particular, we can observe that
+milimiter and radio resources are scarse, which is stange in the sense that most of the instruments in these
+wavebands can perform spectroscopy. This is because the SSA service is very specific to certain type of
+data, so efforts are been made to extend this service to support spectral data cubes as the ones that
+the ALMA observatory is generating. 
 
-\subsection{VO Resources by Observation Subject}
+\subsection{VO Resources by Scientific Subject}
 
+Each resource is commonly focused on certain science subjects, so a field with this name was included
+as a suggestion in the registry standard. Impresively, this suggestion has been strongly followed by the VO.
+In fact, only less than 0.4\% of all the resources (including the four standards) do not inform a subject. 
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Subject} & \textbf{Resources} \\
+\hline
+Galaxies  &  1994  \\
+Stars  &  1566  \\
+Photometry  &  1400  \\
+Photometry:wide-band  &  1176  \\
+Redshifts  &  1018  \\
+Stars:variable  &  985  \\
+Velocities  &  919  \\
+Open_Clusters  &  787  \\
+Spectroscopy  &  715  \\
+\hline
+\end{tabular}
+\label{tab:resSub}
+\caption{Most popular subjects, considering all the resources (12357) from the four services.}
+\end{center}
+\end{table}
+
+In Table~\ref{tab:resSub}, the scientific subjects with more resources are presented. Besides the ones
+presented in the table there are 837 other subjects, where one resource can have many subjects. 
+The most popular subjects are obviously very general categorizations (like stars and galaxies), but
+more specific ones, such as variable stars or open clusters, can be very usefull tags for selecting
+resources. An interesting result here is that 715 resources declare to be spectroscopy data\footnote{Moreover, this number does not include tags that are implicitely spectroscopy data such as ``Galaxies:spectra''.}, but we
+found only 48 SSA resources. This means that most of the spectroscopy data is offered through other
+services (like SCS), but not using SSA. There are two complementary reasons for this issue: the first
+is that SSA is a very specific service as explained above, and the second is that the SSA service requires
+much more effort and metadata than SCS, so the VOs may not consider prioritary to mount this service.
+In any case, an improved spectral access standard is being developed.
+
+Please note that the queries perfomed in the past sections can be easely combined. For example,
+the number of resources that are tagged as Galaxies that have data in optical band are 1485, while the ones in
+the infrared band are 493 and in the UV band are only 127 (again this does not sum 1994 because a resource can have data
+in more than one band) . 
+
+
+% \textbf{Others} &  837    \\
+%total amount:  12357
 
 %Most of virtual observatories usually contribute to development of tools for
 %for national astronomical instruments. These tools can be new source codes for
