@@ -264,13 +264,18 @@ language descriptions or other internal implementation details.
 
 Currently, the most popular \emph{services} are those defined for
 the \textbf{Data Access Layer} (right side of Figure~\ref{figure:ivoarch}), 
-probably because recovering data is the first task that a VO node must offer.
+probably because recovering data is the first thing that a VO node must offer.
 We highlight here the four most used ones:
 \begin{itemize}
-\item \textbf{SCS}: 
-\item \textbf{SIA}: 
-\item \textbf{SSA}: 
-\item \textbf{TAP}: 
+\item \textbf{SCS}: Simple Cone Search, a query that describes a sky position and a
+angular distance, defining a cone on the sky where to search for resources.
+\item \textbf{SIA}: Simple Image Access, a query that defines a rectangular region on
+the sky where to find images.
+\item \textbf{SSA}: Simple Spectral Access, an interfaces to remotely discover
+and access one-dimensional spectra. 
+\item \textbf{TAP}: Table Access Protocol, a service protocol for accessing
+general table data. The access is provided for both database and table metadata
+as well as for actual table data.
 \end{itemize}
 
 On the other hand, identifying the most used ``non-service'' standards is much
@@ -279,10 +284,10 @@ than services, and no all the VO nodes accurately report their IVOA compliance.
 Regardless this, we highlight here four ``non-service'' standard that are usually important
 to consider:
 \begin{itemize}
-\item \textbf{ADQL}: 
-\item \textbf{ObsCore}: 
-\item \textbf{...}: 
-\item \textbf{...}: 
+\item \textbf{ADQL}: Astronomical Data Query Language.
+\item \textbf{ObsCore}: Observation Core.
+\item \textbf{VOTable}: 
+\item \textbf{VOSpace}: 
 \end{itemize}
 
 
