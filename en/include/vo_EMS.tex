@@ -1,4 +1,5 @@
-\section{Virtual Observatory Registry }
+\section{Virtual Observatory Registry}
+\label{sec:registry}
 
 The description of the work done by each IVOA member
 in the previous section is an accurate political, organizational 
@@ -22,12 +23,32 @@ the VO supports as a whole.
 
 \subsection{The Registry}
 
-The IVOA registry allows users and applications to discover data collections and
-metadata, as well as services in the resource layer. The registry contains
-descriptions of the VO resources, which are divided in four standard registers:
+The IVOA registry allows users and applications to discover data collections,
+metadata and services in the resource layer for a particular scientific
+problem. In fact, a resource it can be virtually any information that might be
+relevant to astronomers, from abstract concepts to images and catalogs. 
+The specification is based on a general, distributed model composed of
+so-called searchable and publishing registries:
 \begin{itemize}
-\item \textbf{Resource Metadata:} 
+\item A \emph{searchable} registry offers a list of resources through searching the 
+metadata contained in the records for a given selection criterion.
+This allows aggregating several resources from different providers 
+without the need of visiting and searching in each provider's site just to
+know if the data is useful for the scientific objectives.
+The process of searching through all the VO sites is usually called harvesting.
+\item A \emph{publishing} registry allows offering resources in a standard way
+in order to be harvested by a searchable registry. This is a much more
+simpler registry than the previous, where the only objective is to 
+inform others which are the resources that the registry offers.
 \end{itemize}
+
+Even though there are some local searchable registries in some VOs, the
+main idea of these ones is to be global: each VO can have one or more
+publishing registries from which a searchable registry feeds to give
+a global answer for a selection criterion. For the following sections
+we will use the VO-Paris
+registry\footnote{\texttt{http://voparis-registry.obspm.fr/vo/ivoa/1/voresources/search}}
+because is one of the most complete and functional global searchable registries.
 % description of the registry
 % the registry that we will use
 
@@ -35,7 +56,7 @@ descriptions of the VO resources, which are divided in four standard registers:
 
 We have selected the four most known IVOA services standards described in Section~\ref{sec:popservices}, namely
 \verb+SCS+, \verb+SIA+, \verb+SSA+ and \verb+TAP+. We've queried the Registry for the number of resources 
-that are available for each one of them. Please note that a resource correspond to a whole database, where
+that are available for each one of them. Please note that a resource may correspond to a whole database, where
 each one might have from one to a huge number of entries depending on the service. 
 
 \begin{table}
@@ -205,7 +226,7 @@ In any case, an improved spectral access standard is being developed.
 Please note that the queries performed in the past sections can be easily combined. For example,
 the number of resources that are tagged as Galaxies that have data in optical band are 1485, while the ones in
 the infrared band are 493 and in the UV band are only 127 (again this does not sum 1994 because a resource can have data
-in more than one band) . 
+in more than one band). 
 
 
 % \textbf{Others} &  837    \\

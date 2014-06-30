@@ -1,0 +1,169 @@
+% easychair.tex,v 3.2 2012/05/15
+%
+% Select appropriate paper format in your document class as
+% instructed by your conference organizers. Only withtimes
+% and notimes can be used in proceedings created by EasyChair
+%
+% The available formats are 'letterpaper' and 'a4paper' with
+% the former being the default if omitted as in the example
+% below.
+%
+\documentclass{easychair}
+%\documentclass[debug]{easychair}
+%\documentclass[verbose]{easychair}
+%\documentclass[notimes]{easychair}
+%\documentclass[withtimes]{easychair}
+%\documentclass[a4paper]{easychair}
+%\documentclass[letterpaper]{easychair}
+
+% This provides the \BibTeX macro
+\usepackage{doc}
+\usepackage{makeidx}
+
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{lscape}
+\usepackage{tikz}
+\usepackage{longtable}
+
+
+% In order to save space or manage large tables or figures in a
+% landcape-like text, you can use the rotating and pdflscape
+% packages. Uncomment the desired from the below.
+%
+% \usepackage{rotating}
+% \usepackage{pdflscape}
+
+% If you plan on including some algorithm specification, we recommend
+% the below package. Read more details on the custom options of the
+% package documentation.
+%
+% \usepackage{algorithm2e}
+
+% Some of our commands for this guide.
+%
+\newcommand{\easychair}{\textsf{easychair}}
+\newcommand{\miktex}{MiK{\TeX}}
+\newcommand{\texniccenter}{{\TeX}nicCenter}
+\newcommand{\makefile}{\texttt{Makefile}}
+\newcommand{\latexeditor}{LEd}
+
+%\makeindex
+
+\newcommand{\rem}[2]{{\bf [#1] #2}}
+
+
+%% Document
+%%
+\begin{document}
+
+%% Front Matter
+%%
+% Regular title as in the article class.
+%
+
+\title{A Survey on the Virtual Observatory}
+
+% \titlerunning{} has to be set to either the main title or its shorter
+% version for the running heads. When processed by
+% EasyChair, this command is mandatory: a document without \titlerunning
+% will be rejected by EasyChair
+
+\titlerunning{A Survey on the VO}
+
+% Authors are joined by \and. Their affiliations are given by \inst, which indexes
+% into the list defined using \institute
+%
+\author{
+Serguei A. Mokhov\inst{1}\thanks{Designed and implemented the class style}
+\and
+    Geoff Sutcliffe\inst{2}\thanks{Did numerous tests and provided a lot of suggestions}
+\and
+   Andrei Voronkov\inst{3}\thanks{Masterminded EasyChair and created versions
+     3.0--3.3 of the class style}\\
+\and
+   Graham Gough\inst{3}\thanks{Changed author list format.}\\
+}
+
+% Institutes for affiliations are also joined by \and,
+\institute{
+  Concordia University,
+  Montreal, Quebec, Canada\\
+  \email{mokhov@cse.concordia.ca}
+\and
+   University of Miami,
+   Miami, Florida, U.S.A.\\
+   \email{geoff@cs.miami.edu}\\
+\and
+   University of Manchester,
+   Manchester, U.K.\\
+   \email{andrei@voronkov.com, graham@cs.man.ac.uk}\\
+ }
+%  \authorrunning{} has to be set for the shorter version of the authors' names;
+% otherwise a warning will be rendered in the running heads. When processed by
+% EasyChair, this command is mandatory: a document without \authorrunning
+% will be rejected by EasyChair
+
+\authorrunning{Mokhov, Sutcliffe, Voronkov and Gough}
+
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+This paper presents a short survey on the astronomical Virtual Observatories
+(VOs) that are
+part of the International Virtual Observatory Alliance (IVOA). From how they are
+distributed worldwide to their specialization range on the electromagnetic
+spectrum,
+we summarize key aspects of the current 19 VO members.
+
+\end{abstract}
+
+\setcounter{tocdepth}{2}
+{\small
+\tableofcontents}
+
+%\section{To mention}
+%
+%Processing in EasyChair - number of pages.
+%
+%Examples of how EasyChair processes papers. Caveats (replacement of EC
+%class, errors).
+
+\pagestyle{empty}
+
+\input{include/introduction}
+
+\input{include/vo_distribution}
+
+\input{include/vo_services}
+
+\input{include/vo_platforms}
+
+\input{include/vo_EMS}
+
+\input{include/conclusions}
+
+\label{sect:bib}
+\bibliographystyle{plain}
+%\bibliographystyle{alpha}
+%\bibliographystyle{unsrt}
+%\bibliographystyle{abbrv}
+\bibliography{iccs2014}
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+% Index
+%\printindex
+
+%------------------------------------------------------------------------------
+\end{document}
+
+% EOF
