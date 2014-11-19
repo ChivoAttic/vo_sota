@@ -1,5 +1,5 @@
 %\section{Distribution of IVOA Virtual Observatories Worlwide and its Projects}
-\section{IVOA Virtual Observatories Worldwide}
+\section{IVOA Virtual Observatories}
 \label{sec:ivoa}
 
 Astronomy has always been a data-driven science, and therefore,
@@ -159,14 +159,6 @@ the IVOA.
 \end{table}
 \normalsize
 
-\begin{figure}%[h]
-\begin{center}
-	\includegraphics[width=0.9\linewidth]{img/VO-worldwide.png}
-	\caption{International Virtual Observatory Alliance presence in the world.}
-\label{figure:worldview}
-\end{center}
-\end{figure}
-
 \subsection{The IVOA}
 
 Since June 2002, different virtual observatory projects have come to integrate the
@@ -178,21 +170,11 @@ others institutions. The members of the Virtual Observatory share
 knowledge between them and the community in a standardized manner. They
 themselves are who develop these standards for data exchange and
 interoperability.
-
 Table \ref{table:partners} shows the partners of IVOA up to
-February 2014 that represents a nation, and in Figure~\ref{figure:worldview} the
-presence of IVOA worldwide is shown. Also, two international organizations
+November 2014 that represents a nation. Also, two international organizations
 are part of the VO, including the European Space Agency VO
 (ESA-VO\footnote{http://www.sciops.esa.int/index.php?project=SAT\&page=ESAVOIntro})
 and the EURO-VO~\footnote{http://www.euro-vo.org/}, which is a federation of several VOs in Europe.
-The founders and first members are the same countries that have
-been developing astronomy and astronomical instruments in the world, 
-such as in Eastern Europe, North America, east Asia and Oceania. During the last few years,
-new VOs in other regions were integrated to IVOA, specially in the southern
-hemisphere, like the two youngest members: South Africa and Chile. 
-This offers not only a better worldwide coverage, but the chance of
-better exploiting the high-quality data produced by observatories 
-located in those countries, both locally and globally. 
 
 \subsection{IVOA Architecture}
 
@@ -260,8 +242,8 @@ and recommendations that each VO node should implement. A standard usually
 define a basic set of elements to be implemented in order
 to be IVOA compliant, but it also define recommendations of optional
 elements and protocols. A clear distinction can be made between those
-standards that define service protocols, and those that define data models
-language descriptions or other internal implementation details.
+standards that define service protocols, and those that define data models,
+semantic descriptions or other internal implementation details.
 
 Currently, the most popular \emph{services} are those defined for
 the \textbf{Data Access Layer} (right side of Figure~\ref{figure:ivoarch}), 
@@ -296,6 +278,19 @@ in the FITS table standard.
 distributed storage that host persistent and interchangeable data.
 \end{itemize}
 
+At last, we want to highlight the important effort made by IVOA in semantics:
+it is not enough to have the same data structures and protocols of
+communications, the contents of data and metadata should mean the same 
+independent of the specific VO in order to have true interoperability.
+The semantics working group has developed a standard for Unified Content
+Descriptors (UCD), a maintenance protocol of these descriptors, a 
+standard vocabulary for the VO, and a standard syntax and semantics for 
+units. The importance of developing VO tools with standard semantics goes
+beyond machine interoperability, it helps with human interoperability.
+A VO-compliant tool should not only get along with VO-services, but also
+provide an unified and understandable namespace and context to human users
+(i.e. astronomers), allowing more efficient searching, processing and 
+visualization.
 
 %The founder members of IVOA a In the southern hemisphere, 
 
