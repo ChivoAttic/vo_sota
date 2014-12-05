@@ -30,61 +30,6 @@ with different goals, working-style and budgets is the central objective of
 the IVOA.
 
 
-%\subsection{Organizations}
-%\begin{itemize}
-%	\item \textbf{CVO}
-%	\item Canadian Astronomy Data Centre
-%	\item \textbf{VAO}
-%	\item National Science Foundation, NSF
-%	\item National Aeronautics and Space Administration, NASA 
-%	\item Associated Universities, Inc, AUI.
-%	\item Association of Universities for Reseach in Astronomy, AURA
-%	\item \textbf{BRAVO}
-%	\item Brazilian Astronomical Society, SBA
-%	\item National Institue for Science and Technology in Astrophysics, INCT-A
-%	\item \textbf{ChiVO}
-%	\item 5 universities, supported by ALMA, REUNA
-%	\item \textbf{NOVA}
-%	\item 8 institutions, National Universitiy of La Plata, Faculty of Astronomical 
-%		Sciences and Geophysics of la Plata
-%	\item \textbf{ArVO}
-%	\item Digital First Byurakan Survey, DFBS
-%	\item \textbf{AstroGrid}
-%	\item Particle Physics and Astronomy and Research Council  (PPARC)
-%	\item Sciency \& Technology Facilities Council (STFC)
-%	\item \textbf{ESA-VO}
-%	\item Study
-%	\item \textbf{EURO-VO}
-%	\item Continuation of Astrophysical Virtual Observatory, European Commision and six organization
-%	\item \textbf{GAVO}
-%	\item Federal Ministry of Education and Research (BMBF)
-%	\item \textbf{SVO}
-%	\item Centro de Astrobiología (INTA-CSIC)
-%	\item Artificial Intelligence Department of the National University of Distance Education
-%	\item University of Cádiz and Center of Scientific and Academic Services of Catalonia (CESCA)
-%	\item \textbf{VObs.it}
-%	\item Italian National Institute for Astrophysics
-%	\item Information System Units
-%	\item \textbf{Ukrainian}
-%	\item Ukrainian Astronomical Association (UAA)
-%	\item \textbf{SA$^3$}
-%	\item National Research Fundation
-%	\item South African Astronomical Observatory
-%	\item Hartebeesthoek Radio Astronomy Observatory
-%	\item Square Kilometer Array South Africa 
-%	\item \textbf{China-VO}
-%	\item National Astronomical Observatories
-%	\item Chinese Academy of Sciences
-%	\item \textbf{JVO}
-%	\item National Astronomical Observatory of Japan
-%	\item Fujitsu
-%	\item \textbf{VOI}
-%	\item Inter University Center for Astronomy and Astrophysics
-%	\item Ministry of Communication and Information Technology
-%	\item \textbf{Aus-VO}
-%	\item Linkage Infrastructure, Equipment and Facilities
-%\end{itemize}
-
 \scriptsize
 \begin{table}[h]
 \centering
@@ -163,7 +108,8 @@ the IVOA.
 
 Since June 2002, different virtual observatory projects have come to integrate the
 International Virtual Observatory Alliance (IVOA) under the \textbf{Guidelines
-for Participation\footnote{\url{http://www.ivoa.net/documents/latest/IVOAParticipation.html}}}. 
+for
+Participation\footnote{\url{http://www.ivoa.net/documents/latest/IVOAParticipation.html}}}. 
 These projects are funded through national and international programs, both governmental and 
 private, in collaboration with various centers of scientific studies, universities and
 others institutions. The members of the Virtual Observatory share
@@ -246,7 +192,7 @@ standards that define service protocols, and those that define data models,
 semantic descriptions or other internal implementation details.
 
 Currently, the most popular \emph{services} are those defined for
-the \textbf{Data Access Layer} (right side of Figure~\ref{figure:ivoarch}), 
+the \textbf{Data Access Layer} (DAL) (right side of Figure~\ref{figure:ivoarch}), 
 probably because recovering data is the first thing that a VO node must offer.
 We highlight here the four most used ones:
 \begin{itemize}
@@ -292,137 +238,44 @@ provide an unified and understandable namespace and context to human users
 (i.e. astronomers), allowing more efficient searching, processing and 
 visualization.
 
-%The founder members of IVOA a In the southern hemisphere, 
+\subsection{Summary of VO Toolkits}
 
-%Almost half of IVOA virtual observatories are supported in Europe:
-%\footnote{The
-%Observatoire Virtuel France is ommited in \textbf{Europe} subsection of
-%\textbf{List of Virtual Observatories} section by lack of the information.} 
-%9 of
-%the total; 1 belong to Africa, 1 to Australia, 2 to North America, 3 to South
-%America and 5 to Asia. 
+\begin{table*}[h!t]
+   \centering
+   \begin{tabular}{|l|l|l|l|l|l|}
+   \hline
+   \textbf{Toolkit} & \textbf{VO} & \textbf{DAL Services} & \textbf{Language} &
+\textbf{Download} & \textbf{Support} \\
+   \hline
+   \hline
+DALToolKit & ESA-VO & SCS/SIA & Java & Available & No\\
+   \hline
+SVOCat & SVO & SCS            & Unknown & On demand & On demand \\
+   \hline
+MySpec-MyImg & SVO & SIA/SSA  & Unknown & On demand & On demand \\
+   \hline
+SAADA & VO-France & SCS/SIA/SSA/TAP & Java & Available & Yes \\
+   \hline
+DALServer & US-VAO & SCS/SIA/SSA/SLA & Java & Available & No \\
+   \hline
+VO-Dance & VObs.it & SCS/SIA/SSA & Java/Python & Available & Yes \\
+   \hline
+DaCHS & GAVO & SCS/SIA/SSA/TAP/Reg & Python & Available & Yes \\
+   \hline
+OpenCADC & CVO & SCS/SIA/SSA/TAP/Reg & Java/Python & Available & Yes\\
+   \hline
+DSA & AstroGrid & SCS/TAP & Java & On demand & No \\
+  \hline
+   \end{tabular}
+   \caption{Toolkits}
+   \label{table:tk}
+\end{table*}
 
-
-%\begin{figure}%[h]
-%\begin{center}
-%	\includegraphics[scale=0.6]{img/vo_distribution.png}
-%	\caption{International Virtual Observatory Alliance distribution per
-%             continent.}
-%\end{center}
-%\end{figure}
-
-%<<<<<<< HEAD
-
-%=======
-%\begin{figure}%[h]
-%\begin{center}
-%	\includegraphics[width=0.9\linewidth]{img/VO-worldwide.png}
-%	\caption{International Virtual Observatory Alliance presence in the world.}
-%\end{center}
-%\end{figure}
-%
-%\rem{JA}{A lot of initiatives converges in one and only VO. Access worldwide to 
-%scientists.}
-
-%\rem{MA}{subsec: Put here the infrastructure and the organizations}
-%>>>>>>> 3def46e3eefecbe775b056101750c01287231178
-%\subsection{Infrastructure}
-%\begin{itemize}
-%\item \textbf{EURO-VO}
-%\item \textbf{EURO-VO Data Centre Alliance (EuroVO-DCA)}:
-%it is supported by the European Union (EU) in the framework of the FP6
-%e-Insfraestructure Communication Network Development initiative (project
-%RI031675). It began on 1st of September, 2006, and ended on 31th of December,
-%2008.
-%\item \textbf{EURO-VO Astronomical Infraestructure for Data Access
-%              (EuroVO-AIDA)}:
-%it is supported by the European Union (UE) in the framework of the FP7
-%e-Infrastructure Scientific Research Repositories initiative (%project
-%RI2121104). It began on 1st of February, 2008, and ended on 31th of July, 2010.
-%\end{itemize}
-
-%<<<<<<< HEAD
-%=======
-%\subsection{Organizations}
-%\rem{MA}{Funding and Support: important actors of a VO}
-%\begin{itemize}
-%	\item \textbf{CVO}
-%	\item Canadian Astronomy Data Centre
-%	\item \textbf{VAO}
-%	\item National Science Foundation, NSF
-%	\item National Aeronautics and Space Administration, NASA 
-%	\item Associated Universities, Inc, AUI.
-%	\item Association of Universities for Reseach in Astronomy, AURA
-%	\item \textbf{BRAVO}
-%	\item Brazilian Astronomical Society, SBA
-%	\item National Institue for Science and Technology in Astrophysics, INCT-A
-%	\item \textbf{ChiVO}
-%	\item 5 universities, supported by ALMA, REUNA
-%	\item \textbf{NOVA}
-%	\item 8 institutions, National Universitiy of La Plata, Faculty of Astronomical 
-%		Sciences and Geophysics of la Plata
-%	\item \textbf{ArVO}
-%	\item Digital First Byurakan Survey, DFBS
-%	\item \textbf{AstroGrid}
-%	\item Particle Physics and Astronomy and Research Council  (PPARC)
-%	\item Sciency \& Technology Facilities Council (STFC)
-%	\item \textbf{ESA-VO}
-%	\item Study
-%	\item \textbf{EURO-VO}
-%	\item Continuation of Astrophysical Virtual Observatory, European Commision and six organization
-%	\item \textbf{GAVO}
-%	\item Federal Ministry of Education and Research (BMBF)
-%	\item \textbf{SVO}
-%	\item Centro de Astrobiología (INTA-CSIC)
-%	\item Artificial Intelligence Department of the National University of Distance Education
-%	\item University of Cádiz and Center of Scientific and Academic Services of Catalonia (CESCA)
-%	\item \textbf{VObs.it}
-%	\item Italian National Institute for Astrophysics
-%	\item Information System Units
-%	\item \textbf{Ukrainian}
-%	\item Ukrainian Astronomical Association (UAA)
-%	\item \textbf{SA$^3$}
-%	\item National Research Fundation
-%	\item South African Astronomical Observatory
-%	\item Hartebeesthoek Radio Astronomy Observatory
-%	\item Square Kilometer Array South Africa 
-%	\item \textbf{China-VO}
-%	\item National Astronomical Observatories
-%	\item Chinese Academy of Sciences
-%	\item \textbf{JVO}
-%	\item National Astronomical Observatory of Japan
-%	\item Fujitsu
-%	\item \textbf{VOI}
-%	\item Inter University Center for Astronomy and Astrophysics
-%	\item Ministry of Communication and Information Technology
-%	\item \textbf{Aus-VO}
-%	\item Linkage Infrastructure, Equipment and Facilities
-%\end{itemize}
-%>>>>>>> 3def46e3eefecbe775b056101750c01287231178
-
-
-
-%\rem{MA}{subsec: Development lines of VOs and data speciality}
-
-% If Chile became part of International Virtual Observatory Alliance, the
-% distribution of IVOA's members per continent will be as shown in the figure
-% 2. \\
-
-%\begin{comment}
-%\begin{figure}%[h]
-%\begin{center}
-%	\includegraphics[width=110mm]{img/if_chile.png}
-%	\caption{International Virtual Observatory Alliance distribution per
-%             continent if Chile is accepted.}
-%\end{center}
-%\end{figure}
-%\end{comment}
-
-%Without considering the status of the internal projects of the virtual
-%observatories, the membership of Chile would contribute to the cooperation,
-%development and interoperability from America in the same percent that Asia.
-%Furthermore, this fact would be very significant, because a large numbers of
-%astronomical centers like observatories are placed in this country.  For now, is
-%intended to work with a certain quantity of data of ALMA.\\
-
+Several VOs have developed their own software packages (known as toolkits)
+for publishing data under the IVOA architecture and standards.
+IVOA maintains a list of these
+toolkits\footnote{\url{http://wiki.ivoa.net/twiki/bin/view/IVOA/PublishingInTheVONew}}, 
+which is summarized in table~\ref{table:tk}. Some of these toolkits also include
+support for the VOSpace service, but they are usually distributed as a different
+toolkit that works similarly to the main one.
 
