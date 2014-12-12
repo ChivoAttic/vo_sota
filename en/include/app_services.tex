@@ -1,4 +1,4 @@
-\subsection{Summary of Tools and Projects}
+\subsection{Summary of VO-enabled Tools }
 
 The standards and services of a VO are meant to be used in the end 
 by applications. The Applications working group have defined only two major
@@ -6,83 +6,76 @@ standards for application interoperability beyond the services standards:
 (1) the Simple Application Messaging Protocol (SAMP), and (2) the VOTable
 format. These standards, plus all the other protocols and standards 
 allows VO-compliant tools to be developed, which are the endpoints for
-science production. In the next table we summarize the most used tools
+science production. In Table~\ref{table:app} we summarize the most used tools
 and they status.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%$Data Access%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table*}[h]
+\begin{table}[ht!]
 	\centering
-	\begin{tabular}{|l|l|p{8.5cm}|}
+   \scriptsize
+	\begin{tabular}{|l|l|l|}
 	\hline
 	\textbf{User Tool} & \textbf{Country} &  \textbf{Comment}\\
+	\hline								 
+  Aladin & France & Search and visualize images, spectra and catalogs\\
 	\hline
-  Cross-Comparision Tool & USA & a web tool that performs croos-comparisons between one table supplied by the user and other of an online source 
-								catalog, for a user-specified match radius. This returns the all sources in the online catalog that are within the radius.\\
+  AstroStat & India & VOTable-compatible statistics for astronomical datasets\\
 	\hline								 
-  Data Discovery Tool & USA &  A web tool that allows to find datasets from astronomical collections known to the VO like the Hubble Space Telescope 
-									(HST), the Chandra X-ray Observatory, the Spitzer Space Telescope, among other.\\
+  AppLauncher & France & An integrated launcher of VO-tools under SAMP \\
 	\hline								 
-  Time Series Search Tool & USA & A web tool that allows to access the time series data sets at the Harvard Time Series Center (TSC), the NASA 
-									Exoplanet Archive and the Catalina Real-Time Transient Survey, and analize them with the periodogram application 
-									of the NASA Exoplanet Archive.\\
+  Cassis & France & 1D spectral observations search and analysis tool  \\
+	\hline								 
+  Cross-Comparision Tool & USA & Web tool for croos-comparisons between tables\\
+	\hline								 
+  CDS XMatch & France & Cross-match sources between very large catalogues \\
+	\hline								 
+  Data Discovery Tool & USA & Web tool to find datasets from astronomical collections\\
+	\hline								 
+  Filter Profiles & Spain & Web tool to retrieve telescope filter profiles \\
   \hline
-  Iris & USA & A downloadable application for the finding, plotting and fitting the 
-			Spectral Energies Distributions (SEDs). \\
-	\hline								 
-  Seleste & USA & \\
-	\hline								 
-  Skyview & USA & \\
-	\hline								 
-  Specview & USA & \\
+  Iris & USA & A tool for the finding, plotting and fitting SEDs \\
   \hline
-  WCSFIXER & USA & \\
+  Montage & USA & Web tool to produce proper mosaics for astrometry \\
+%  \hline
+%  Octet & Canada & \\
+  \hline
+  Skyview & USA & A web-based image viewer using VO resources\\
+	\hline								 
+  Specview & USA & 1D spectral observations and SEDs analysis tool \\
+  \hline
+  Splat & Germany & 1D spectral observations search and analysis tool \\
+	\hline								 
+  TESELA & Spain & A tool that allows access to the catalog of blank regions\\
+  \hline								 
+  Time Series Search Tool & USA & Web tool to access time series datasets \\
+  \hline								 
+  Topcat & UK & Graphical search, viewer and editor for tables and images\\
+  \hline								 
+  Visivo & Italy & 3D renderings from astrophysical data tables \\
+  \hline								 
+  VOConvert & India & VOTable converter tool \\
+  \hline								 
+  VODesktop & UK & analysis tools that allows data saving \\
+  \hline								
+  VOPlot & India & Desktop and web tool for plotting VO resources \\
   \hline 
-  Montage & USA & \\
-  \hline
-  Xamin & USA & \\
-	\hline								 
-  Aladin & France & Widely-used VO tool that allows searching, visualizing
-and perform basic operation to images, spectra and catalogs.\\
-	\hline								 
-  Cassis & France & \\
-	\hline								 
-  Cross-Match Service & France  & \\
-	\hline								 
-  AppLauncher & France & \\
-	\hline								 
-  X-Match & France & \\
-	\hline								 
-   VOSA & Spain & \\
-	\hline								 
-  VOSED & Spain & \\
-	\hline								 
-  TESELA & Spain &  a service that allows to access the catalog of blank
-regions. It is based on the application of the Delaunay triangulation\\
-	\hline								 
-  Filter Profiles & Spain & \\
-   \hline
-	VODesktop & UK & an analysis tools wich allows limit the choice of resources through specific data saving.\\
-	\hline								 
-  Topcat & UK &  An interactive graphical viewer and editor for tabular data for
-formats like the Flexible Image Transport System (FITS) \\
-	\hline								 
-	\hline								 
-  Splat & Germany & \\
-	\hline								 
-   VOSpec & Europe & A multi-wavelength spectral analysis tool with access to
-atomic and \\
-	\hline								 
- AstroStat & India & a software tool that allows astronomers to use both and sophisticated statical routines on large datasets uploaded in VOTable or
-									ASCII format. \\
-	\hline								 
-  Visivo & Italy & \\
-	\hline								 
-	Skynode & Italy & A web service that allows to query in the VVDS catalogs. \\
+  VOStat & India & Desktop and web to run statistical routines to VOTables \\
+  \hline 
+  VOSpec & Europe & A multi-wavelength spectral analysis tool\\
+  \hline								 
+  VOSA & Spain & SED analyzer using VO resources \\
+  \hline								 
+  VOSED & Spain & A SED generator tool using VO resources \\
+  \hline								 
+  VOServices & USA & Footprint, spectrum and filter profile web tools\\ 
+  \hline 
+  WCSFixer & USA & A Web-Enabled IRAF Plate Solver \\
 	\hline		
 	\end{tabular}
-	\caption{Data Access}
-	\label{table:da}
-\end{table*}
+	\caption{VO-enabled applications with a brief
+description.}
+	\label{table:app}
+\end{table}
 

@@ -43,7 +43,7 @@ the IVOA.
 		\url{http://aus-vo.org.au/} \\
 	\hline
    CVO (Canada) & 2002 & %Governmental Initiative + 1 partner & % CADC, NRC, CSA &
-   	\url{http://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca} \\
+   	\url{http://cadc-ccda.hia-iha.nrc-cnrc.gc.ca} \\
 %	EURO-VO (Europe) & 
 %& & \url{http://www.euro-vo.org/} \\
 	\hline
@@ -56,7 +56,7 @@ the IVOA.
 	RVO (Russia) & 2002 & % &  
 		\url{http://www.inasan.rssi.ru/eng/rvo/} \\
 	\hline
-	US-VAO (United States) & 2002 & %  &
+	US-VAO (USA) & 2002 & %  &
 		 \url{http://www.usvao.org/} \\
 	\hline
 	VOI (India) & 2002 & %  & 
@@ -99,7 +99,7 @@ the IVOA.
 		\url{http://www.chivo.cl/} \\
 	\hline
 \end{tabular}
-\caption{IVOA's partners.}
+\caption{IVOA's partners by year of affiliation with their websites.}
 \label{table:partners}
 \end{table}
 \normalsize
@@ -146,7 +146,7 @@ through \emph{Data Access} protocols.
 \begin{figure}%[h]
 \begin{center}
 	\includegraphics[width=0.9\linewidth]{img/ivoa_arch.png}
-	\caption{IVOA Architecture.}
+	\caption{IVOA Architecture at Level 1 (high-level abstraction).}
 \end{center}
 \label{figure:ivoarch}
 \end{figure}
@@ -246,17 +246,18 @@ for format conversions or for inference of data semantics.
 
 \begin{table*}[h!t]
    \centering
+\scriptsize
    \begin{tabular}{|l|l|l|l|l|l|}
-   \hline \scriptsize
+   \hline 
    \textbf{Toolkit} & \textbf{VO} & \textbf{DAL Services} & \textbf{Language} &
-\textbf{Download} & \textbf{Support} \\
+\textbf{Download} & \textbf{Supp.} \\
    \hline
    \hline
 DALToolKit & ESA-VO & SCS/SIA & Java & Available & No\\
    \hline
-SVOCat & SVO & SCS            & Unknown & On demand & On demand \\
+SVOCat & SVO & SCS            & Unknown & On demand & Yes \\
    \hline
-MySpec-MyImg & SVO & SIA/SSA  & Unknown & On demand & On demand \\
+MySpec-MyImg & SVO & SIA/SSA  & Unknown & On demand & Yes \\
    \hline
 SAADA & VO-France & SCS/SIA/SSA/TAP & Java & Available & Yes \\
    \hline
@@ -264,14 +265,15 @@ DALServer & US-VAO & SCS/SIA/SSA/SLA & Java & Available & No \\
    \hline
 VO-Dance & VObs.it & SCS/SIA/SSA & Java/Python & Available & Yes \\
    \hline
-DaCHS & GAVO & SCS/SIA/SSA/TAP/Reg & Python & Available & Yes \\
+DaCHS & GAVO & SCS/SIA/SSA/TAP & Python & Available & Yes \\
    \hline
-OpenCADC & CVO & SCS/SIA/SSA/TAP/Reg & Java/Python & Available & Yes\\
+OpenCADC & CVO & SCS/SIA/SSA/TAP & Java/Python & Available & Yes\\
    \hline
 DSA & AstroGrid & SCS/TAP & Java & On demand & No \\
   \hline
    \end{tabular}
-   \caption{Toolkits}
+   \caption{IVOA Toolkits, including in which VO it was developed, the main
+programming language, the on-line availability and if currently has support.}
    \label{table:tk}
 \end{table*}
 
